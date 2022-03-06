@@ -1,0 +1,13 @@
+<label class="d-inline col-1 col-form-label">{{'app_easy' | translate }}</label>
+
+<div class="d-inline col-2 minor-top">
+    <svg width="30" height="20" *ngFor="let complexityValue of complexityArray" (click)="selected(complexityValue)">
+        <rect width="30" height="20" [ngClass]="getRectClass(complexityValue)" />
+    </svg>
+</div>
+
+<label class="d-inline col-1 col-form-label">{{'app_hard' | translate }}</label>
+
+<div class="d-inline">
+    <button class="btn" (click)="clear()"><i class="fa fa-times"></i></button>
+</div>

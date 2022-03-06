@@ -1,0 +1,12 @@
+<div *ngFor="let article of articleParts">
+    <quill-view [content]="article.text" format="text" theme="snow"></quill-view>
+    
+    <div class="row">
+        <div class="offset-2 col-8 mt-2 mb-2">
+            <video *ngIf="article.videoName" style="width: 100%" preload="auto" controls>
+                <source src="blog-video/{{article.videoName}}.{{article.videoType}}"
+                    type="video/{{article.videoType}}">
+            </video>
+        </div>
+    </div>
+</div>

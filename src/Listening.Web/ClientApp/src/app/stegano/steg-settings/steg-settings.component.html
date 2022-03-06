@@ -1,0 +1,127 @@
+<div class="card">
+    <div class="card-header bg-blue">
+        <div class="row">
+            <label class="col-6 col-form-label cursor-pointer" (click)="changeSettingsVisibility()">
+                {{ 'steg_set' | translate }}
+            </label>
+        </div>
+    </div>
+
+    <div class="card-block" [hidden]="!isSettingsVisible">
+        <div class="row ">
+            <div class="col-6 mt-2 ml-2">
+                <input #fileInput (change)="fileChanged($event)" placeholder="{{ 'upload_key' | translate}}"
+                    type="file" />
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <label class="col-2 ml-2">{{ 'steg_clrs' | translate }}</label>
+
+            <label class="col-2">
+                <input type="checkbox" class="mr-1" (change)="colorSelectChanged('red')" [(ngModel)]="includeRed" />
+                <i class="fa fa-circle text-danger mr-1"></i> {{ 'red' | translate }}
+            </label>
+
+            <label class="col-2">
+                <input type="checkbox" class="mr-1" (change)="colorSelectChanged('green')" [(ngModel)]="includeGreen" />
+                <i class="fa fa-circle text-success mr-1"></i> {{ 'green' | translate }}
+            </label>
+
+            <label class="col-2 ml-2">
+                <input type="checkbox" class="mr-1" (change)="colorSelectChanged('blue')" [(ngModel)]="includeBlue" />
+                <i class="fa fa-circle text-primary mr-1"></i>{{ 'blue' | translate }}
+            </label>
+
+            <label class="col-2 ml-2">
+                <input type="checkbox" class="mr-1" (change)="colorSelectChanged('alpha')" [(ngModel)]="includeAlpha" />
+                <i class="fa fa-genderless mr-1"></i>{{ 'alpha' | translate }}
+            </label>
+        </div>
+
+
+        <div class="row" *ngIf="selectedColors && selectedColors.length > 0">
+            <div class="col-2">
+                <label class="ml-2">{{ 'order' | translate }}</label>
+            </div>
+
+            <div class="col-10">
+                <div cdkDropList cdkDropListOrientation="horizontal" class="drag-drop-list"
+                    (cdkDropListDropped)="drop($event)">
+                    <div class="drag-drop-box" *ngFor="let description of selectedColors" cdkDrag>
+                        <i class="fa {{description.className}}"></i> {{ description.name | translate }}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mt-2 mb-2">
+            <div class="offset-4 col-2">
+                <label class="ml-2">{{ 'mode' | translate }}</label>
+            </div>
+
+            <select class="col-3 form-control" (change)="modeSelected($event.target.value)" [(ngModel)]="selectedMode">
+                <option></option>
+                <option *ngFor="let mode of modes" [value]="mode.alias">
+                    {{ mode.name | translate }}
+                </option>
+            </select>
+
+            <!-- <ngx-select [items]="modes" optionValueField="alias" optionTextField="name" (select)="modeSelected($event)" 
+                        [(ngModel)]="selectedMode">
+                <ng-template ngx-select-option ngx-select-option-selected let-option let-text="text">
+                    <span>{{ option.data.name | translate }}</span>
+                </ng-template>
+            </ngx-select> -->
+        </div>
+
+
+        <div class="row">
+            <label class="col-2 ml-2 mt-1">{{ 'enter_start_ind' | translate }}</label>
+            <input class="col-2 form-control" type="number" [(ngModel)]="startIndex" (change)="calculateLength()"
+                placeholder="{{ 'enter_start_ind' | translate }}" />
+
+            <label class="col-2 mt-1">{{ 'enter_step' | translate }}</label>
+            <input class="col-2 form-control ml-1" type="number" [(ngModel)]="step" (change)="calculateLength()"
+                placeholder="{{ 'enter_step' | translate }}" />
+
+            <label *ngIf="maxLength" class="col-4 ml-2">{{ 'new_length' | translate }}: {{maxLength}}</label>
+        </div>
+
+        <div *ngIf="selectedMode && selectedMode.alias === 's'; else elseBlock" class="row ml-1">
+
+            <div class="col-3">
+                <input class="mr-1" [(ngModel)]="simpleDescription.isHorizontal" type="checkbox" disabled />
+                <label class="mt-2">{{ 'is_horiz' | translate }}</label>
+            </div>
+
+            <div class="col-3">
+                <input class="mr-1" [(ngModel)]="simpleDescription.isInverted" type="checkbox" disabled />
+                <label class="mt-2">{{ 'is_inv' | translate }}</label>
+            </div>
+        </div>
+
+        <ng-template #elseBlock>
+            <div class="ml-1">
+                <input type="text" class="col-6 form-control" [(ngModel)]="func.description"
+                    placeholder="{{ 'entr_forml' | translate }} 3*sin(x)+4*cos(x)+pow(x,3)" />
+            </div>
+        </ng-template>
+
+        <div class="row mt-2">
+            <div class="col-12 text-center">
+                <button *ngIf="isInject" [disabled]="!selectedMode || (selectedMode && selectedMode.alias == null)"
+                    class="btn" (click)="saveKey()">
+                    {{ 'save_key' | translate }}
+                </button>
+
+                <button [disabled]="!selectedMode || (selectedMode && selectedMode.alias == null)"
+                    class="btn ml-1" (click)="apply()">
+                    {{ 'apply' | translate }}
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>

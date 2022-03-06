@@ -1,0 +1,4 @@
+../../node_modules/@angular/cli/bin/ng g m bukvitsa
+
+
+../../../node_modules/@angular/cli/bin/ng g s copy

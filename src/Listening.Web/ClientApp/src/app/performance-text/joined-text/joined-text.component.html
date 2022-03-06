@@ -1,0 +1,15 @@
+<div class="margin-bottom-50" 
+    *ngFor="let paragraph of paragraphs; index as iParagraph; trackBy: trackByFn">
+
+  <div class="word" *ngFor="let word of paragraph.words; index as iWord; trackBy: trackByFn">
+    <button class="btn" [ngClass]="letter.className" 
+      *ngFor="let letter of word.letters; trackBy: trackByFn"
+      (dblclick)="hintLetter(letter, iParagraph, iWord)">{{letter.symbol}}</button>
+  </div>
+
+</div>
+
+<div *ngIf="isFinished">
+  <appc-guessing-result [resultsData]="resultsData" [resultsWordsData]="resultsWordsData">
+  </appc-guessing-result>
+</div>

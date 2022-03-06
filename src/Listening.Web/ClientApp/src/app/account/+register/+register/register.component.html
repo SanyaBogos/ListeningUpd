@@ -1,0 +1,38 @@
+﻿<div class="row">
+    <div class="form-group offset-3 col-6">
+        <h2 class="text-center">{{ 'app_nav_register' | translate }}</h2>
+
+        <appc-email [email]="model.email" (emailChanged)="model.email = $event"></appc-email>
+        <br />
+
+        <appc-password [(password)]="model.password" (passwordChanged)="passwordChanged1($event)">
+        </appc-password>
+        <br />
+
+        <appc-password [(password)]="passwordConfirm" (passwordChanged)="passwordChanged2($event)">
+        </appc-password>
+
+        <span class="text-danger field-validation-valid" [hidden]="!passwordError">
+            {{ passwordError }}
+          </span>
+        <br />
+
+        <appc-captcha (captchaObject)="updateCaptchaObj($event)"></appc-captcha>
+        <br />
+
+        <p class="text-center">
+            <label>
+                <input type="checkbox" [(ngModel)]="acceptedTerms" />&nbsp;{{ 'accept_terms' | translate }}
+                <a routerLink="/privacy" > {{ 'terms_of_use' | translate }} </a>
+            </label>
+        </p>
+
+        <div class="text-center">
+            <button [disabled]="!acceptedTerms" class="btn" (click)="register()">
+                <i class="fa fa-floppy-o"></i>
+                {{ 'app_nav_register' | translate }}
+            </button>
+        </div>
+
+    </div>
+</div>

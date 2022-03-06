@@ -1,0 +1,439 @@
+ContentKey,en-US,fr-FR,ru-RU,be-BY,uk-UA,kk-KZ
+app_title,Listening,~fr~Listening,Слушание,~by~Listening,Слухання,~kz~Listening
+app_description,Single page application using aspnet core and angular,~fr~Single page application using aspnet core and angular,Приложение для улучшения навыков распознавания речи (написано с использованием технологий .net core & angular),~by~Single page application using aspnet core and angular,~ua~Single page application using aspnet core and angular,~kz~Single page application using aspnet core and angular
+app_repo_url,https://github.com/asadsahi/aspnetcorespa,https://github.com/asadsahi/aspnetcorespa,https://github.com/asadsahi/aspnetcorespa,https://github.com/asadsahi/aspnetcorespa,https://github.com/asadsahi/aspnetcorespa,https://github.com/asadsahi/aspnetcorespa
+app_nav_home,Home,~fr~Home,Домашняя,~by~Home,Домашня,~kz~Home
+app_nav_signalr,Chat,~fr~Chat,Разговорник,~by~Chat,Чат,~kz~Chat
+app_nav_examples,Examples,~fr~Examples,Примеры,~by~Examples,Приклади,~kz~Examples
+app_nav_register,Register,~fr~Register,Регистрация,~by~Register,Реєстрація,~kz~Register
+app_nav_login,Login,~fr~Login,Вход,~by~Login,Вхід,~kz~Login
+app_nav_crosswd_list,Crossword list,~fr-FR~Crossword list,Список кроссвордов,~be-BY~Crossword list,Список кросвордів,~kk-KZ~Crossword list
+app_nav_crosswd_res,Crossword results,~fr-FR~Crossword results,Результаты кроссвордов,~be-BY~Crossword results,Результати кросвордів,~kk-KZ~Crossword results
+app_nav_crosswd_admin,Manage crosswords,~fr-FR~Manage crosswords,Управление кроссвордами,~be-BY~Manage crosswords,Керування кросвордами,~kk-KZ~Manage crosswords
+app_nav_logout,Logout,~fr~Logout,Выход,~by~Logout,Вихід,~kz~Logout
+app_login_btn,Login,~fr~Login,Войти,~by~Login,Ввійти,~kz~Login
+app_registry_btn,Register,~fr~Register,Зарегистрироваться,~by~Register,Зареєструватись,~kz~Register
+app_email,Email,~fr~Email,Электронная почта,~by~Email,Електронна пошта,~kz~Email
+app_password,Password,~fr~Password,Пароль,~by~Password,Пароль,~kz~Password
+app_username,Username,~fr~Username,Имя в системе,~by~Username,Ім“я в системі,~kz~Username
+app_firstname,Firstname,~fr~Firstname,Имя,~by~Firstname,Ім“я,~kz~Firstname
+app_lastname,Lastname,~fr~Lastname,Фамилия,~by~Lastname,Прізвище,~kz~Lastname
+app_mobile,Mobile,~fr~Mobile,Мобильный,~by~Mobile,Мобільний,~kz~Mobile
+app_forget_password,Forget password? click here,~fr~Forget password? click here,Забыли пароль? Нажмите сюда,~by~Forget password? click here,Забули пароль? Натисніть тут,~kz~Forget password? click here
+app_nav_admin,Admin,~fr-FR~Admin,Администрирование,~be-BY~Admin,Адміністрування,~kk-KZ~Admin
+app_nav_results,Results,~fr-FR~Results,Результаты,~be-BY~Results,Результати,~kk-KZ~Results
+app_nav_texts_list,Texts,~fr-FR~Texts,Тексты,~be-BY~Texts,Тексти,~kk-KZ~Texts
+app_texts_list_header,Texts for listening,~fr-FR~Texts for listening,Тексты для прослушивания,~be-BY~Texts for listening,Тексти для прослуховування,~kk-KZ~Texts for listening
+app_texts_joined_type,Joined,~fr-FR~Joined,Объединённый,~be-BY~Joined,Об“єднаний,~kk-KZ~Joined
+app_texts_separated_type,Separated,~fr-FR~Separated,Разделённый,~be-BY~Separated,Розділений,~kk-KZ~Separated
+app_nav_texts_admin,Manage texts,~fr-FR~Manage texts,Управление текстами,~be-BY~Manage texts,Керування текстами,~kk-KZ~Manage texts
+app_nav_roles_admin,Manage roles,~fr-FR~Manage roles,Управление ролями,~be-BY~Manage roles,Керування ролями,~kk-KZ~Manage roles
+app_texts_list_header_for_admin,Texts for editing,~fr-FR~Texts for editing,Тексты для изменения,~be-BY~Texts for editing,Тексти для редагування,~kk-KZ~Texts for editing
+app_hotkeys,Hotkeys,~fr-FR~Hotkeys,Горячие клавиши,~be-BY~Hotkeys,Гарячі клавіші,~kk-KZ~Hotkeys
+app_double_click,(double click) open hidden letter,~fr-FR~(double click) open hidden letter,(двойной клик) открыть скрытый символ,~be-BY~(double click) open hidden letter,(подвійний клік) відкрити прихований символ,~kk-KZ~(double click) open hidden letter
+app_check_word,check word,~fr-FR~check word,проверить слово,~be-BY~check word,перевірка слова,~kk-KZ~check word
+app_play_stop_audio,play/stop audio,~fr-FR~play/stop audio,проигрывать/остановить медиафайл,~be-BY~play/stop audio,грати/зупинити медіафайл,~kk-KZ~play/stop audio
+app_previous_second_in_audio,previous second in audio,~fr-FR~previous second in audio,предыдущая секунда в медиафайле,~be-BY~previous second in audio,попередня секунда в медіафайлі,~kk-KZ~previous second in audio
+app_next_second_in_audio,next second in audio,~fr-FR~next second in audio,следующая секунда в медиафайле,~be-BY~next second in audio,наступна секунда в медіафайлі,~kk-KZ~next second in audio
+app_got_it,Got it,~fr-FR~Got it,Понятно,~be-BY~Got it,Зрозумів,~kk-KZ~Got it
+app_next_word,go to next word,~fr-FR~go to next word,перейти к следующему слову,~be-BY~go to next word,перейти до наступного слова,~kk-KZ~go to next word
+app_previous_word,go to previous word,~fr-FR~go to previous word,перейти к предыдущему слову,~be-BY~go to previous word,перейти до попереднього слова,~kk-KZ~go to previous word
+app_info_btn,Info,~fr-FR~Info,Информация,~be-BY~Info,Інформація,~kk-KZ~Info
+guessing_results,Guessing results,~fr-FR~Guessing results,Результаты изучения,~be-BY~Guessing results,Результати вивчення,~kk-KZ~Guessing results
+letters_result,Letters result,~fr-FR~Letters result,Посимвольные результаты,~be-BY~Letters result,Посимвольні результати,~kk-KZ~Letters result
+words_result,Words result,~fr-FR~Words result,Пословные результаты,~be-BY~Words result,Послівні результати,~kk-KZ~Words result
+cancel,Cancel,~fr-FR~Cancel,Закрыть,~be-BY~Cancel,Закрити,~kk-KZ~Cancel
+go_to_texts,Go to texts,~fr-FR~Go to texts,Перейти к текстам,~be-BY~Go to texts,Перейти до текстів,~kk-KZ~Go to texts
+go_to_results,Go to results,~fr-FR~Go to results,Перейти к результатам,~be-BY~Go to results,Перейти до результатів,~kk-KZ~Go to results
+manage_text_header,Use to change existing texts,~fr-FR~Use to change existing texts,Использовать для изменения существующих текстов,~be-BY~Use to change existing texts,Використовувати для зміни існуючих текстів,~kk-KZ~Use to change existing texts
+title_name,Title,~fr-FR~Title,Название,~be-BY~Title,Назва,~kk-KZ~Title
+subtitle_name,Subtitle,~fr-FR~Subtitle,Дополнительное название,~be-BY~Subtitle,Додаткова назка,~kk-KZ~Subtitle
+country_name,Country,~fr-FR~Country,Страна,~be-BY~Country,Країна,~kk-KZ~Country
+text_name,Text,~fr-FR~Text,Текст,~be-BY~Text,Текст,~kk-KZ~Text
+save_name,Save,~fr-FR~Save,Сохранить,~be-BY~Save,Зберегти,~kk-KZ~Save
+delete_name,Delete,~fr-FR~Delete,Удалить,~be-BY~Delete,Видалити,~kk-KZ~Delete
+text_recognition_site,Text recognition site,~fr-FR~Text recognition site,Сайты для распознавания текстов с картинок,~be-BY~Text recognition site,Сайти для розпізнавання текстів з картинок,~kk-KZ~Text recognition site
+delete_confirmation,Delete confirmation,~fr-FR~Delete confirmation,Подтверждение удаления,~be-BY~Delete confirmation,Підтвердження видалення,~kk-KZ~Delete confirmation
+confirmation_delete_text_question,Are you sure that this text should be deleted?,~fr-FR~Are you sure that this text should be deleted?,Вы уверены%comma% что хотите удалить?,~be-BY~Are you sure that this text should be deleted?,Ви впевнені%comma% що хочете видалити?,~kk-KZ~Are you sure that this text should be deleted?
+yes_,Yes,~fr-FR~Yes,Да,~be-BY~Yes,Так,~kk-KZ~Yes
+no_,No,~fr-FR~No,Нет,~be-BY~No,Ні,~kk-KZ~No
+hidden,Hidden,~fr-FR~Hidden,Скрытый,~be-BY~Hidden,Прихований,~kk-KZ~Hidden
+hinted,Hinted,~fr-FR~Hinted,Подсказанный,~be-BY~Hinted,Підказаний,~kk-KZ~Hinted
+guessed,Guessed,~fr-FR~Guessed,Распознанный,~be-BY~Guessed,Розпізнаний,~kk-KZ~Guessed
+sign,Sign,~fr-FR~Sign,Знак,~be-BY~Sign,Знак,~kk-KZ~Sign
+fully_guessed_words,Fully guessed words,~fr-FR~Fully guessed words,Полностью распознанные слова,~be-BY~Fully guessed words,Повністю розпізнані слова,~kk-KZ~Fully guessed words
+fully_hinted_words,Fully hinted words,~fr-FR~Fully hinted words,Полностью подсказанные слова,~be-BY~Fully hinted words,Повністю підказані слова,~kk-KZ~Fully hinted words
+partitially_gueesed_words,Partitially gueesed words,~fr-FR~Partitially gueesed words,Частично распознанные слова,~be-BY~Partitially gueesed words,Частково розпізнані слова,~kk-KZ~Partitially gueesed words
+check_name,Check,~fr-FR~Check,Проверить,~be-BY~Check,Перевірити,~kk-KZ~Check
+check_hint,You are able to use it at any point of transcribing,~fr-FR~You are able to use it at any point of transcribing,Можно использовать многократно и в любое время в процессе изучения,~be-BY~You are able to use it at any point of transcribing,Можна використовувати багато разів і в будь-який час,~kk-KZ~You are able to use it at any point of transcribing
+start_over,Start over,~fr-FR~Start over,Начать сначала,~be-BY~Start over,Почати спочатку,~kk-KZ~Start over
+confirm_override_results_1,Are you sure want to remove results of guessing of this text,~fr-FR~Are you sure want to remove results of guessing of this text,Вы уверены%comma% что хотите удалить результаты,~be-BY~Are you sure want to remove results of guessing of this text,Ви впевнені%comma% що хочете видалити результати?,~kk-KZ~Are you sure want to remove results of guessing of this text
+confirm_override_results_2,and start from scretch,~fr-FR~and start from scretch,и начать сначала?,~be-BY~and start from scretch,і почати спочатку?,~kk-KZ~and start from scretch
+new_text_name,New text,~fr-FR~New text,Новый текст,~be-BY~New text,Новий текст,~kk-KZ~New text
+backup,Backup,~fr-FR~Backup,Резервная копия,~be-BY~Backup,Резервна копія,~kk-KZ~Backup
+search_and_filter,Search & filter,~fr-FR~Search & filter,Поиск и сортировка,~be-BY~Search & filter,Пошук і сортування,~kk-KZ~Search & filter
+title_placeholder,Title,~fr-FR~Title,Название,~be-BY~Title,Назва,~kk-KZ~Title
+subtitle_placeholder,Subtitle,~fr-FR~Subtitle,Дополнительное название,~be-BY~Subtitle,Додаткова назва,~kk-KZ~Subtitle
+search_btn_name,Search,~fr-FR~Search,Искать,~be-BY~Search,Шукати,~kk-KZ~Search
+clear_btn_name,Clear,~fr-FR~Clear,Очистить,~be-BY~Clear,Очистити,~kk-KZ~Clear
+select_country_title,Select country,~fr-FR~Select country,Выбрать страну,~be-BY~Select country,Вибрати країну,~kk-KZ~Select country
+go_to_texts_list,Go to texts list,~fr-FR~Go to texts list,Перейти к списку текстов,~be-BY~Go to texts list,Перейти до списку текстів,~kk-KZ~Go to texts list
+welcome,Welcome to a language listening site,~fr-FR~Welcome to a language listening site,Добро пожаловать на сайт тренировки навыка прослушивания иностранных языков,~be-BY~Welcome to a language listening site,Ласкаво просимо на сайт тренування вміння прослуховування і розпізнавання іноземних мов,~kk-KZ~Welcome to a language listening site
+hoping,Hope this resource will help you!,~fr-FR~Hope this resource will help you!,Надеюсь%comma% что этот ресурс будет Вам полезен,~be-BY~Hope this resource will help you!,Сподіваюсь%comma% що цей ресурс буде вам корисний,~kk-KZ~Hope this resource will help you!
+greeting_word,As we all know%comma% one of the indispensable components of successfully learning and using a foreign language is the ability to understand the interlocutor. Specially for this purpose we have developed this site. If you wish to start%comma% please go to Texts menu tab and choose one of the possible texts.,~fr-FR~As we all know%comma% one of the indispensable components of successfully learning and using a foreign language is the ability to understand the interlocutor. Specially for this purpose we have developed this site. If you wish to start%comma% please go to Texts menu tab and choose one of the possible texts.,Как мы знаем%comma% один из наиболее важных элементов в изучении иностранного языка – возможность понимать речь собеседника в режиме реального времени. Для развития соответствующих навыков и был разработан этот сайт. Для того чтобы начать нажмите вкладку Тексты вверху и сделайте выбор текста из списка возможных.,~be-BY~As we all know%comma% one of the indispensable components of successfully learning and using a foreign language is the ability to understand the interlocutor. Specially for this purpose we have developed this site. If you wish to start%comma% please go to Texts menu tab and choose one of the possible texts.,Як ми знаємо%comma% один з найбільш важливих елементів у вивченні іноземної мови — це можливість розуміти мову співрозмовника в режимі реального часу. Для розвитку відповідних  навичок і був розроблений цей сайт. Для початку натисніть вкладку Тексти зверху і зробіть вибір тексту із списку доступних.,~kk-KZ~As we all know%comma% one of the indispensable components of successfully learning and using a foreign language is the ability to understand the interlocutor. Specially for this purpose we have developed this site. If you wish to start%comma% please go to Texts menu tab and choose one of the possible texts.
+video_success_cut,Video has been successfully cut,~fr-FR~Video has been successfully cut,Видео было успешно обрезано,~be-BY~Video has been successfully cut,Відео було успішно обрізано,~kk-KZ~Video has been successfully cut
+video_error_from_to_diff,'From' value shouldn`t be more than 'To',~fr-FR~'From' value shouldn`t be more than 'To',Значение “Начало” не должно быть больше за “Конец”,~be-BY~'From' value shouldn`t be more than 'To',Значення «Початок» не повинно бути більшим за «Кінець»,~kk-KZ~'From' value shouldn`t be more than 'To'
+video_error_same_value,'From' and 'To' shouldn`t be the same,~fr-FR~'From' and 'To' shouldn`t be the same,Значения “Начало” и “Конец” не должны быть равны,~be-BY~'From' and 'To' shouldn`t be the same,Значення «Початок» і «Кінець» не повинні бути рівними,~kk-KZ~'From' and 'To' shouldn`t be the same
+get_video,Get video,~fr-FR~Get video,Получить видео,~be-BY~Get video,Отримати відео,~kk-KZ~Get video
+cut_the_video,Cut the video,~fr-FR~Cut the video,Обрезать видео,~be-BY~Cut the video,Вирізати відео,~kk-KZ~Cut the video
+video_suggestion,I suggest you cutting video and left not more than 2:30 minutes,~fr-FR~I suggest you cutting video and left not more than 2:30 minutes,Советую использовать видео не длинее 2:30 минут,~be-BY~I suggest you cutting video and left not more than 2:30 minutes,Рекомендую використовувати відео не довше 2:30 хвилин,~kk-KZ~I suggest you cutting video and left not more than 2:30 minutes
+video_info_from_to,For setting time markers use the following formate 'mimutes:seconds' (for example: '3:51') (without quotes),~fr-FR~For setting time markers use the following formate 'mimutes:seconds' (for example: '3:51') (without quotes),Испоьзуйте заданый формат “минуты:секунды” для указания времени (без кавычек),~be-BY~For setting time markers use the following formate 'mimutes:seconds' (for example: '3:51') (without quotes),Використовуйте формат «хвилини:секунди» для того%comma% щоб сказати час (без лапок),~kk-KZ~For setting time markers use the following formate 'mimutes:seconds' (for example: '3:51') (without quotes)
+from,From,~fr-FR~From,Начало,~be-BY~From,Початок,~kk-KZ~From
+to,To,~fr-FR~To,Конец,~be-BY~To,Кінець,~kk-KZ~To
+audio,Audio,~fr-FR~Audio,Аудио,~be-BY~Audio,Аудіо,~kk-KZ~Audio
+video,Video,~fr-FR~Video,Видео,~be-BY~Video,Відео,~kk-KZ~Video
+not_allowed_text,You are not allowed to do this operation,~fr-FR~You are not allowed to do this operation,Нет возможности совершить операцию (недостаточно прав),~be-BY~You are not allowed to do this operation,Нема можливості здійснити операцію (недостатньо прав),~kk-KZ~You are not allowed to do this operation
+unable_to_change_password,Unable to change password,~fr-FR~Unable to change password,Нельзя изменить пароль,~be-BY~Unable to change password,Неможна змінити пароль,~kk-KZ~Unable to change password
+invalid_user_credentials,Your credentials do not match or account not enabled. Please try again.,~fr-FR~Your credentials do not match or account not enabled. Please try again.,Введённые имя и пароль не соответствуют или пользователь заблокирован. Попробуйте ещё.,~be-BY~Your credentials do not match or account not enabled. Please try again.,Введені ім“я та пароль неправильні або користувач заблокований,~kk-KZ~Your credentials do not match or account not enabled. Please try again.
+invalid_login_attempt,Invalid login attempt.,~fr-FR~Invalid login attempt.,Неправильная попытка входа.,~be-BY~Invalid login attempt.,Неправильна спроба входу.,~kk-KZ~Invalid login attempt.
+insufficient_sms_credit_error_message,Your SMS credit is not enought to process the request.,~fr-FR~Your SMS credit is not enought to process the request.,~ru-RU~Your SMS credit is not enought to process the request.,~be-BY~Your SMS credit is not enought to process the request.,~uk-UA~Your SMS credit is not enought to process the request.,~kk-KZ~Your SMS credit is not enought to process the request.
+audio_or_video_is_necessary,Audio or video file name is necessary.,~fr-FR~Audio or video file name is necessary.,Имя медиафайла обязательно для ввода,~be-BY~Audio or video file name is necessary.,Ім“я медіфайлу обов“язкове для введення,~kk-KZ~Audio or video file name is necessary.
+not_allowed_to_use_both_audio_an_video,It is not allowed to use both audio and video file. Please chose one.,~fr-FR~It is not allowed to use both audio and video file. Please chose one.,Нельзя использовать одновременно аудио и видео.,~be-BY~It is not allowed to use both audio and video file. Please chose one.,Неможна одночасно використовувати і аудіо і відео,~kk-KZ~It is not allowed to use both audio and video file. Please chose one.
+from_is_not_to,'From' value shouldn't be the same as 'To'.,~fr-FR~'From' value shouldn't be the same as 'To'.,Значения “Начало” и “Конец” должны быть разными,~be-BY~'From' value shouldn't be the same as 'To'.,Значення «Початок» і «Кінець» повинні бути різними,~kk-KZ~'From' value shouldn't be the same as 'To'.
+max_duration_exceeds,Video shouldn`t be too long. Max value is 2:30 minutes.,~fr-FR~Video shouldn`t be too long. Max value is 2:30 minutes.,Видео не должно быть слишком длинным. Максимальное значение 2:30 минут,~be-BY~Video shouldn`t be too long. Max value is 2:30 minutes.,Відео не повинно бути занадто довгим. Максимальний розмір 2:30 хвилин,~kk-KZ~Video shouldn`t be too long. Max value is 2:30 minutes.
+please_log_in,Please log in,~fr-FR~Please log in,Пожалуйста%comma% войдите,~be-BY~Please log in,Будь-ласка%comma% ввійдіть,~kk-KZ~Please log in
+unauthorized,Unauthorized,~fr-FR~Unauthorized,Неавторизированный пользователь,~be-BY~Unauthorized,Неавторизований користувач,~kk-KZ~Unauthorized
+server_error,Server error,~fr-FR~Server error,Ошибка сервера,~be-BY~Server error,Помилка серверу,~kk-KZ~Server error
+contact_admin,Please contact admin,~fr-FR~Please contact admin,Обратитесь к администратору,~be-BY~Please contact admin,Зверніться до адміністратору,~kk-KZ~Please contact admin
+internal_error,Internal server error,~fr-FR~Internal server error,Внутреняя ошибка сервера,~be-BY~Internal server error,Внутрішня помилка серверу,~kk-KZ~Internal server error
+login_passwd_incorrect,The username/password couple is invalid.,~fr-FR~The username/password couple is invalid.,Пара значений имя пользователя и пароль неправильные.,~be-BY~The username/password couple is invalid.,Пара значень ім“я користувача і пароль неправильні,~kk-KZ~The username/password couple is invalid.
+text_preview,Text preview,~fr-FR~Text preview,Просмотр текста,~be-BY~Text preview,Перегляд тексту,~kk-KZ~Text preview
+refresh,Refresh,~fr-FR~Refresh,Обновить,~be-BY~Refresh,Оновити,~kk-KZ~Refresh
+list_of_ocr,List of external OCR:,~fr-FR~List of external OCR:,Список внешних сайтов по распознаванию текстов (с картинок):,~be-BY~List of external OCR:,Список зовнішніх сайтів з розпізнавання текстів (з картинок): ,~kk-KZ~List of OCR:
+go_to_new_tab,Go to site in new window tab,~fr-FR~Go to site in new window tab,Перейти на сайт в новой вкладке,~be-BY~Go to site in new window tab,Перейти на сайт в новій вкладці ,~kk-KZ~Go to site in new window tab
+show_letters,Show letters,~fr-FR~Show letters,Показать скрытые символы,~be-BY~Show letters,Показати приховані символи ,~kk-KZ~Show letters
+captcha_too_long,Captcha is too long,~fr-FR~Captcha is too long,Значение для CAPTCHA слишком длинное,~be-BY~Captcha is too long,Значення для CAPTCHA задовге ,~kk-KZ~Captcha is too long
+captcha_is_not_filled,Captcha has not been filled,~fr-FR~Captcha has not been filled,CAPTCHA не установлена,~be-BY~Captcha has not been filled,CAPTCHA не встановлена ,~kk-KZ~Captcha has not been filled
+wrong_captcha_value,Incorrect captcha value,~fr-FR~Incorrect captcha value,Неправильное значение CAPTCHA,~be-BY~Incorrect captcha value,Неправильне значення CAPTCHA ,~kk-KZ~Incorrect captcha value
+wrong_captcha_length,Incorrect captcha symbols count,~fr-FR~Incorrect captcha symbols count,Неправильное количество символов в CAPTCHA,~be-BY~Incorrect captcha symbols count,Неправильне кількість символів в CAPTCHA ,~kk-KZ~Incorrect captcha symbols count
+app_captcha,Captcha,~fr-FR~Captcha,CAPTCHA,~be-BY~Captcha,Captcha,~kk-KZ~Captcha
+chat_user_list,Users list,~fr-FR~Users list,Список пользователей,~be-BY~Users list,Список користувачів,~kk-KZ~Users list
+person_search_plchldr,Enter person’s name,~fr-FR~Enter person’s name,Введите имя пользователя,~be-BY~Enter person’s name,Введіть ім'я користувача ,~kk-KZ~Enter person’s name
+search_chat_usr_btn,Search,~fr-FR~Search,Поиск,~be-BY~Search,Пошук,~kk-KZ~Search
+active_chat_users,Active,~fr-FR~Active,Активные,~be-BY~Active,Активні,~kk-KZ~Active
+inactive_chat_users,Inactive,~fr-FR~Inactive,Неактивные,~be-BY~Inactive,Неактивні,~kk-KZ~Inactive
+conversation_with,Conversation with,~fr-FR~Conversation with,Разговор с,~be-BY~Conversation with,Розмова з ,~kk-KZ~Conversation with 
+get_more_messages_btn,Get more messages,~fr-FR~Get more messages,Получить предыдущие сообщения,~be-BY~Get more messages,Отримати попередні повідомлення ,~kk-KZ~Get more messages 
+messages_table_header,Messages,~fr-FR~Messages,Сообщения,~be-BY~Messages,Повідомлення ,~kk-KZ~Messages 
+time_table_header,Time,~fr-FR~Time,Время,~be-BY~Time,Час,~kk-KZ~Time
+your_message_plchldr,your message…,~fr-FR~your message…,ваше сообщение…,~be-BY~your message…,ваше повідомлення…,~kk-KZ~your message…
+send_message_btn,Send message,~fr-FR~Send message,Отправить сообщение,~be-BY~Send message,Надіслати повідомлення ,~kk-KZ~Send message
+video_conversation,Video conversation,~fr-FR~Video conversation,Видеоразговор,~be-BY~Video conversation,Відеорозмова,~kk-KZ~Video conversation 
+no_messages,No messages,~fr-FR~No messages,Нет сообщений,~be-BY~No messages,Немає повідомлень,~kk-KZ~No messages 
+select_necessary_settings,Select necessary setting,~fr-FR~Select necessary setting,Выберите нужные параметры,~be-BY~Select necessary setting,Виберіть потрібне налаштування,~kk-KZ~Select necessary setting
+include_video,Include video,~fr-FR~Include video,Включить видео,~be-BY~Include video,Включити відео,~kk-KZ~Include video 
+include_audio,Include audio,~fr-FR~Include audio,Включить аудио,~be-BY~Include audio,Включити аудіо,~kk-KZ~Include audio 
+start_myself_stream,Start stream with me,~fr-FR~Start stream with me,Начать показ своего потока,~be-BY~Start stream with me,Почати показ свого потоку,~kk-KZ~Start stream with me
+incorrect_email,Incorrect email,~fr-FR~Incorrect email,Неправильная электронная почта,~be-BY~Incorrect email,Неправильна електронна пошта,~kk-KZ~Incorrect email 
+digit,digit,~fr-FR~digit,цифра,~be-BY~digit,цифра,~kk-KZ~digit 
+big_letter,big letter,~fr-FR~big letter,большая буква,~be-BY~big letter,велика літера,~kk-KZ~big letter 
+little_letter,little letter,~fr-FR~little letter,маленькая буква,~be-BY~little letter,маленька літера,~kk-KZ~little letter 
+special_character,special character,~fr-FR~special character,специальный символ,~be-BY~special character,спеціальний символ,~kk-KZ~special character 
+passwords_not_the_same,Passwords are not the same,~fr-FR~Passwords are not the same,Пароли не соответствуют,~be-BY~Passwords are not the same,Паролі не збігаються,~kk-KZ~Passwords are not the same 
+password_should_be,Password should be al least,~fr-FR~Password should be al least,Пароль должен быть как минимум,~be-BY~Password should be al least,Пароль має бути як мінімум,~kk-KZ~Password should be al least 
+password_symbols,symbols,~fr-FR~symbols,символов,~be-BY~symbols,символів,~kk-KZ~symbols
+password_should_contain,Password should contain at least one,~fr-FR~Password should contain at least one,Пароль должен содержать,~be-BY~Password should contain at least one,Пароль повинен містити принаймні один,~kk-KZ~Password should contain at least one
+save_backup,Save backup,~fr-FR~Save backup,Создать резервную копию,~be-BY~Save backup,Зберегти резервну копію,~kk-KZ~Save backup
+restore_backup,Restore backup,~fr-FR~Restore backup,Восстановить с резервной копии,~be-BY~Restore backup,Відновлення резервної копії,~kk-KZ~Restore backup
+control,Control,~fr-FR~Control,Управление,~be-BY~Control,Керування,~kk-KZ~Control
+you_name,you,~fr-FR~you,ты,~be-BY~you,ти,~kk-KZ~you
+assignee,Assignee,~fr-FR~Assignee,Ответственный,~be-BY~Assignee,Відповідальний,~kk-KZ~Assignee
+no_admin_selected,No admin selected,~fr-FR~No admin selected,Не выбрано администратора,~be-BY~No admin selected,Не вибрано жодного адміністратора,~kk-KZ~No admin selected
+upload_file,Upload file,~fr-FR~Upload file,Загрузить файл,~be-BY~Upload file,Завантажити файл,~kk-KZ~Upload file
+incorrect_format,Incorrect format. Please follow formate upper.,~fr-FR~Incorrect format. Please follow formate upper.,Неправильный ормат. Следуйте формату выше,~be-BY~Incorrect format. Please follow formate upper.,Неправильний формат. Слідкуйте за форматом вказаним зверху.,~kk-KZ~Incorrect format. Please follow formate upper.
+no_empty,Can`t be empty,~fr-FR~Can`t be empty,Не может быть пустым,~be-BY~Can`t be empty,Не може бути порожнім,~kk-KZ~Can`t be empty
+value_not_null,Value can`t be bigger than duration of file.,~fr-FR~Value can`t be bigger than duration of file.,Значение не может быть больше всей длины файла,~be-BY~Value can`t be bigger than duration of file.,Значення не може бути більше тривалості файлу.,~kk-KZ~Value can`t be bigger than duration of file.
+filter_all_columns,Filter all columns,~fr-FR~Filter all columns,Фильтр по всем колонкам,~be-BY~Filter all columns,Фільтрувати за всіма стовпцями,~kk-KZ~Filter all columns
+no_results_yet,No results yet,~fr-FR~No results yet,Пока нет результатов.,~be-BY~No results yet,Результатів ще немає,~kk-KZ~No results yet
+page,Page,~fr-FR~Page,Страница,~be-BY~Page,Сторінка,~kk-KZ~Page
+unsupportable_text_length,System does not support texts more than,~fr-FR~System does not support texts more than,Система не поддерживает больше чем,~be-BY~System does not support texts more than,Система не підтримує тексти більше ніж,~kk-KZ~System does not support texts more than
+text_name_not_empty,Text shouldn`t be empty,~fr-FR~Text shouldn`t be empty,Текст не должен быть пустым,~be-BY~Text shouldn`t be empty,Текст не повинен бути порожнім,~kk-KZ~Text shouldn`t be empty
+unsupportable_text_length_4000,System does not support texts more than 4000 symbols,~fr-FR~System does not support texts more than 4000 symbols,Система не поддерживает больше чем 4000 символов,~be-BY~System does not support texts more than 4000 symbols,Система не підтримує тексти більше 4000 символів,~kk-KZ~System does not support texts more than 4000 symbols
+title_not_empty,Title shouldn`t be empty,~fr-FR~Title shouldn`t be empty,Название текста не должно быть пустым,~be-BY~Title shouldn`t be empty,Заголовок не повинен бути порожнім,~kk-KZ~Title shouldn`t be empty
+audio_should_fill,Audio name should be filled,~fr-FR~Audio name should be filled,Название аудио файла не должно быть пустым,~be-BY~Audio name should be filled,Назва аудіо повинна бути заповнена,~kk-KZ~Audio name should be filled
+video_should_fill,Video name should be filled,~fr-FR~Video name should be filled,Название видео файла не должно быть пустым,~be-BY~Video name should be filled,Назва відео повинна бути заповнена,~kk-KZ~Video name should be filled
+scs_aud_sav,Successfully saved audio,~fr-FR~Successfully saved audio,Аудио файл успешно сохранён,~be-BY~Successfully saved audio,Звук успішно збережено,~kk-KZ~Successfully saved audio
+scs_vid_sav,Successfully saved video,~fr-FR~Successfully saved video,Видео файл успешно сохранён,~be-BY~Successfully saved video,Відео успішно збережено,~kk-KZ~Successfully saved video
+scs_del,Successfully deleted,~fr-FR~Successfully deleted,Удаление прошло успешно,~be-BY~Successfully deleted,Успішно видалено,~kk-KZ~Successfully deleted
+scs_add_txt,Successfully added new text,~fr-FR~Successfully added new text,Новый текст успешно добавлен,~be-BY~Successfully added new text,Новий текст успішно додано,~kk-KZ~Successfully added new text
+scs_add_crswd,Successfully added new crossword,~fr-FR~Successfully added new crossword,Новый кроссворд успешно добавлен,~be-BY~Successfully added new crossword,Новий кросворд успішно додано,~kk-KZ~Successfully added new crossword
+scs_upd_txt,Successfully updated text,~fr-FR~Successfully updated text,Текст успешно изменён,~be-BY~Successfully updated text,Текст успішно оновлено,~kk-KZ~Successfully updated text
+txts_upd,Text has been already modified. Please refresh page to get latest data or save new instance,~fr-FR~Text has been already modified. Please refresh page to get latest data or save new instance,Текст уже изменён,~be-BY~Text has been already modified. Please refresh page to get latest data or save new instance,Текст уже змінено. Оновіть сторінку%comma% щоб отримати останні дані або зберегти новий екземпляр,~kk-KZ~Text has been already modified. Please refresh page to get latest data or save new instance
+app_nav_feedbacks,Feedbacks,~fr-FR~Feedbacks,Обратная связь,~be-BY~Feedbacks,Відгуки,~kk-KZ~Feedbacks
+feedback_entry_word,Please write feedback to improve service,~fr-FR~Please write feedback to improve service,Оставьте%comma% пожалуйста%comma% отзыв для улучшения качества работы сайта. Конструктивная критика приветствуется.,~be-BY~Please write feedback to improve service,Напишіть відгук%comma% щоб покращити службу,~kk-KZ~Please write feedback to improve service
+feedback_topic,Topic,~fr-FR~Topic,Тематика,~be-BY~Topic,Тема,~kk-KZ~Topic
+is_visible,Visible for everyone,~fr-FR~Visible for everyone,Отзыв будет виден всем,~be-BY~Visible for everyone,Видимий для всіх,~kk-KZ~Visible for everyone
+send_feedback,Send feedback,~fr-FR~Send feedback,Отправить отзыв,~be-BY~Send feedback,Надіслати відгук,~kk-KZ~Send feedback
+or_trnsl,or,~fr-FR~or,или,~be-BY~or,або,~kk-KZ~or
+success_restore,Texts has been successfully restored from backup,~fr-FR~Texts has been successfully restored from backup,Тексты успешно восстановлены с резервной копии,~be-BY~Texts has been successfully restored from backup,Тексти успішно відновлені з резервної копії,~kk-KZ~Texts has been successfully restored from backup
+do_refresh_captcha,Please refresh captcha,~fr-FR~Please refresh captcha,Пожалуйста%comma% обновите капчу,~be-BY~Please refresh captcha,Будь-ласка%comma% оновіть капчу,~kk-KZ~Please refresh captcha
+refresh_captcha,Refresh captcha,~fr-FR~Refresh captcha,Обновить капчу,~be-BY~Refresh captcha,Оновити капчу,~kk-KZ~Refresh captcha
+app_nav_need_help,Help,~fr-FR~Help,Помощь,~be-BY~Help,Допомога,~kk-KZ~Help
+copied_to_buffer,Successfully copied to buffer,~fr-FR~Successfully copied to buffer,Скопировано в буфер обмена,~be-BY~Successfully copied to buffer,Успішна копія в буфер обміну,~kk-KZ~Successfully copied to buffer
+copy_to_clipboard_btn,Copy to clipboard,~fr-FR~Copy to clipboard,Копировать в буфер обмена,~be-BY~Copy to clipboard,Копіювати в буфер обміну,~kk-KZ~Copy to clipboard
+push_to_text_btn,Push to Text,~fr-FR~Push to Text,Перенести в Текст,~be-BY~Push to Text,Перенести в текст,~kk-KZ~Push to Text
+recognize_btn,Recognize,~fr-FR~Recognize,Распознать,~be-BY~Recognize,Розпізнати,~kk-KZ~Recognize
+started_from_scretch,You have started this text from scretch ,~fr-FR~You have started this text from scretch ,Вы начали работать с этим текстом с нуля,~be-BY~You have started this text from scretch ,Ви почали працювати над текстом з нуля,~kk-KZ~You have started this text from scretch 
+own_ocr,Use own optical recognition tool,~fr-FR~Use own optical recognition tool,Использовать существующий инструмент распознавания текста,~be-BY~Use own optical recognition tool,Використати існуючий інструмент розпізнавання тексту,~kk-KZ~Use own optical recognition tool
+accept_terms,I accept,~fr-FR~I accept,Я принимаю,~be-BY~I accept,Я приймаю,~kk-KZ~I accept
+terms_of_use,terms of use,~fr-FR~terms of use,условия использования,~be-BY~terms of use,правила використання,~kk-KZ~terms of use
+captcha_expired,Captcha is already expired,~fr-FR~Successfully copied to buffer,Время использования сaptcha истекло,~be-BY~Successfully copied to buffer,Час вичерпано для значення сaptcha,~kk-KZ~Successfully copied to buffer
+only_one_audio,Don`t use more than one audio ,~fr-FR~Don`t use more than one audio ,Не используйте больше одного аудио файла,~be-BY~Don`t use more than one audio ,Не використовуйте більше одного аудіо файлу,~kk-KZ~Don`t use more than one audio 
+to_many_files,To many files ,~fr-FR~To many files ,Слишком много файлов,~be-BY~To many files ,Занадто багато файлів,~kk-KZ~To many files 
+rtc_general_error,Real-time communication error,~fr-FR~Real-time communication error,Ошибка взаимодействия реального времени,~be-BY~Real-time communication error,Помилка взаємодії технології реального часу,~kk-KZ~Real-time communication error
+connected_users,Connected users ,~fr-FR~Connected users ,Подключённые пользователи,~be-BY~Connected users ,Підключені користувачі,~kk-KZ~Connected users 
+caller_video,Caller video,~fr-FR~Caller video,Видео звонящего,~be-BY~Caller video,Відео того хто дзвонить,~kk-KZ~Caller video
+my_video,My video,~fr-FR~My video,Моё видео,~be-BY~My video,Моє відео,~kk-KZ~My video
+call_offer,Outgoing call,~fr-FR~Outgoing call,Исходящий звонок,~be-BY~Outgoing call,Вихідний дзвінок,~kk-KZ~Outgoing call
+offer_call_msg,You are calling to user,~fr-FR~You are calling to user,Вы звоните пользователю,~be-BY~You are calling to user,Ви дзвоните користувачу,~kk-KZ~You are calling to user
+cancel_call_offer,Cancel call,~fr-FR~Cancel call,Прекратить звонок,~be-BY~Cancel call,Припинити дзвінок,~kk-KZ~Cancel call
+call_confirmation,Incoming call,~fr-FR~Incoming call,Входящий вызов,~be-BY~Incoming call,Вхідний виклик,~kk-KZ~Incoming call
+confirm_call_msg,is calling you,~fr-FR~is calling you,звонит Вам,~be-BY~is calling you,дзвонить Вам,~kk-KZ~is calling you
+hang_up,Hang up,~fr-FR~Hang up,Положить трубку,~be-BY~Hang up,Покласти трубку,~kk-KZ~Hang up
+terms_detailed,If you are worried about your personal information%comma% please don't type it :) I'm not going to sell it%comma% or spread to other people%comma% however it's enough hard to create totally secured application (with 100-percentage sure). If you set checkbox as true%comma% you allow me work with this data.,~fr-FR~If you are worried about your personal information%comma% please don't type it :) I'm not going to sell it%comma% or spread to other people%comma% however it's enough hard to create totally secured application (with 100-percentage sure). If you set checkbox as true%comma% you allow me work with this data.,Любую персональную информацию Вы вводите на свой страх и риск :) Я не ручаюсь за её сохранность. Я не планирую её продавать третим лицам%comma% но от хакеров не застрахован никто. Ставя галочку Вы разрешаете обработку введённых данных. Поэтому Вы можете использовать любое название для email. На данный момент работа с почтой не реализована.,~be-BY~If you are worried about your personal information%comma% please don't type it :) I'm not going to sell it%comma% or spread to other people%comma% however it's enough hard to create totally secured application (with 100-percentage sure). If you set checkbox as true%comma% you allow me work with this data.,Будь-яку персональну інформацію Ви вводите на свій страх і ризик :) Я не гарантую її конфіденційність і цілісність. Я не планую її продавати третім особам%comma% але від хакерів не застрахований ніхто. Встановлюючи галочку Ви дозволяєте обробку введених даних. Тому Ви можете використовувати будь-яку назву для email. На даний момент робота з поштою не реалізована. ,~kk-KZ~If you are worried about your personal information%comma% please don't type it :) I'm not going to sell it%comma% or spread to other people%comma% however it's enough hard to create totally secured application (with 100-percentage sure). If you set checkbox as true%comma% you allow me work with this data.
+help_detailed,This project is not going to be a commerial%comma% therefore you wouldn't see advertisement. Anyway%comma% I'm able to suggest important information for self-development (from my point of view). Basically%comma% this information will be in special tab%comma% so it woouldn't be distractive. If you have any offers%comma% how to improve quality of service%comma% please leave your feedback. Constructive criticism could be helpful. If you have a computer%comma% which you don't need and you could give it or sell it cheap%comma% please write me. I'll consider any offer. ,~fr-FR~This project is not going to be a commerial%comma% therefore you wouldn't see advertisement. Anyway%comma% I'm able to suggest important information for self-development (from my point of view). Basically%comma% this information will be in special tab%comma% so it woouldn't be distractive. If you have any offers%comma% how to improve quality of service%comma% please leave your feedback. Constructive criticism could be helpful. If you have a computer%comma% which you don't need and you could give it or sell it cheap%comma% please write me. I'll consider any offer. ,Этот проект не предполагает коммерческой выгоды%comma% а предоставлен на доброволной основе для помощи людям в освоении новых знаний%comma% поэтому данный сайт не содержит рекламы.  Тем не менее%comma% я оставляю за собой право рекомендовать то%comma% что считаю нужным и важным для развития (это является моим субъективным мнением и не претендует на истину в последней инстанции). Эта информация будет в отдельной вкладке и также не будет всплывать и отвлекать пользователя от основного занятия.  Замечания и предложения пишите в отзывах. Если у кого-то есть желание помочь проекту и сделать лучше - буду рад конструктивной критике и помощи. Если у кого-то есть вычислительные устройства типа компьютер%comma% с которым люди могут расстаться безвоздмездно (тоесть даром) либо за символическую плату. Рассмотрю все предоложения :) (Возможно%comma% чей-то морально устаревший компьютер поможет в развитии проекта (: ),~be-BY~This project is not going to be a commerial%comma% therefore you wouldn't see advertisement. Anyway%comma% I'm able to suggest important information for self-development (from my point of view). Basically%comma% this information will be in special tab%comma% so it woouldn't be distractive. If you have any offers%comma% how to improve quality of service%comma% please leave your feedback. Constructive criticism could be helpful. If you have a computer%comma% which you don't need and you could give it or sell it cheap%comma% please write me. I'll consider any offer. ,Цей проект не передбачає комерційної вигоди%comma% а наданий на доброволно основі для допомоги людям в освоєнні нових знань%comma% а тому цей сайт не містить реклами. Проте%comma% я залишаю за собою право рекомендувати те%comma% що вважаю за потрібне і важливим для розвитку (це%comma% звісно%comma% моя суб'єктивна думка і я не претендую на істину в останній інстанції). Дана інформація буде в окремій вкладці і також не буде вспливати і відволікати користувача від основного заняття. Зауваження та пропозиції пишіть у відгуках. Якщо у когось є бажання допомогти проекту і зробити його краще - буду радий конструктивній критиці і допомозі. Якщо у когось є старий комп'ютер%comma% який люди можуть подарувати чи продати за символічну плату - буду радий підтримці. Розгляну будь-які варіанти :) (Можливо%comma% чийсь морально застарілий комп'ютер допоможе в розвитку проекту (:  ),~kk-KZ~This project is not going to be a commerial%comma% therefore you wouldn't see advertisement. Anyway%comma% I'm able to suggest important information for self-development (from my point of view). Basically%comma% this information will be in special tab%comma% so it woouldn't be distractive. If you have any offers%comma% how to improve quality of service%comma% please leave your feedback. Constructive criticism could be helpful. If you have a computer%comma% which you don't need and you could give it or sell it cheap%comma% please write me. I'll consider any offer. 
+media_processing,Media processing,~fr-FR~Media processing,Обработка потока,~be-BY~Media processing,Обробка потоку,~kk-KZ~Media processing
+help_translator,If somebody could help me with translations to the other languages%comma% please write me. I'd be appreciated with any help.,~fr-FR~If somebody could help me with translations to the other languages%comma% please write me. I'd be appreciated with any help.,Если кто-то может помочь с переводом сайта на другие языки - пишите мне. Буду рад любой помощи.,~be-BY~If somebody could help me with translations to the other languages%comma% please write me. I'd be appreciated with any help.,Якщо хтось може допомогти з перекладом сайту на інші мови - пишіть мені. Буду радий будь-якій допомозі.,~kk-KZ~If somebody could help me with translations to the other languages%comma% please write me. I'd be appreciated with any help.
+intro_lang_description,Change interface language,~fr-FR~Video tutorial about change interface language,Видео об изменении языка интерфейса,~be-BY~Video tutorial about change interface language,Відео про зміну мови інтерфейсу сайту,~kk-KZ~Video tutorial about change interface language
+intro_search_and_filter_description,Filtering and searching text by different criterias,~fr-FR~Video tutorial about filtering and searching text by different criterias,Видео о поиске и сортировке текстов по заданным параметрам,~be-BY~Video tutorial about filtering and searching text by different criterias,Відео про пошук та сортування текстів за заданими параметрами,~kk-KZ~Video tutorial about filtering and searching text by different criterias
+intro_joined_description,Listening and transcribing texts using joined mode,~fr-FR~Video tutorial about listening and transcribing texts using joined mode,Видео о работе с текстом в объединённом режиме ,~be-BY~Video tutorial about listening and transcribing texts using joined mode,Відео про роботу з текстом в об'єднаному режимі,~kk-KZ~Video tutorial about listening and transcribing texts using joined mode
+intro_separated_description,Listening and transcribing texts using separated mode,~fr-FR~Video tutorial about listening and transcribing texts using separated mode,Видео о работе с текстом в разделённом режиме,~be-BY~Video tutorial about listening and transcribing texts using separated mode,Відео про роботу з текстом в роздыленому режимі,~kk-KZ~Video tutorial about listening and transcribing texts using separated mode
+intro_save_new_text_audio_description,Save new text with audio file,~fr-FR~Video tutorial about save new text with audio file,Видео о сохранении нового текста с аудио файлом,~be-BY~Video tutorial about save new text with audio file,Відео про збереження нового тексту з аудіофайлом,~kk-KZ~Video tutorial about save new text with audio file
+usr_profile,User profile,~fr-FR~User profile,Профиль пользователя,~be-BY~User profile,Профіль користувача,~kk-KZ~User profile
+usr_info,User info ,~fr-FR~User info ,Информация о пользователе,~be-BY~User info ,Інформація про користувача,~kk-KZ~User info 
+upd_passwd,Update password ,~fr-FR~Update password ,Обновить пароль,~be-BY~Update password ,Оновити пароль,~kk-KZ~Update password 
+usr_photo,User photo ,~fr-FR~User photo ,Фотография пользователя,~be-BY~User photo ,Фото користувача,~kk-KZ~User photo 
+othr_accs,Other accounts ,~fr-FR~Other accounts ,Другие аккаунты,~be-BY~Other accounts ,Інші аккаунти,~kk-KZ~Other accounts 
+current_passwd,Current password ,~fr-FR~Current password ,Текущий пароль,~be-BY~Current password ,Поточний пароль,~kk-KZ~Current password 
+new_passwd,New password ,~fr-FR~New password ,Новый пароль,~be-BY~New password ,Новий пароль,~kk-KZ~New password 
+verify_passwd,Verify password ,~fr-FR~Verify password ,Подтвердите пароль,~be-BY~Verify password ,Підтвердіть пароль,~kk-KZ~Verify password 
+record_stream,Record stream,~fr-FR~Record stream,Запись потока,~be-BY~Record stream,Запис потоку,~kk-KZ~Record stream
+screen,Screen,~fr-FR~Screen,Экран,~be-BY~Screen,Екран,~kk-KZ~Screen
+max_video_length,Max record length (seconds),~fr-FR~Max record length (seconds),Максимальная длина записи (секунды),~be-BY~Max record length (seconds),Максимальна довжина запису (секунди),~kk-KZ~Max record length (seconds)
+app_apply,Apply,~fr-FR~Apply,Применить,~be-BY~Apply,Застосувати,~kk-KZ~Apply
+app_complexity,Complexity,~fr-FR~Complexity,Сложность,~be-BY~Complexity,Складність,~kk-KZ~Complexity
+app_easy,Easy,~fr-FR~Easy,Просто,~be-BY~Easy,Просто,~kk-KZ~Easy
+app_hard,Hard,~fr-FR~Hard,Сложно,~be-BY~Hard,Складно,~kk-KZ~Hard
+audio_or_video_restriction,You have to select audio or video for correct work with text,~fr-FR~You have to select audio or video for correct work with text,Вы должны выбрать аудио или видео для правильной работы с текстом,~be-BY~You have to select audio or video for correct work with text,Ви повинні вибрати аудіо або відео для правильної роботи з текстом,~kk-KZ~You have to select audio or video for correct work with text
+app_topic,Topic,~fr-FR~Topic,Тематика,~be-BY~Topic,Тематика,~kk-KZ~Topic
+sort_not_avail,This sorting name ({0}) is not available,~fr-FR~This sorting name ({0}) is not available,Невозможно сортировать по данным критериям: {0},~be-BY~This sorting name ({0}) is not available,Неможливо сортувати за даними критерыями: {0},~kk-KZ~This sorting name ({0}) is not available
+search_not_avail,These fields are not available for searching: {0},~fr-FR~These fields are not available for searching: {0},Эти поля нельзя использовать для поиска: {0},~be-BY~These fields are not available for searching: {0},Ці поля не можна використовувати для пошуку: {0},~kk-KZ~These fields are not available for searching: {0}
+incld_assgn,Include assignee,~fr-FR~Include assignee,Добавить ответственного,~be-BY~Include assignee,Додати відповідального,~kk-KZ~Include assignee
+incld_crt,Include create time,~fr-FR~Include create time,Добавить время создания,~be-BY~Include create time,Додати час створення,~kk-KZ~Include create time
+incld_upd,Include update time,~fr-FR~Include update time,Добавить время изменения,~be-BY~Include update time,Додати час модифікації,~kk-KZ~Include update time
+registr_confirm,Registration confirmation,~fr-FR~Registration confirmation,Подвтерждение регистрации,~be-BY~Registration confirmation,Підтвердження реєстрації,~kk-KZ~Registration confirmation
+thnk_for_registry,Thank you for registration your email%comma% please,~fr-FR~Thank you for registration your email%comma% please,Благодарю за регистрацию. Для входа нажмите,~be-BY~Thank you for registration your email%comma% please,Дякую за реєстрацію. Для входу натисніть,~kk-KZ~Thank you for registration your email%comma% please
+no_data,No data by this filter. ,~fr-FR~No data by this filter. ,Нет данных по заданным критериям,~be-BY~No data by this filter. ,Нема даних за заданими параметрами,~kk-KZ~No data by this filter. 
+app_created,Created date,~fr-FR~Created date,Дата создания,~be-BY~Created date,Дата створення,~kk-KZ~Created date
+app_updated,Updated date,~fr-FR~Updated date,Дата изменения,~be-BY~Updated date,Дата модифікації,~kk-KZ~Updated date
+less_date,Date is less than selected,~fr-FR~Date is less than selected,Дата меньше выбранной,~be-BY~Date is less than selected,Дата меньше вибраної,~kk-KZ~Date is less than selected
+more_date,Date is more than selected,~fr-FR~Date is more than selected,Дата больше выбранной,~be-BY~Date is more than selected,Дата більше вибраної,~kk-KZ~Date is more than selected
+equal_date,Date is equal to selected,~fr-FR~Date is equal to selected,Дата соответствует выбранной,~be-BY~Date is equal to selected,Дата відповідає вибраній,~kk-KZ~Date is equal to selected
+select_date,Select date,~fr-FR~Select date,Выберите дату,~be-BY~Select date,Виберіть дату,~kk-KZ~Select date
+app_nav_additional_tools,Additional tools,~fr-FR~Additional tools,Дополнительные инструменты,~be-BY~Additional tools,Додаткові інструменти,~kk-KZ~Additional tools
+app_nav_main,Main,~fr-FR~Main,Главная,~be-BY~Main,Головна,~kk-KZ~Main
+app_nav_online_camera,Online camera,~fr-FR~Online camera,Онлайн камера,~be-BY~Online camera,Онлайн камера,~kk-KZ~Online camera
+check_camera,Check camera online,~fr-FR~Check camera online,Проверка камеры онлайн,~be-BY~Check camera online,Перевірка камери онлайн,~kk-KZ~Check camera online
+record_detailed,Record camera%comma% audio%comma% screen,~fr-FR~Record camera%comma% audio%comma% screen,Запись камеры%comma% аудио%comma% экрана,~be-BY~Record camera%comma% audio%comma% screen,Запис камери%comma% аудіо%comma% екрану,~kk-KZ~Record camera%comma% audio%comma% screen
+interesting,Interesting,~fr-FR~Interesting,Интересное,~be-BY~Interesting,Цікаве,~kk-KZ~Interesting
+mode_name,Mode,~fr-FR~Mode,Режим,~be-BY~Mode,Режим,~kk-KZ~Mode
+duration_name,Duration,~fr-FR~Duration,Продолжительность,~be-BY~Duration,Час виконання,~kk-KZ~Duration
+guessed_symbols_name,Guessed symbols ,~fr-FR~Guessed symbols ,Правильно определённые символы,~be-BY~Guessed symbols ,Правильно визначені символи,~kk-KZ~Guessed symbols 
+hinted_symbols_name,Hinted symbols ,~fr-FR~Hinted symbols ,Подсказанные символы,~be-BY~Hinted symbols ,Вгадані символи,~kk-KZ~Hinted symbols 
+errors_count,Errors count ,~fr-FR~Errors count ,Количество ошибок,~be-BY~Errors count ,Кількість помилок,~kk-KZ~Errors count 
+filter_by_title,Filter by title,~fr-FR~Filter by title,Фильтровать по названию,~be-BY~Filter by title,Фільтрувати за назвою,~kk-KZ~Filter by title
+knowledge,Knowledge,~fr-FR~Knowledge,Знания,~be-BY~Knowledge,Знання,~kk-KZ~Knowledge
+specific_info,Specific,~fr-FR~Specific,Специальная информация,~be-BY~Specific,Спеціальна інформація,~kk-KZ~Specific
+shir_intro,Введение. История развития соломенных технологий. Энергоинформатика.,~fr-FR~Введение. История развития соломенных технологий. Энергоинформатика.,Введение. История развития соломенных технологий. Энергоинформатика.,~be-BY~Введение. История развития соломенных технологий. Энергоинформатика.,Вступ. Історія розвитку солом“яних технологій.Енергоінформатика.,~kk-KZ~Введение. История развития соломенных технологий. Энергоинформатика.
+shir_pechi,Конструктив экодомов. Печи. Золотое сечение. Часть 1,~fr-FR~Конструктив экодомов. Печи. Золотое сечение. Часть 1,Конструктив экодомов. Печи. Золотое сечение. Часть 1,~be-BY~Конструктив экодомов. Печи. Золотое сечение. Часть 1,Конструктив экобудинків. Печі. Золотий переріз. Частина 1,~kk-KZ~Конструктив экодомов. Печи. Золотое сечение. Часть 1
+shir_pechi2,Конструктив экодомов. Печи. Золотое сечение. Часть 2,~fr-FR~Конструктив экодомов. Печи. Золотое сечение. Часть 2,Конструктив экодомов. Печи. Золотое сечение. Часть 2,~be-BY~Конструктив экодомов. Печи. Золотое сечение. Часть 2,Конструктив экобудинків. Печі. Золотий переріз. Часть 2,~kk-KZ~Конструктив экодомов. Печи. Золотое сечение. Часть 2
+shir_ecodesign,Экодизайн. Примеры проектов экодомов.,~fr-FR~Экодизайн. Примеры проектов экодомов.,Экодизайн. Примеры проектов экодомов.,~be-BY~Экодизайн. Примеры проектов экодомов.,Екодизайн. Приклади проектів екобудинків.,~kk-KZ~Экодизайн. Примеры проектов экодомов.
+shir_nuances,Проекты. Нюансы строительства.,~fr-FR~Проекты. Нюансы строительства.,Проекты. Нюансы строительства.,~be-BY~Проекты. Нюансы строительства.,Проекти. Нюанси будівництва.,~kk-KZ~Проекты. Нюансы строительства.
+shir_permaculture,Пермакультура,~fr-FR~Пермакультура,Пермакультура,~be-BY~Пермакультура,Пермакультура,~kk-KZ~Пермакультура
+shir_permaculture2,Пермакультура. Продолжение.,~fr-FR~Пермакультура. Продолжение.,Пермакультура. Продолжение.,~be-BY~Пермакультура. Продолжение.,Пермакультура. Продовження.,~kk-KZ~Пермакультура. Продолжение.
+shir_select_area,Выбор участка. Ответы на вопросы.,~fr-FR~Выбор участка. Ответы на вопросы.,Выбор участка. Ответы на вопросы.,~be-BY~Выбор участка. Ответы на вопросы.,Вибір ділянки. Відповіді на питання.,~kk-KZ~Выбор участка. Ответы на вопросы.
+shir_clear,Чистки,~fr-FR~Чистки,Чистки,~be-BY~Чистки,Чистки,~kk-KZ~Чистки
+shir_pechi_nuans,Печи. Нюансы строительства.,~fr-FR~Печи. Нюансы строительства.,Печи. Нюансы строительства.,~be-BY~Печи. Нюансы строительства.,Печі. Нюанси будівництва.,~kk-KZ~Печи. Нюансы строительства.
+shir_answers,Ответы на вопросы. Проекты участников каркас.,~fr-FR~Ответы на вопросы. Проекты участников каркас.,Ответы на вопросы. Проекты участников каркас.,~be-BY~Ответы на вопросы. Проекты участников каркас.,Відповіді на питання. Проекти учасників каркас.,~kk-KZ~Ответы на вопросы. Проекты участников каркас.
+shir_last,Заключительная.,~fr-FR~Заключительная.,Заключительная.,~be-BY~Заключительная.,Кінцева.,~kk-KZ~Заключительная.
+video_tutorial,Video tutorial,~fr-FR~Video tutorial,Видеоинструкция,~be-BY~Video tutorial,Відеоінструкція,~kk-KZ~Video tutorial
+text_recognition,Text Recognition,~fr-FR~Text Recognition,Распознавание текста,~be-BY~Text Recognition,Розпізнавання тексту,~kk-KZ~Text Recognition
+save_sql_backup,Save sql backup,~fr-FR~Save sql backup,Сохранить sql базу данных,~be-BY~Save sql backup,Зберегти резервну копію sql,~kk-KZ~Save sql backup
+restore_sql_backup,Restore sql backup,~fr-FR~Restore sql backup,Восстановить с резервной копии sql,~be-BY~Restore sql backup,Відновити резервну копію sql,~kk-KZ~Restore sql backup
+blog,Blog,~fr-FR~Blog,Дневник,~be-BY~Blog,Щоденник,~kk-KZ~Blog
+entr_tpcs,Enter topics,~fr-FR~Enter topics,Введите темы,~be-BY~Enter topics,Введіть теми,~kk-KZ~Enter topics
+methodology,Methodology,~fr-FR~Methodology,Методологический,~be-BY~Methodology,Методологічний,~kk-KZ~Methodology
+chronology,Chronology,~fr-FR~Chronology,Историко-хронологический,~be-BY~Chronology,Історико-хронологічний,~kk-KZ~Chronology
+factology,Factology,~fr-FR~Factology,Фактологический,~be-BY~Factology,Фактологічний,~kk-KZ~Factology
+economy,Economy,~fr-FR~Economy,Экономический,~be-BY~Economy,Економічний,~kk-KZ~Economy
+genocide,Genocide,~fr-FR~Genocide,Генный,~be-BY~Genocide,Генний,~kk-KZ~Genocide
+war,War,~fr-FR~War,Военный,~be-BY~War,Воєнний,~kk-KZ~War
+uncategorized,Uncategorized,~fr-FR~Uncategorized,Неформат,~be-BY~Uncategorized,Неформат,~kk-KZ~Uncategorized
+inst_blg_art_cnfrm,Insert blog article confirmation,~fr-FR~Insert blog article confirmation,Подтверждение вставки без темы,~be-BY~Insert blog article confirmation,Підтвердження вставки без теми,~kk-KZ~Insert blog article confirmation
+cnfrm_insrt_blg_art_qst,Are you sure%comma% that you want to insert without topic?,~fr-FR~Are you sure%comma% that you want to insert without topic?,А Вы уверены%comma% что хотите вставить статью без темы?,~be-BY~Are you sure%comma% that you want to insert without topic?,Ви впевнені%comma% що хочете вставити статтю без теми?,~kk-KZ~Are you sure%comma% that you want to insert without topic?
+blg_prview,Blog preview,~fr-FR~Blog preview,Предварительный просмотр,~be-BY~Blog preview,Попередній перегляд,~kk-KZ~Blog preview
+select_topics,Select topics,~fr-FR~Select topics,Выберите темы,~be-BY~Select topics,Виберіть тему,~kk-KZ~Select topics
+blg_descr,Here I publish my thinking about things%comma% which I evaluate as important,~fr-FR~Here I publish my thinking about things%comma% which I evaluate as important,Здесь я размещаю свои размышления%comma% которые считаю важными и полезными для общества,~be-BY~Here I publish my thinking about things%comma% which I evaluate as important,Тут я описую своє бачення щодо важливих%comma% на мій погляд%comma% речей,~kk-KZ~Here I publish my thinking about things%comma% which I evaluate as important
+entr_hdr,Enter header,~fr-FR~Enter header,Введите заголовок,~be-BY~Enter header,Введіть заголовок,~kk-KZ~Enter header
+entr_dscr,Enter description,~fr-FR~Enter description,Введите описание,~be-BY~Enter description,Введіть опис,~kk-KZ~Enter description
+entr_prior,Enter priority,~fr-FR~Enter priority,Введите приоритет,~be-BY~Enter priority,Введіть пріоритет,~kk-KZ~Enter priority
+preview,Preview,~fr-FR~Preview,Просмотр,~be-BY~Preview,Переглянути,~kk-KZ~Preview
+clean_name,Clean,~fr-FR~Clean,Очистить,~be-BY~Clean,Очистити,~kk-KZ~Clean
+all_blg_art,All blog articles,~fr-FR~All blog articles,Все статьи,~be-BY~All blog articles,Всі статті,~kk-KZ~All blog articles
+lst_of_art,List of articles,~fr-FR~List of articles,Список статей,~be-BY~List of articles,Список статей,~kk-KZ~List of articles
+post_description,Post description,~fr-FR~Post description,Описание статьи,~be-BY~Post description,Опис статті,~kk-KZ~Post description
+post_topics,Post topics,~fr-FR~Post topics,Темы статьи,~be-BY~Post topics,Теми статті,~kk-KZ~Post topics
+scs_artcl_sav,Success article save,~fr-FR~Success article save,Успешное сохранение статьи,~be-BY~Success article save,Статтю успішно збережено,~kk-KZ~Success article save
+scs_artcl_upd,Success article update,~fr-FR~Success article update,Успешное обновление статьи,~be-BY~Success article update,Статтю успішно оновлено,~kk-KZ~Success article update
+steganography,Steganography,~fr-FR~Steganography,Тайнопись,~be-BY~Steganography,Стеганографія,~kk-KZ~Steganography
+stegImg,Image,~fr-FR~Image,Картинки,~be-BY~Image,Зображення,~kk-KZ~Image
+stegAudio,Audio,~fr-FR~Audio,Аудио,~be-BY~Audio,Аудіо,~kk-KZ~Audio
+stegVideo,Video,~fr-FR~Video,Видео,~be-BY~Video,Відео,~kk-KZ~Video
+inject_msg,Inject message,~fr-FR~Inject message,Вставить сообщение,~be-BY~Inject message,Вставити повідомлення,~kk-KZ~Inject message
+inject,Inject,~fr-FR~Inject,Вставить,~be-BY~Inject,Вставити,~kk-KZ~Inject
+eject,Eject,~fr-FR~Eject,Извлечь,~be-BY~Eject,Вилучити,~kk-KZ~Eject
+convension,These videos has been bought from the other people (see link below). Therefore%comma% if you find this video as usefull%comma% please don“t forget to pay author or make any other good deeds (for social%comma% nature or other usefull for everyone job). I know%comma% that not all people has enough financial resources%comma% especially at this time. However%comma% I believe%comma% that you could pay a bit later (after implementation). Anyway%comma% even if you reduce consuption%comma% that would be great :),~fr-FR~These videos has been bought from the other people (see link below). Therefore%comma% if you find this video as usefull%comma% please don“t forget to pay author or make any other good deeds (for social%comma% nature or other usefull for everyone job). I know%comma% that not all people has enough financial resources%comma% especially at this time. However%comma% I believe%comma% that you could pay a bit later (after implementation). Anyway%comma% even if you reduce consuption%comma% that would be great :),Данные видео были куплены (смотри ссылку ниже)%comma% поэтому если Вы посчитаете данную информацию полезной и нужной%comma% не забудьте%comma% пожалуйста%comma% отблагодарить автора или сделать другое полезное дело%comma% а ещё лучше полезныЕ дела :) Но в виду того%comma% что не у всех есть деньги или другие ресурсы%comma% особенно на данный момент%comma% то%comma% я полагаю%comma% что можете отблагодарить попозже. В какой-то мере%comma% если Вы снизите уровень потребления и будете более оптимально расходовать ресурсы%comma% это уже будет очень здорово :),~be-BY~These videos has been bought from the other people (see link below). Therefore%comma% if you find this video as usefull%comma% please don“t forget to pay author or make any other good deeds (for social%comma% nature or other usefull for everyone job). I know%comma% that not all people has enough financial resources%comma% especially at this time. However%comma% I believe%comma% that you could pay a bit later (after implementation). Anyway%comma% even if you reduce consuption%comma% that would be great :),Ці відео були куплені (дивись посилання нижче)%comma% тому якщо Ви вважаєте дану інформацію корисною і важливою%comma% не забудьте%comma% будь-ласка%comma% віддячити автора чи зробити іншу корисну справу%comma% а ще краще справи :) Але через те%comma% що не у всіх є зараз ресурси (особливо в даний період)%comma% то%comma% я вважаю%comma% що це можна зробити пізніше. якщо Ви знизите рівень споживання і будете більш раціонально використовувати ресурси - це вже буде дуже добре :),~kk-KZ~These videos has been bought from the other people (see link below). Therefore%comma% if you find this video as usefull%comma% please don“t forget to pay author or make any other good deeds (for social%comma% nature or other usefull for everyone job). I know%comma% that not all people has enough financial resources%comma% especially at this time. However%comma% I believe%comma% that you could pay a bit later (after implementation). Anyway%comma% even if you reduce consuption%comma% that would be great :)
+original_link,Original link,~fr-FR~Original link,Прямая ссылка,~be-BY~Original link,Пряме посилання,~kk-KZ~Original link
+save_pict,Save,~fr-FR~Save,Сохранить,~be-BY~Save,Зберегти,~kk-KZ~Save
+input_img,Input image,~fr-FR~Input image,Входная картинка,~be-BY~Input image,Вхідне зображення,~kk-KZ~Input image
+result_img,Result image,~fr-FR~Result image,Результирующая картинка,~be-BY~Result image,Результуюче зображення,~kk-KZ~Result image
+add_container,Add container,~fr-FR~Add container,Добавить контейнер,~be-BY~Add container,Додати контейнер,~kk-KZ~Add container
+max_msg_lngth,Max message length,~fr-FR~Max message length,Максимальная длина сообщения,~be-BY~Max message length,Максимальна довжина повідомлення,~kk-KZ~Max message length
+steg_set,Settings,~fr-FR~Settings,Настройки,~be-BY~Settings,Налаштування,~kk-KZ~Settings
+steg_clrs,Colors,~fr-FR~Colors,Цвета,~be-BY~Colors,Кольори,~kk-KZ~Colors
+order,Order,~fr-FR~Order,Порядок,~be-BY~Order,Порядок,~kk-KZ~Order
+save_key,Save key,~fr-FR~Save key,Сохранить ключ,~be-BY~Save key,Зберегти ключ,~kk-KZ~Save key
+red,red,~fr-FR~red,Красный,~be-BY~red,Червоний,~kk-KZ~red
+green,green,~fr-FR~green,Зелёный,~be-BY~green,Зелений,~kk-KZ~green
+blue,blue,~fr-FR~blue,Голубой,~be-BY~blue,Голубий,~kk-KZ~blue
+alpha,transparency,~fr-FR~transparency,Прозрачность,~be-BY~transparency,Прозорість,~kk-KZ~transparency
+original_site,Original site,~fr-FR~Original site,Исходный сайт,~be-BY~Original site,Оригінальний сайт,~kk-KZ~Original site
+base_course,Base course,~fr-FR~Base course,Базовый курс,~be-BY~Base course,Базовий курс,~kk-KZ~Base course
+add_course,Additional course,~fr-FR~Additional course,Дополнительный курс,~be-BY~Additional course,Додатковий курс,~kk-KZ~Additional course
+ecobuild,Ecobuild,~fr-FR~Ecobuild,Экостроительство,~be-BY~Ecobuild,Еко будівництво,~kk-KZ~Ecobuild
+shirokov,Shirokov,~fr-FR~Shirokov,Широков,~be-BY~Shirokov,Широков,~kk-KZ~Shirokov
+kovalenko,Kovalenko,~fr-FR~Kovalenko,Коваленко,~be-BY~Kovalenko,Коваленко,~kk-KZ~Kovalenko
+apply,Apply,~fr-FR~Apply,Применить,~be-BY~Apply,Застосувати,~kk-KZ~Apply
+simple,Simple,~fr-FR~Simple,Простой,~be-BY~Simple,Простий,~kk-KZ~Simple
+func,Function,~fr-FR~Function,Функция,~be-BY~Function,Функція,~kk-KZ~Function
+enter_start_ind,Enter start index,~fr-FR~Enter start index,Введите начальный индекс,~be-BY~Enter start index,Введіть початковий індекс,~kk-KZ~Enter start index
+enter_step,Enter step,~fr-FR~Enter step,Введите шаг,~be-BY~Enter step,Введіть крок,~kk-KZ~Enter step
+new_length,New length,~fr-FR~New length,Новая длина,~be-BY~New length,Нова довжина,~kk-KZ~New length
+msg_ingctd,Message injected,~fr-FR~Message injected,Сообщение вставлено,~be-BY~Message injected,Повідомлення вставлено,~kk-KZ~Message injected
+youtube_download,Youtube downloader,~fr-FR~Youtube downloader,Скачивание с ютуб,~be-BY~Youtube downloader,Зберігання з ютуб,~kk-KZ~Youtube downloader
+to_blog,Go to blog,~fr-FR~Go to blog,Перейти к дневнику,~be-BY~Go to blog,Перейти до щоденнику,~kk-KZ~Go to blog
+mode,Mode,~fr-FR~Mode,Режим,~be-BY~Mode,Режим,~kk-KZ~Mode
+debian_fai,Debian FAI,~fr-FR~Debian FAI,Полностью автоматизированный установщик debian,~be-BY~Debian FAI,Повністю автоматизований образ debian,~kk-KZ~Debian FAI
+entr_ytb_url,Enter youtube URL,~fr-FR~Enter youtube URL,Введите ссылку ютуб,~be-BY~Enter youtube URL,Введыть посилання на ютуб,~kk-KZ~Enter youtube URL
+get_info,Get video info,~fr-FR~Get video info,Получить информацию о видео,~be-BY~Get video info,Отримати інформацію про відео,~kk-KZ~Get video info
+dwnlad,Download,~fr-FR~Download,Загрузить,~be-BY~Download,Завантажити,~kk-KZ~Download
+get_dflt_prsd,Get default preseed file,~fr-FR~Get default preseed file,Получить файл с настройками (preseed.cfg),~be-BY~Get default preseed file,Отримати cnfylfhnybq файл з налаштуванням (pressed.cfg),~kk-KZ~Get default preseed file
+get_prsd,Get preseed,~fr-FR~Get preseed,Получить стандартный файл с настройками (preseed.cfg),~be-BY~Get preseed,Отримати файл з налаштуванням (pressed.cfg),~kk-KZ~Get preseed
+get_img,Get image,~fr-FR~Get image,Получить образ,~be-BY~Get image,Отримати образ,~kk-KZ~Get image
+devic_type,Device type,~fr-FR~Device type,Тип устройства,~be-BY~Device type,Тип пристрою,~kk-KZ~Device type
+root_pswd,Root password,~fr-FR~Root password,Пароль суперпользователя (root),~be-BY~Root password,Пароль суперкористувача (root),~kk-KZ~Root password
+usrNm,User name,~fr-FR~User name,Имя пользователя,~be-BY~User name,Им“я користувача,~kk-KZ~User name
+usrFlNm,User full name,~fr-FR~User full name,Полное имя пользователя,~be-BY~User full name,Повне ім“я користувача,~kk-KZ~User full name
+usrPswd,User password,~fr-FR~User password,Пароль пользователя,~be-BY~User password,Пароль користувача,~kk-KZ~User password
+mirror,Mirror,~fr-FR~Mirror,Ссылка на зеркало,~be-BY~Mirror,Посилання на зеркало,~kk-KZ~Mirror
+addSoft,Additional soft,~fr-FR~Additional soft,Дополнительное программное обеспечение,~be-BY~Additional soft,Додаткове програмне забезпечення,~kk-KZ~Additional soft
+deb_stngs,Debian settings,~fr-FR~Debian settings,Настройки Debian,~be-BY~Debian settings,Налаштування Debian,~kk-KZ~Debian settings
+hdd_split,HDD (SSD) split,~fr-FR~HDD (SSD) split,Разбивка диска,~be-BY~HDD (SSD) split,Розбивка диску,~kk-KZ~HDD (SSD) split
+preseed,Preseed file (result),~fr-FR~Preseed file (result),Результирующий предустановочный файл,~be-BY~Preseed file (result),Результат файла для попереднього встановлення,~kk-KZ~Preseed file (result)
+force_dwnld,Force download,~fr-FR~Force download,Обязательное скачивание образа debian с сервера,~be-BY~Force download,Обов“язкове скачування образу debian з серверу,~kk-KZ~Force download
+spec_too_huge_msg,Too hudge message for this container. Please decrease message or select another container (picture),~fr-FR~Too hudge message for this container. Please decrease message or select another container (picture),Слишком большое сообщение для этого файла. Уменьшите сообщение или выберите другой файл,~be-BY~Too hudge message for this container. Please decrease message or select another container (picture),Занадто велике повідомлення для цього файлу. Зменшіть повідомлення чи виберіть інший файл,~kk-KZ~Too hudge message for this container. Please decrease message or select another container (picture)
+spec_ej_incr_lngth,Incorrect eject. Incorrect length,~fr-FR~Incorrect eject. Incorrect length,Ошибка при извлечении. Неправильная длина сообщения,~be-BY~Incorrect eject. Incorrect length,Помилка при зчитуванні повідомлення. Неправильна довжина повідомлення,~kk-KZ~Incorrect eject. Incorrect length
+success_inject,Successfully injected,~fr-FR~Successfully injected,Успешная вставка сообщения,~be-BY~Successfully injected,Вставка повідомлення успішна,~kk-KZ~Successfully injected
+steg_serv_inj,Inject on server,~fr-FR~Inject on server,Вставка на сервере,~be-BY~Inject on server,Вставка на сервері,~kk-KZ~Inject on server
+acpt,Accept,~fr-FR~Accept,Принять,~be-BY~Accept,Прийняти,~kk-KZ~Accept
+rstre_to_dflt,Restore to default,~fr-FR~Restore to default,Восстановить к параметрам по умолчанию,~be-BY~Restore to default,Відновити до стандартних,~kk-KZ~Restore to default
+no_partition_slctd,No partition selected,~fr-FR~No partition selected,Не выбран раздел,~be-BY~No partition selected,Не вибрано розділ,~kk-KZ~No partition selected
+no_fs_slctd,No filesystem selected,~fr-FR~No filesystem selected,Не выбрана файловая система,~be-BY~No filesystem selected,Не вибрано файлову систему,~kk-KZ~No filesystem selected
+math,Math,~fr-FR~Math,Математика,~be-BY~Math,Математика,~kk-KZ~Math
+plot,Plot,~fr-FR~Plot,Графики,~be-BY~Plot,Графіки,~kk-KZ~Plot
+crt_img,Create virtual machine disk,~fr-FR~Create virtual machine disk,Создать виртуальный диск,~be-BY~Create virtual machine disk,Створити диск віртуальної машини,~kk-KZ~Create virtual machine disk
+emu_cd,Emulate virtual machine with cd-rom,~fr-FR~Emulate virtual machine with cd-rom,Запустить виртуальную машину с CD-диском,~be-BY~Emulate virtual machine with cd-rom,Запуск емуляції віртуальної машини з CD диском,~kk-KZ~Emulate virtual machine with cd-rom
+emu_hdd,Run virtual machine via HDD,~fr-FR~Run virtual machine via HDD,Запуск виртуальной машины без CD диска,~be-BY~Run virtual machine via HDD,Запуск емуляції віртуальної машини з жорсткого диску,~kk-KZ~Run virtual machine via HDD
+qemu_expl,Example of commands for create virtual HDD image%comma% launch system and use cd-rom%comma% and run system without cd-rom (for check),~fr-FR~Example of commands for create virtual HDD image%comma% launch system and use cd-rom%comma% and run system without cd-rom (for check),Примеры команд для создания виртуального диска%comma% запуска виртуальной машины с CD диском и без,~be-BY~Example of commands for create virtual HDD image%comma% launch system and use cd-rom%comma% and run system without cd-rom (for check),Приклади команд для створення віртуального диску%comma% запуску віртуальної машини з CD диску і без,~kk-KZ~Example of commands for create virtual HDD image%comma% launch system and use cd-rom%comma% and run system without cd-rom (for check)
+expln,How to use after download image,~fr-FR~How to use after download image,Как использовать после загрузки,~be-BY~How to use after download image,Як використовувати після завантаження образу,~kk-KZ~How to use after download image
+x_range,Range X,~fr-FR~Range X,Диапазон оси Х,~be-BY~Range X,Діапазон осі Х,~kk-KZ~Range X
+y_range,Range Y,~fr-FR~Range Y,Диапазон оси Y,~be-BY~Range Y,Діапазон осі Y,~kk-KZ~Range Y
+grid,Grid,~fr-FR~Grid,Сетка,~be-BY~Grid,Сітка,~kk-KZ~Grid
+plt_crt,Create plot,~fr-FR~Create plot,Создать график,~be-BY~Create plot,Створити графік,~kk-KZ~Create plot
+deb_conf_img,Configure options for new image,~fr-FR~Configure options for new image,Настроить параметры для нового образа ,~be-BY~Configure options for new image,Налаштуйте параметри для нового образу,~kk-KZ~Configure options for new image
+deb_inst,Debian installation,~fr-FR~Debian installation,Установка Debian,~be-BY~Debian installation,Встановлення Debian,~kk-KZ~Debian installation
+deb_aftr_inst,Run (emulate) debian after install,~fr-FR~Run (emulate) debian after install,Запустить (эмулировать) debian после установки,~be-BY~Run (emulate) debian after install,Запустити (емулювати) debian після встановлення,~kk-KZ~Run (emulate) debian after install
+how_use,How to use,~fr-FR~How to use,Как пользоваться,~be-BY~How to use,Як використовувати,~kk-KZ~How to use
+steg_serv_ej,Eject on server,~fr-FR~Eject on server,Извлечь через сервер,~be-BY~Eject on server,Отримати через сервер,~kk-KZ~Eject on server
+intro_joined_res,Listening and transcribing texts using joined mode and work with results after guessing,~fr-FR~Video tutorial about listening and transcribing texts using joined mode,Видео о работе с текстом в объединённом режиме и работа с результатами после завершения,~be-BY~Video tutorial about listening and transcribing texts using joined mode,Відео про роботу з текстом в об'єднаному режимі і робота з результатами,~kk-KZ~Video tutorial about listening and transcribing texts using joined mode
+steg_no_engh_points,"Not enough points on picture. Bad function, please use another one or modify current.","~fr-FR~Not enough points on picture. Bad function, please use another one or modify current.",Недостаточно точек%comma% чтобы внедрить сообщение. Поищите функцию получше или измените соответствующее эту.,"~be-BY~Not enough points on picture. Bad function, please use another one or modify current.",Недостатньо точок на картинці для вставки повідомлення. Виберіть іншу функцію чи модифікуйте цю.,"~kk-KZ~Not enough points on picture. Bad function, please use another one or modify current."
+is_horiz,Is Horizontal,~fr-FR~Is Horizontal,Горизонтально,~be-BY~Is Horizontal,Горизонтально,~kk-KZ~Is Horizontal
+is_inv,Is Inverted,~fr-FR~Is Inverted,Обратный ход,~be-BY~Is Inverted,Зворотій хід,~kk-KZ~Is Inverted
+entr_forml ,Enter formula,~fr-FR~Enter formula,Введите формулу,~be-BY~Enter formula,Введіть формулу,~kk-KZ~Enter formula
+iz_kvart,From flat to house,~fr-FR~From flat to house,Из квартиры в дом,~be-BY~From flat to house,З квартири в дім,~kk-KZ~From flat to house
+speed,Speed,~fr-FR~Speed,Скорость,~be-BY~Speed,Швидкість,~kk-KZ~Speed
+kedr,Kravchenko,~fr-FR~Kravchenko,Кравченко,~be-BY~Kravchenko,Кравченко,~kk-KZ~Kravchenko
+time,Time,~fr-FR~Time,Время,~be-BY~Time,Час,~kk-KZ~Time
+straw,Straw-bale houses,~fr-FR~Straw-bale houses,Соломенные дома,~be-BY~Straw-bale houses,Солом“яні будинки,~kk-KZ~Straw-bale houses
+eco_tech,Ecotechnology of biopositive and energy efficient constructions,~fr-FR~Ecotechnology of biopositive and energy efficient constructions,Экотехнология биопозитивных и энергоэффективных конструкций,~be-BY~Ecotechnology of biopositive and energy efficient constructions,Екотехнологія біопозитивних і енергоефективних кострукцій,~kk-KZ~Ecotechnology of biopositive and energy efficient constructions
+books,Books,~fr-FR~Books,Книги,~be-BY~Books,Книги,~kk-KZ~Books
+dom_iz_samana,Adobe house — Evans%comma% Smith%comma% Smiley,~fr-FR~Adobe house — Evans%comma% Smith%comma% Smiley,Дом из самана — Эванс Я.%comma% Смит М.Д.%comma% Смайли Л.,~be-BY~Adobe house — Evans%comma% Smith%comma% Smiley,Будинок із саману — Еванс Я.%comma% Сміт М.Д.%comma% Смайли Л.,~kk-KZ~Adobe house — Evans%comma% Smith%comma% Smiley
+kladka_pech,Masonry stoves with their hands — Shepelev,~fr-FR~Masonry stoves with their hands — Shepelev,Кладка печей своими руками — Шепелев,~be-BY~Masonry stoves with their hands — Shepelev,Кладка печей своїми руками — Шепелев,~kk-KZ~Masonry stoves with their hands — Shepelev
+shtuk_dekor,Plaster decorative art works — Shepelev,~fr-FR~Plaster decorative art works — Shepelev,Штукатурные декоративно художественные работы — Шепелев,~be-BY~Plaster decorative art works — Shepelev,Штукатурно-декоративні художні роботи — Шепелев,~kk-KZ~Plaster decorative art works — Shepelev
+sovrem_krovlya,Modern roof — Savelie,~fr-FR~Modern roof — Saveliev,Современная кровля — Савельев,~be-BY~Modern roof — Saveliev,Сучасна кровля — Савельєв,~kk-KZ~Modern roof — Saveliev
+entsikl_rab_po_der,Encyclopedia of woodwork — David Day,~fr-FR~Encyclopedia of woodwork — David Day,Энциклопедия работ по дереву — Дэвид Дей,~be-BY~Encyclopedia of woodwork — David Day,Енциклопедія робіт по дереву — Девід Дей,~kk-KZ~Encyclopedia of woodwork — David Day
+haslak_obrb_derev,Basic tools for woodworking — Haslak,~fr-FR~Basic tools for woodworking — Haslak,Основные инструменты для обработки дерева — Хаслак П.,~be-BY~Basic tools for woodworking — Haslak,Основні інструменти для обробки дерева — Хаслак П.,~kk-KZ~Basic tools for woodworking — Haslak
+only_one_file,Don`t use more than one file ,~fr-FR~Don`t use more than one file,Не используйте больше одного файла,~be-BY~Don`t use more than one file ,Не використовуйте більше одного файлу,~kk-KZ~Don`t use more than one file
+text_referenced,Text is already in use (process of learning). Will create new instance of it!,~fr-FR~Text is already in use (process of learning). Will create new instance of it!,Текст уже в работе. Для обеспечения целостности был создан новый файл,~be-BY~Text is already in use (process of learning). Will create new instance of it!,Текст вже використовується. Для забезпечення цілісності створено новий текст.,~kk-KZ~Text is already in use (process of learning). Will create new instance of it!
+present,Presentation,~fr-FR~Presentation,Презентация,~be-BY~Presentation,Презентація,~kk-KZ~Presentation
+exp_course,Experience,~fr-FR~Experience,Опыт,~be-BY~Experience,Досвід,~kk-KZ~Experience
+ocr,Optical character recognition,~fr-FR~Optical character recognition,Оптическое распознавание символов,~be-BY~Optical character recognition,Оптичне розпізнавання символів,~kk-KZ~Optical character recognition
+eject_serv,Eject on server,~fr-FR~Eject on server,Извлечь через сервер,~be-BY~Eject on server,Вилучити через сервер,~kk-KZ~Eject on server
+omsk,Project in Omsk,~fr-FR~Project in Omsk,Проект под Омском,~be-BY~Project in Omsk,Проект під Омськом,~kk-KZ~Project in Omsk
+tatarstan,Project in Tatarstan,~fr-FR~Project in Tatarstan,Проект в Татарстане,~be-BY~Project in Tatarstan,Проект в Татарстані,~kk-KZ~Project in Tatarstan
+dom_za_5,Build house in 5 days,~fr-FR~Build house in 5 days,Дом за 5 дней,~be-BY~Build house in 5 days,Дім за 5 днів,~kk-KZ~Build house in 5 days
+vystup_kak_stroit,How to build ecohouse 2014,~fr-FR~How to build ecohouse 2014,Выступление на «Как построить экодом 2014»,~be-BY~How to build ecohouse 2014,Виступ на «Як побудувати екодім 2014»,~kk-KZ~How to build ecohouse 2014
+yura_ko_pract,Yurii Kovalenko. Practice of building,~fr-FR~Yurii Kovalenko. Practice of building,Юра Коваленко. Практика строительства,~be-BY~Yurii Kovalenko. Practice of building,Юрій Коваленко. Практика будівництва.,~kk-KZ~Yurii Kovalenko. Practice of building
+yura_ko_web,Yurii Kovalenko. Webinar,~fr-FR~Yurii Kovalenko. Webinar,Юра Коваленко: Вебинар.,~be-BY~Yurii Kovalenko. Webinar,Юрій Коваленко. Вебінар.,~kk-KZ~Yurii Kovalenko. Webinar
+save,Save,~fr-FR~Save,Сохранить,~be-BY~Save,Зберегти,~kk-KZ~Save
+add_user,Add user,~fr-FR~Add user,Добавить пользователя,~be-BY~Add user,Додати користувача,~kk-KZ~Add user
+saved_succ,Saved,~fr-FR~Saved,Сохранено успешно,~be-BY~Saved,Збережено,~kk-KZ~Saved
+login_disabled_usr,Impossible to login using this user,~fr-FR~Impossible to login using this user,Невозможно войти данным пользователем,~be-BY~Impossible to login using this user,Неможливо зайти даним користувачем,~kk-KZ~Impossible to login using this user
+nature_gard,Nature garden,~fr-FR~Nature garden,Природосообразное земледелие,~be-BY~Nature garden,Природодогоджаюче землеробство,~kk-KZ~Nature garden
+peretyat,Peretyatko,~fr-FR~Peretyatko,Перетятько,~be-BY~Peretyatko,Перетятько,~kk-KZ~Peretyatko
+orlov,Orlov,~fr-FR~Orlov,Орлов,~be-BY~Orlov,Орлов,~kk-KZ~Orlov
+health,Health,~fr-FR~Health,Здоровье,~be-BY~Health,Здоров“я,~kk-KZ~Health
+sovetov,Sovetov,~fr-FR~Sovetov,Советов,~be-BY~Sovetov,Совєтов,~kk-KZ~Sovetov
+energo_heal,Energo healer,~fr-FR~Energo healer,Целительство,~be-BY~Energo healer,Цілительство,~kk-KZ~Energo healer
+milaart,Mila Artukh,~fr-FR~Mila Artukh,Мила Артюх,~be-BY~Mila Artukh,Міла Артюх,~kk-KZ~Mila Artukh
+rec_scr,Record screen,~fr-FR~Record screen,Запись экрана,~be-BY~Record screen,Запис екрану,~kk-KZ~Record screen
+rec_vid,Record video,~fr-FR~Record video,Запись видео,~be-BY~Record video,Запис відео,~kk-KZ~Record video
+rec_aud,Record audio,~fr-FR~Record audio,Запись звука,~be-BY~Record audio,Запис взуку,~kk-KZ~Record audio
+turn_on_off_cam,Turn on and off camera,~fr-FR~Turn on and off camera,Включить и выключить камеру,~be-BY~Turn on and off camera,Ввімкнути і вимкнути камеру,~kk-KZ~Turn on and off camera
+create,Create,~fr-FR~Create,Создать,~be-BY~Create,Створити,~kk-KZ~Create
+update,Update,~fr-FR~Update,Обновить,~be-BY~Update,Оновити,~kk-KZ~Update
+clear,Clear,~fr-FR~Clear,Очистить,~be-BY~Clear,Очистити,~kk-KZ~Clear
+updated_succ,Updated successfully,~fr-FR~Updated successfully,Успешно обновлено,~be-BY~Updated successfully,Успішно оновлено,~kk-KZ~Updated successfully
+not_empt,Shouldn’t be empty!,~fr-FR~Shouldn’t be empty!,Не должно быть пустым!,~be-BY~Shouldn’t be empty!,Не повинно бути пустим!,~kk-KZ~Shouldn’t be empty!
+hght,Height,~fr-FR~Height,Высота,~be-BY~Height,Висота,~kk-KZ~Height
+wdth,Width,~fr-FR~Width,Ширина,~be-BY~Width,Ширина,~kk-KZ~Width
+quest,Question,~fr-FR~Question,Вопрос,~be-BY~Question,Питання,~kk-KZ~Question
+answ,Answer,~fr-FR~Answer,Ответ,~be-BY~Answer,Відповідь,~kk-KZ~Answer
+dirct,Direction,~fr-FR~Direction,Направление,~be-BY~Direction,Напрям,~kk-KZ~Direction
+posit,Position,~fr-FR~Position,Позиция,~be-BY~Position,Позиція,~kk-KZ~Position
+horiz,Horizontal,~fr-FR~Horizontal,Горизонталь,~be-BY~Horizontal,Горизонталь,~kk-KZ~Horizontal
+vert,Vertical,~fr-FR~Vertical,Вертикаль,~be-BY~Vertical,Вертикаль,~kk-KZ~Vertical
+save_qst,Save question,~fr-FR~Save question,Сохранить вопрос,~be-BY~Save question,Зберегти питання,~kk-KZ~Save question
+del_qst,Delete question,~fr-FR~Delete question,Удалить вопрос,~be-BY~Delete question,Видалити питання,~kk-KZ~Delete question
+fltr_qst,Filter by question,~fr-FR~Filter by question,Фильтрация по вопросам,~be-BY~Filter by question,Фільтарція за питаннями,~kk-KZ~Filter by question
+fltr_answ,Filter by answer,~fr-FR~Filter by answer,Фильтрация по ответам,~be-BY~Filter by answer,Фільтрація за відповідями,~kk-KZ~Filter by answer

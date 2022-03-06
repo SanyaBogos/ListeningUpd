@@ -1,0 +1,60 @@
+.full-width {
+  width: 100%;
+  text-align: left;
+}
+
+.bg-blue {
+  background-image: linear-gradient(to bottom, #d9edf7 0, #c4e3f3 100%);
+}
+
+.bg-yellow {
+  background: linear-gradient(to bottom, #fefcea 0%, #f1da36 100%);
+}
+
+.bg-green {
+  background: linear-gradient(to bottom, #b4e391 0%, #61c419 50%, #b4e391 100%);
+}
+
+.bg-light {
+  background-image: linear-gradient(white, #e9ecef 60%, #dde2e6);
+}
+
+.bg-ground {
+  background: linear-gradient(to bottom, #f3e2c7 0%, #c19e67 50%, #b68d4c 51%, #e9d4b3 100%);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.color-1 {
+  fill: rgb(0, 255, 0);
+}
+.color-2 {
+  fill: rgb(166, 255, 0);
+}
+.color-3 {
+  fill: rgb(255, 251, 0);
+}
+.color-4 {
+  fill: rgb(255, 115, 0);
+}
+.color-5 {
+  fill: rgb(255, 0, 0);
+}
+
+.clr-1 {
+  color: rgb(0, 255, 0);
+}
+.clr-2 {
+  color: rgb(166, 255, 0);
+}
+.clr-3 {
+  color: rgb(255, 251, 0);
+}
+.clr-4 {
+  color: rgb(255, 115, 0);
+}
+.clr-5 {
+  color: rgb(255, 0, 0);
+}

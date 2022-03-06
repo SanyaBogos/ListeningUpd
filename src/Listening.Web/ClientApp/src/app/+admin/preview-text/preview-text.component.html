@@ -1,0 +1,36 @@
+<div class="card">
+  <div class="card-header bg-blue">    
+    <div class="row">
+      <label class="col-6 col-form-label cursor-pointer" (click)="changePreviewVisibility()">
+        {{ 'text_preview' | translate }}
+      </label>
+
+      <div class="col-3 mt-2">
+        <div class="float-right">
+          <label class="ml-1">
+            <input type="checkbox" [(ngModel)]="showSymbols" />
+            {{'show_letters' | translate }}
+          </label>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="float-right">
+          <button class="btn" (click)="buildPreview()">
+            {{ 'refresh' | translate }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-block" [hidden]="!isPreviewVisible">
+    <div *ngFor="let paragraph of paragraphs">
+      <div class="word" *ngFor="let word of paragraph.words">
+        <button class="btn" [ngClass]="letter.className" *ngFor="let letter of word.letters">
+          {{letter.symbol}}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

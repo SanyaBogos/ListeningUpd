@@ -1,0 +1,96 @@
+<div class="row mb-1">
+    <div class="col-3">
+        <button class="btn" (click)="showFiles = !showFiles"
+            tooltip="{{ (showFiles ? 'hid' : 'shw') | translate }} {{ 'menu' | translate }}" placement="right">
+            <b> <i class="weight fa fa-angle-{{ showFiles ? 'left' : 'right' }}"></i> </b>
+        </button>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-3" [hidden]="!showFiles">
+        <p-tree [value]="files" selectionMode="single" [filter]="true" (onNodeSelect)="nodeSelect($event)"
+            [pTooltip]="menuTooltip"
+            (mouseover)="menuNodeTooltipOver($event)"
+            (mouseout)="menuNodeTooltipOut($event)">
+
+            <ng-template let-node pTemplate type="default">
+                <span pTooltip="{{ menuTooltip }}">{{ node.label }}</span>
+            </ng-template>
+            
+        </p-tree>
+    </div>
+
+    <div *ngIf="videoSrc" class="col-{{ showFiles ? '9' : '12'}}">
+        <div class="row">
+            <div class="col-12">
+                <h3>{{name}}</h3>
+            </div>    
+        </div>
+
+        <div class="row">
+            <vg-player (onPlayerReady)="onPlayerReady($event)">
+                <video #mySpecMedia [vgMedia]="mySpecMedia" id="myVid" style="width: 100%" preload="auto" controls>
+                    <source [src]="videoSrc" type="video/mp4">
+                </video>
+            </vg-player>
+
+            <div *ngIf="videoSrc" class="col-6 iniline mt-2">
+                <div class="row">
+                    <appc-time-stamp [duration]="duration" [type]="'u'" (resultTime)="getTimeStamp($event)"
+                        (setTime)="setTimeToPlayer($event)" [timeFromPlayer]="getTimeFromPlayer">
+                    </appc-time-stamp>
+
+                    <button class="ml-2 btn btn-secondary-white" (click)="showCommentArea = !showCommentArea"
+                        tooltip="{{ (showCommentArea ? 'hid' : 'shw') | translate }} {{ 'cmnt' | translate }}" placement="bottom">
+                        <i class="fa fa-{{ showCommentArea ? 'minus' : 'plus' }}-circle"></i>
+                    </button>
+
+                    <button class="ml-1 btn" (click)="getVideoUrl()" tooltip="{{ 'shr_vid' | translate }}" placement="bottom">
+                        <i class="fa fa-share"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="mt-2 col-3 input-group">
+                <span class="input-group-btn">
+                    <button class="btn" (click)="shiftTime(true)">
+                        <i class="fa fa-arrow-left"></i>
+                    </button>
+                </span>
+
+                <input class="form-control short-inpt" type="number" [(ngModel)]="timeShift" />
+
+                <span class="input-group-btn">
+                    <button class="btn" (click)="shiftTime(false)">
+                        <i class="fa fa-arrow-right"></i>
+                    </button>
+                </span>
+            </div>
+
+            <div class="mt-2 col-3 iniline float-right">
+                <label class="mt-1 mr-2">{{ 'speed' | translate}}</label>
+
+                <select class="form-control " (change)="speedSelected($event.target.value)" [(ngModel)]="selectedSpeed">
+                    <option *ngFor="let speed of speeds" [value]="speed">
+                        {{speed}}
+                    </option>
+                </select>
+            </div>
+
+            <div *ngIf="showCommentArea" class="row mt-1">
+                <div class="col-12">
+                    <textarea class="form-control" disabled></textarea>
+                </div>
+            </div>
+
+            <div *ngIf="description">
+                <div *ngIf="!isEdit" class="row">
+                    <quill-view [content]="description" format="text" theme="snow"></quill-view>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

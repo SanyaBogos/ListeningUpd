@@ -1,0 +1,83 @@
+<h3>{{ 'app_nav_signalr' | translate }}</h3>
+
+<h5>{{ 'chat_user_list' | translate }}</h5>
+
+<div class="row">
+  <input type="text" class="col-8 form-control" placeholder="{{ 'person_search_plchldr' | translate }}" name="message"
+    [(ngModel)]="searchMask">
+  <button type="submit" class="col-4 btn btn-secondary-white" (click)="search()">{{ 'search_chat_usr_btn' | translate }}</button>
+</div>
+
+<div class="row" *ngIf="availableUsers != null">
+  <div class="col-6">
+    <appc-users-list [users]="availableUsers.active" [isActive]="true"
+      (selectCurrentUser)="selectUserForConversation($event)">
+    </appc-users-list>
+  </div>
+  <div class="col-6">
+    <appc-users-list [users]="availableUsers.inactive" [isActive]="false"
+      (selectCurrentUser)="selectUserForConversation($event)">
+    </appc-users-list>
+  </div>
+</div>
+
+<hr />
+
+<div class="row" *ngIf="currentCullocator != null">
+  <label class="col-9 text-center mt-2" *ngIf="currentCullocator != null">
+    {{ 'conversation_with' | translate }}
+    {{ currentCullocator.firstName }}
+    {{ currentCullocator.lastName }}
+    {{ currentCullocator.email }}
+  </label>
+  <button class="col-3 btn btn-secondary-white" (click)="getMoreMessages()">
+    {{ 'get_more_messages_btn' | translate }}
+  </button>
+</div>
+
+<div *ngIf="currentCullocator != null">
+  <div class="row">
+    <table class="col-12 table table-striped" *ngIf="messages.length > 0">
+      <thead>
+        <tr>
+          <th>
+            <div class="text-center">
+              {{ 'messages_table_header' | translate }}
+            </div>
+          </th>
+          <th>
+            <div class="float-right">
+              {{ 'time_table_header' | translate }}
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let message of messages">
+          <td>
+            <div [ngClass]="{ 'float-right': message.isMine }">
+              {{message.message}}
+            </div>
+          </td>
+          <td>
+            <div class="float-right">
+              {{message.time | date: 'short'}}
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="col-12" *ngIf="messages.length <= 0">
+      <span>{{ 'no_messages' | translate }}</span>
+    </div>
+  </div>
+
+  <form class="row" (ngSubmit)="sendMessage()" #messageForm="ngForm">
+    <label class="sr-only" for="message">Message</label>
+    <input type="text" class="col-8 form-control" id="message" placeholder="{{ 'your_message_plchldr' | translate }}" name="message"
+      [(ngModel)]="message" required>
+    <button type="submit" class="btn col-4" [disabled]="!messageForm.valid">
+      {{ 'send_message_btn' | translate }}
+    </button>
+  </form>
+</div>

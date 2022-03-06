@@ -1,0 +1,24 @@
+.bg-light-blue {
+    background-color: #d7e5f9;
+}
+
+.drevnerusskij {
+    font-family: 'Drevnerusskij';
+}
+
+.nums {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+$sizes: 10;
+
+@mixin sizes-bkv {
+    @for $i from 1 through $sizes {
+        .size-#{$i} {
+            max-width: (12 * $i) + px;
+            max-height: (10 * $i) + px;
+        }
+    }
+}
+
+@include sizes-bkv;

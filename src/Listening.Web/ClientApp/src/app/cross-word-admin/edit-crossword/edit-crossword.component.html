@@ -1,0 +1,113 @@
+<section>
+    <div class="form-horizontal" *ngIf="crosswordDto">
+        <div class="row">
+            <div class="col-12">
+                <h4 class="text-center">{{'manage_crswd_hdr' | translate }}</h4>
+            </div>
+            <!-- <div class="col-1">
+                <i class="fa fa-question-circle fa-2x top-3" aria-hidden="true" tooltip="{{'some_expl' | translate}}"
+                    placement="bottom"></i>
+            </div> -->
+        </div>
+
+        <hr>
+
+        <div class="form-group row">
+            <div class="col-2 col-form-label">
+                <label class="text-danger">*&nbsp;</label>
+                <label> {{'title_name' | translate }}:</label>
+            </div>
+
+            <div class="col-4">
+                <input class="form-control" [(ngModel)]="crosswordDto.title" (focusout)="checkTitle()" />
+                <span class="text-danger field-validation-valid" [hidden]="crosswordDto.title">
+                    {{ 'not_empt' | translate }}
+                </span>
+            </div>
+
+            <label class="col-2 col-form-label">{{'subtitle_name' | translate }}: </label>
+            <div class="col-4">
+                <input class="form-control" [(ngModel)]="crosswordDto.subTitle" />
+            </div>
+        </div>
+
+
+        <div class="form-group row">
+            <div class="col-2 col-form-label">
+                <label class="text-danger">*&nbsp;</label>
+                <label> {{'country_name' | translate }}:</label>
+            </div>
+            <div class="col-4">
+                <appc-country-selector [selectedValue]="crosswordDto.country"
+                    (selectedValueChange)="crosswordDto.country = $event">
+                </appc-country-selector>
+            </div>
+
+            <div class="col-2 col-form-label">
+                <label class="text-danger">*&nbsp;</label>
+                <label> {{'assgn' | translate }}:</label>
+            </div>
+            <div class="col-4">
+                <ngx-select [allowClear]="true" [items]="admins" optionValueField="id" optionTextField="email"
+                    [(ngModel)]="selectedAdmin" placeholder="{{'no_admin_selected' | translate }}">
+
+                    <ng-template ngx-select-option ngx-select-option-selected let-option let-text="text">
+                        <span>{{option.data.email}}</span>
+                    </ng-template>
+                </ngx-select>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <label class="col-2 col-form-label">{{'app_complexity' | translate }}:</label>
+
+            <div class="col-4">
+                <appc-complexity [complexity]="crosswordDto.complexity"
+                    (complexitySelected)="crosswordDto.complexity = $event">
+                </appc-complexity>
+            </div>
+
+
+            <label class="col-1 col-form-label">{{'hght' | translate }}:</label>
+
+            <div class="col-1">
+                <input class="form-control" type="number" [(ngModel)]="gridSettings.size.height" />
+            </div>
+            
+            <label class="col-1 col-form-label">{{'wdth' | translate }}:</label>
+
+            <div class="col-1">
+                <input class="form-control" type="number" [(ngModel)]="gridSettings.size.width"
+                    placeholder="{{'wdth' | translate }}" />
+            </div>
+
+            <div class="col-1">
+                <button class="btn" (click)="applyNewSize()">{{'apply' | translate }}</button>
+            </div>
+
+        </div>
+
+        <hr />
+
+        <div class="row">
+            <div class="col-12">
+                <appc-list-questions></appc-list-questions>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <appc-edit-question></appc-edit-question>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <appc-grid-crossword [settings]="gridSettings"></appc-grid-crossword>
+        </div>
+
+
+
+
+    </div>
+</section>

@@ -1,0 +1,17 @@
+<!-- <div class="row">
+    <div class="col-6">
+        <video id="{{videoId}}" playsinline class="video-js vjs-default-skin width-100"></video>
+        <br />
+        <button class="btn" (click)="saveVideo()">{{'save_name' | translate }}</button>
+    </div>
+</div> -->
+<div *ngIf="settings.isAudioOnly; else videoBlock">
+    <audio id="{{videoId}}" class="video-js vjs-default-skin"></audio>
+</div>
+<ng-template #videoBlock>
+    <video id="{{videoId}}" playsinline class="video-js vjs-default-skin mb-1"></video>
+</ng-template>
+<!-- <br /> -->
+<div>
+    <button class="btn" (click)="saveVideo()">{{'save_name' | translate }}</button>
+</div>

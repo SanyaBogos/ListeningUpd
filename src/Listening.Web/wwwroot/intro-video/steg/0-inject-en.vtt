@@ -1,0 +1,48 @@
+WEBVTT
+
+00:00.230 --> 00:05.000
+Click to 'Additional tools' header menu item
+and select 'Steganography' -> 'Image' -> 'Inject'
+
+00:05.000 --> 00:07.000
+Click on button chose fileto select image container
+
+00:07.000 --> 00:15.000
+Select picture
+
+00:15.000 --> 00:25.000
+Enter message, which you want to hide
+
+00:25.000 --> 00:34.000
+You are able to see input and output images
+and change size (however, this functionality is not fully implemented yet)
+
+00:34.000 --> 00:36.000
+Click on blue header 'Settings' and expand
+
+00:36.000 --> 00:49.000
+Select colors, which you going to use and their order
+
+00:49.000 --> 00:51.000
+Select mode as 'Simple'
+
+00:51.000 --> 00:54.000
+And set start index and step
+
+00:54.000 --> 01:07.000
+Press 'Save key' button to store this key at your computer
+
+01:07.000 --> 01:08.500
+Click 'Apply' button to apply the following settings
+
+01:08.500 --> 01:27.000
+Click 'Inject message' button, then 'Inject on server'
+(and wait for result)
+
+01:27.000 --> 01:35.500
+Save result picture on your computer
+(by default you have 'res' in the end of the name)
+
+01:35.000 --> 01:50.500
+You could see the result of computed file
+(no visible changes, right? :) )

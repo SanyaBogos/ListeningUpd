@@ -1,0 +1,113 @@
+<div class="card mt-1 mb-1">
+    <div class="card-header bg-light" (click)="isSettingsVisible = !isSettingsVisible">
+        <label class="label-margin"><strong>{{ 'stngs' | translate }}</strong></label>
+    </div>
+
+    <div class="card-block" [hidden]="!isSettingsVisible">
+        <div class="row mt-1 mb-2 ml-2">
+            <div class="col-2 mt-1">
+                {{ 'bkv_clr' | translate }}
+            </div>
+        
+            <div class="col-1">
+                <input class="form-control" [(colorPicker)]="color" [style.background]="color" />
+            </div>
+
+            <div class="col-2 mt-1">
+                {{ 'slct_clr' | translate }}
+            </div>
+        
+            <div class="col-1">
+                <input class="form-control" [(colorPicker)]="selectionColor" [style.background]="selectionColor" />
+            </div>
+
+            <div class="col-2">
+                {{ 'bkv_size' | translate }}
+            </div>
+        
+            <div class="col-2 mt-3">
+                <p-slider [(ngModel)]="size" [min]="0" [max]="10" [step]="1"></p-slider>
+                <label>{{size}}</label>
+            </div>
+        
+            <div class="col-2">
+                <button class="btn" (click)="apply()">{{ 'apply' | translate }}</button>
+            </div>
+        </div>
+
+        <div class="row mb-1">
+            <div class="offset-4 col-4 text-center">
+                <button class="btn" (click)="changeBukvitsaVisibility()">{{ showHideBtnName | translate }}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div *ngIf="settings" [hidden]="!isBukvitsaVisible">
+    <appc-bukvitsy-table-x [settings]="settings" (selectedBukvitsa)="addBukvitsa($event)"></appc-bukvitsy-table-x>
+</div>
+
+<div class="row mt-2 mb-2">
+    <div class="col-6">
+        <textarea class="form-control mr-2" [(ngModel)]="wordSimplified" rows="2"
+            (input)="isAutoConvert && textChanged($event)">
+        </textarea>
+    </div>
+    <div class="col-6">
+        <label class="ml-1 mr-3">
+            <input type="checkbox" (change)="changeAutoConvert()" />
+            {{'auto_cnvrt' | translate }}
+        </label>
+
+        <button *ngIf="!isAutoConvert" class="btn mr-2" (click)="convertText()">
+            {{ 'cnvrt_to_bkvts' | translate }}
+        </button>
+
+        <button class="btn" (click)="clear()">{{ 'clr' | translate }}</button>
+    </div>
+</div>
+
+<div *ngIf="wordOfBukvitsy && wordOfBukvitsy.length > 0">
+    <div class="row">
+        <div class="col-12">
+            <div class="iniline border border-primary rounded">
+                <div class="text-center" *ngFor="let bukvitsa of wordOfBukvitsy; let i = index">
+                    <!-- <div *ngIf="bukvitsa != null; else emptySpace"> -->
+                        <svg [ngClass]="getClassName(i)" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                            [attr.width]="bukvitsa.width" [attr.height]="bukvitsa.height"
+                            [attr.viewBox]="bukvitsa.viewBox" preserveAspectRatio="xMidYMid meet"
+                            (click)="selectedWordBukvitsa(i)" (dblclick)="removeWordBukvitsa(i)">
+
+                            <g [attr.transform]="bukvitsa.transform" [attr.fill]="bukvitsa.color" stroke="none">
+                                <path *ngFor="let path of bukvitsa.pathD" [attr.d]="path" />
+                            </g>
+                        </svg>
+                    <!-- </div> -->
+
+                    <!-- <ng-template #emptySpace>
+                        <div class="empty"></div>
+                    </ng-template> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+        <div class="col-12">
+            <table>
+                <tr *ngFor="let bukvitsa of wordOfBukvitsy">
+                    <td>
+                        <appc-bukvitsa-base [bukvitsa]="bukvitsa"> </appc-bukvitsa-base>
+                    </td>
+                    <td>
+                        <h3> - {{bukvitsa.description}}.</h3>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-12">
+        <label class="font-weight-bold">{{ 'books' | translate}}:</label>
+    </div>
+</div>
+
+<br />
+
+<div class="row">
+    <div class="col-12" *ngFor="let item of items">
+        <a href="/spec-books/{{item.path}}.{{item.fType}}" download="{{item.name}}.{{item.fType}}">
+            <img src="{{ item.fType == 'pdf' ? '/icons/pdf-icon.jpg' : '/icons/djvu-icon.jpg' }}" alt="{{item.name}}" class="file-img">
+            {{item.name}}
+        </a>
+    </div>
+</div>

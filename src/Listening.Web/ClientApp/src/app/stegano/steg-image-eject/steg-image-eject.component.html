@@ -1,0 +1,27 @@
+<appc-how-to-use-enh [videoDescriptions]="videoDescriptions"></appc-how-to-use-enh>
+
+<div class="row">
+    <input type="file" class="col-4 mt-2 ml-3" (change)="fileChangeEvent($event)" />
+    <canvas #canvasWithMsg></canvas>
+</div>
+
+<appc-steg-settings *ngIf="imgSrc && imageData" [width]="imageData.width" [height]="imageData.height"
+    (settingsOut)="applySettings($event)">
+</appc-steg-settings>
+
+<div *ngIf="imgSrc && imageData && settings" class="row">
+    <div class="col-12 text-center">
+        <button class="btn" (click)="eject()">{{ 'eject' | translate }}</button>
+        <button class="btn" (click)="ejectServer()">{{ 'eject_serv' | translate }}</button>
+    </div>
+</div>
+
+<div class="row text-center" *ngIf="isCaptured && showCaptcha">
+    <div class="col-12">
+        <appc-captcha (captchaObject)="updateCaptchaObj($event)"></appc-captcha>
+    </div>
+</div>
+
+<div class="row" *ngIf="extractedMessage">
+    <textarea class="col-12 form-control" disabled>{{extractedMessage}}</textarea>
+</div>

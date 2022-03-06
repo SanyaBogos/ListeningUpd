@@ -1,0 +1,42 @@
+<div class="fixed-top shift-from-top white-bg z-index" #headerDescription>
+    <div class="container">
+        <div class="row">
+            <appc-text-description class="col-12" [description]="textDescription" [guessingType]="type">
+            </appc-text-description>
+        </div>
+        <div class="row">
+            <appc-stream-description [description]="textDescription" 
+                [ngClass]="{'offset-3 col-6 text-center': !isJoinedAndVideoType, 'col-4':isJoinedAndVideoType}">
+            </appc-stream-description>
+            <div *ngIf="!isJoinedAndVideoType" class="col-8"></div>
+
+            <textarea *ngIf="type==='j'" [(ngModel)]="text" class="form-control height-200" 
+                [ngClass]="{'col-4':isJoinedAndVideoType, 'col-8':!isJoinedAndVideoType}"
+                (keypress)="keyPress($event.key)" [disabled]="isFinished"></textarea>
+
+            <div *ngIf="type==='j'" class="col-4">
+                <textarea class="form-control height-160" [(ngModel)]="failedAttemptsText" disabled>
+                </textarea>
+
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fa fa-question-circle fa-2x top-3" aria-hidden="true" 
+                        tooltip="{{'check_hint' | translate}}"
+                            placement="bottom"></i>
+                    </div>
+
+                    <div class="col-11">
+                        <button class="btn full-width text-center" (click)="startCheckWords()"
+                                [disabled]="isFinished">
+                            <i class="fa fa-gavel"></i>
+                            {{'check_name' | translate}}
+                        </button>
+                    </div>                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <hr class="less-margin" />
+</div>

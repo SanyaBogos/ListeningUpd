@@ -1,0 +1,36 @@
+<div>
+  <button class="btn form-control" (click)="changeShowingState()">
+
+    <label *ngIf="selectedCountry == null; else correct_title">
+      <i class="fa fa-list"></i>
+      {{ 'select_country_title' | translate }}
+    </label>
+
+    <ng-template #correct_title>
+      <div class="row">
+        <span class="ml-1 country-flag-header flag flag-{{selectedValue.toLowerCase()}}"></span>
+        <label class="ml-2 text-header">{{ selectedCountry }}</label>
+      </div>
+    </ng-template>
+
+    <div>
+      <i class="fa fa-caret-{{ isListShowed ? 'down' : 'left'}} float-right triangle-{{ selectedCountry != null ? 'not-' : '' }}selected" aria-hidden="true"></i>
+    </div>
+
+  </button>
+
+  <span [hidden]="!isListShowed" class="countries-list-container border border-secondary rounded">
+    <input class="form-control text-center" type="text" [ngModel]="searchWord"
+      (ngModelChange)="searchCountry($event)" />
+
+    <!-- <div class="mb-5"></div> -->
+
+    <span *ngFor="let country of countries">
+      <button class="full-width btn btn-secondary-white border border-primary" (click)="selectCountry(country)">
+        <span class="country-flag flag flag-{{country.id.toLowerCase()}}"></span>
+        <span class="align-middle float-right text-width-limited text-align-right">{{country.value}}</span>
+      </button>
+    </span>
+  </span>
+
+</div>

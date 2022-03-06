@@ -1,0 +1,26 @@
+<appc-modal #modalGuessingResults>
+  <div class="app-modal-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 text-center">
+          <h3>{{'guessing_results' | translate}}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="app-modal-body">
+    <h3 class="centered">{{'letters_result' | translate}}</h3>
+    <ngx-charts-advanced-pie-chart [view]="view" [scheme]="colorScheme" 
+          [results]="resultsData">      
+    </ngx-charts-advanced-pie-chart>
+    <h3 class="centered">{{'words_result' | translate}}</h3>
+    <ngx-charts-advanced-pie-chart [view]="view" [scheme]="colorSchemeWords" 
+          [results]="resultsWordsData">      
+    </ngx-charts-advanced-pie-chart>
+  </div>
+  <div class="app-modal-footer">
+    <button type="button" class="btn" (click)="hideModal()">{{'cancel' | translate}}</button>
+    <button type="button" class="btn btn-primary" (click)="goToTexts()">{{'go_to_texts' | translate}}</button>
+    <button type="button" class="btn btn-success" (click)="goToResults()">{{'go_to_results' | translate}}</button>
+  </div>
+</appc-modal>

@@ -1,0 +1,42 @@
+<appc-guessing-diagram></appc-guessing-diagram>
+
+<div class="row">
+  <div class="offset-3 col-5 text-center">
+    <h2>{{description.title}}</h2>
+    <h4>{{description.subTitle}}</h4>
+  </div>
+  <div class="shift-from-top col-2">
+    <button class="btn btn-danger shift-to-left" (click)="showStartOver()">
+      <i class="fa fa-refresh"></i>
+      {{'start_over' | translate}}
+    </button>
+  </div>
+  <div class="shift-from-top col-2">
+    <appc-info></appc-info>
+  </div>
+
+  <appc-modal #confirmStartingOver>
+    <div class="app-modal-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 text-center">
+            <h3>{{'delete_confirmation' | translate}}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="app-modal-body">
+      <span>{{'confirm_override_results_1' | translate}} (
+        <span>{{description.title}}</span>) {{'confirm_override_results_2' | translate}}?
+      </span>
+    </div>
+    <div class="app-modal-footer">
+      <button type="button" class="btn btn-warning" (click)="startOver()">
+        {{'yes_' | translate}}
+      </button>
+      <button type="button" class="btn" (click)="hideStartOver()">
+        {{'no_' | translate}}
+      </button>
+    </div>
+  </appc-modal>
+</div>

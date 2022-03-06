@@ -1,0 +1,10 @@
+<div *ngIf="bukvitsa" >
+    <svg [ngClass]="'size-' + bukvitsa.size" version="1.0" xmlns="http://www.w3.org/2000/svg" [attr.width]="bukvitsa.width"
+        [attr.height]="bukvitsa.height" [attr.viewBox]="bukvitsa.viewBox"
+        preserveAspectRatio="xMidYMid meet">
+
+        <g [attr.transform]="bukvitsa.transform" [attr.fill]="bukvitsa.color" stroke="none">
+            <path *ngFor="let path of bukvitsa.pathD" [attr.d]="path" />
+        </g>
+    </svg>
+</div>

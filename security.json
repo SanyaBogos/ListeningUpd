@@ -1,0 +1,214 @@
+﻿
+{
+  "certificateName": "certificate.pfx",
+  "passwd": "AjhLpty276",
+  "users": [
+    {
+      "UserName": "sanyaB@listening.in.ua",
+      "Email": "sanyaB@listening.in.ua",
+      "Password": "UwqHdfHdsjh^328^32hjdfh",
+      "Role": "Super"
+    },
+    {
+      "UserName": "AdminIuliiaK@listening.in.ua",
+      "Email": "AdminIuliiaK@listening.in.ua",
+      "Password": "3GnWuN&IO",
+      "Role": "Admin"
+
+    },
+    {
+      "UserName": "AdminLiliiaB@listening.in.ua",
+      "Email": "AdminLiliiaB@listening.in.ua",
+      "Password": "D@35cGF15",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminAlejandroJ@listening.in.ua",
+      "Email": "AdminAlejandroJ@listening.in.ua",
+      "Password": "8Yh)K2HDD",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminAnastasiyaZ@listening.in.ua",
+      "Email": "AdminAnastasiyaZ@listening.in.ua",
+      "Password": "134Wz75!I",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminAnnaS@listening.in.ua",
+      "Email": "AdminAnnaS@listening.in.ua",
+      "Password": "SW32s(HQC",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminAnnaSy@listening.in.ua",
+      "Email": "AdminAnnaSy@listening.in.ua",
+      "Password": "SW1j*7N7X9",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminAnnaT@listening.in.ua",
+      "Email": "AdminAnnaT@listening.in.ua",
+      "Password": "JW5u%QJ9P",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminAzamA@listening.in.ua",
+      "Email": "AdminAzamA@listening.in.ua",
+      "Password": "UQ2$zJ7WF",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminIrynaP@listening.in.ua",
+      "Email": "AdminIrynaP@listening.in.ua",
+      "Password": "CFl^930YR",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminIvanA@listening.in.ua",
+      "Email": "AdminIvanA@listening.in.ua",
+      "Password": "LR6qZ&7WG",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminKaterynaG@listening.in.ua",
+      "Email": "AdminKaterynaG@listening.in.ua",
+      "Password": "M7GNTt#XA",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminKaterynaU@listening.in.ua",
+      "Email": "AdminKaterynaU@listening.in.ua",
+      "Password": "jW*RLKiS9",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminLidiyaB@listening.in.ua",
+      "Email": "AdminLidiyaB@listening.in.ua",
+      "Password": "3PwC4s)8R",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminLiudmylaG@listening.in.ua",
+      "Email": "AdminLiudmylaG@listening.in.ua",
+      "Password": "SD1n*NVY1",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminNataliaG@listening.in.ua",
+      "Email": "AdminNataliaG@listening.in.ua",
+      "Password": "9ZWw{M3QB",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminOksanaP@listening.in.ua",
+      "Email": "AdminOksanaP@listening.in.ua",
+      "Password": "43Fw^4TEG",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminOksanaR@listening.in.ua",
+      "Email": "AdminOksanaR@listening.in.ua",
+      "Password": "TkDPN&B6T",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminOleksandraP@listening.in.ua",
+      "Email": "AdminOleksandraP@listening.in.ua",
+      "Password": "JSYJOn^1G",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminOlenaA@listening.in.ua",
+      "Email": "AdminOlenaA@listening.in.ua",
+      "Password": "6Ga*JNZFE",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminOlenaK@listening.in.ua",
+      "Email": "AdminOlenaK@listening.in.ua",
+      "Password": "L667h(GUK",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminOlenaKo@listening.in.ua",
+      "Email": "AdminOlenaKo@listening.in.ua",
+      "Password": "VTLv%S2U7",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminPaulF@listening.in.ua",
+      "Email": "AdminPaulF@listening.in.ua",
+      "Password": "NUPp$8XX7",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminRobertM@listening.in.ua",
+      "Email": "AdminRobertM@listening.in.ua",
+      "Password": "GJBz0)QZ9",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminScottB@listening.in.ua",
+      "Email": "AdminScottB@listening.in.ua",
+      "Password": "XMK3c4^90",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminTamaraB@listening.in.ua",
+      "Email": "AdminTamaraB@listening.in.ua",
+      "Password": "45v&RZQLU",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminViktoriiaS@listening.in.ua",
+      "Email": "AdminViktoriiaS@listening.in.ua",
+      "Password": "Z65c@U69K",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminVitaliiP@listening.in.ua",
+      "Email": "AdminVitaliiP@listening.in.ua",
+      "Password": "J62c&5TFH",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminYanaL@listening.in.ua",
+      "Email": "AdminYanaL@listening.in.ua",
+      "Password": "WTs*8BI31",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "AdminAlenaDvd@listening.in.ua",
+      "Email": "AdminAlenaDvd@listening.in.ua",
+      "Password": "Qvy5^fdhJdhj",
+      "Role": "Admin"
+    },
+    {
+      "UserName": "alexBSpec@listening.in.ua",
+      "Email": "alexBSpec@listening.in.ua",
+      "Password": "B6547@^sjdHqiu",
+      "Role": "SpecAdm"
+    },
+	  {
+      "UserName": "alexMSpec@listening.in.ua",
+      "Email": "alexMSpec@listening.in.ua",
+      "Password": "Mdu&364Tfgd73S",
+      "Role": "Specific"
+    },
+	  {
+      "UserName": "nastyaPSpec@listening.in.ua",
+      "Email": "nastyaPSpec@listening.in.ua",
+      "Password": "Ms(ru^3yedH",
+      "Role": "Specific"
+    },
+    {
+      "UserName": "user@listening.com",
+      "Email": "user@listening.com",
+      "Password": "123qweASD!",
+      "Role": "User"
+    }
+  ],
+  "emailSiteName": "ListeningSite123@gmail.com",
+  "emailPassword": "UrMfghjkHsdafkjh%39"
+}

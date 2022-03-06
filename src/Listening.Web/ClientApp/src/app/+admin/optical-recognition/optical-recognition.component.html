@@ -1,0 +1,57 @@
+<div class="card">
+  <div class="card-header bg-blue" (click)="changeOCRVisibility()">
+    <label class="cursor-pointer mb-0">{{'text_recognition_site' | translate }}</label>
+  </div>
+
+  <div class="card-block" [hidden]="!isInfoOCRVisible">
+    <div class="margin-20">
+      <div class="card">
+        <div class="card-header bg-yellow">
+          <div class="row" (click)="changeOwnOCRVisibility()">
+            <label class="ml-2">{{ 'own_ocr' | translate }}</label>
+          </div>
+        </div>
+        <div class="card-block" *ngIf="isOwnRecognitionVisible">
+            <appc-own-optical-recognition [isCaptured]="false"></appc-own-optical-recognition>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header bg-yellow">
+          <div class="row" (click)="changeOwnOCRVisibility()">
+            <label class="ml-2">{{ 'list_of_ocr' | translate }}</label>
+          </div>
+        </div>
+        <div class="card-block" *ngIf="!isOwnRecognitionVisible">
+          <div *ngFor="let site of siteVisibilities">
+            <div class="card">
+              <div class="card-header bg-blue">
+                <div class="row">
+                  <label class="col-5 col-form-label cursor-pointer" (click)="changeOCRSiteVisibility(site)">
+                    {{ site.siteURL }}
+                  </label>
+                  <div class="col-7">
+                    <div class="float-right">
+                      <button class="btn" (click)="goToLink(site.siteURL)">
+                        {{ 'go_to_new_tab' | translate }}
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-block" *ngIf="site.isVisible">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" [src]="site.siteURL | safe" allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>

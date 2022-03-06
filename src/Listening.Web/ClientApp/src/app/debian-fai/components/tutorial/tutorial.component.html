@@ -1,0 +1,45 @@
+<div class="card">
+    <div class="card-header bg-blue" (click)="changeExplanationVisibility()">
+        <label class="cursor-pointer mb-0">{{'expln' | translate }}</label>
+    </div>
+
+    <div class="card-block ml-2 mr-2 mt-2 mb-2" [hidden]="!isExplaneVisible">
+
+        <div class="row">
+            <div class="col-6">
+                <label>{{ "qemu_expl" | translate }}:</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-8">
+                <ul>
+                    <div *ngFor="let description of descriptions">
+                        <li>
+                            <div class="row mb-2">
+                                <div class="col-10">
+                                    <label>{{ description.name | translate }}</label>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <div class="border border-primary rounded bg-dark">
+                                                <b><code class="text-success ml-2">{{ description.command }}</code></b>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-2">
+                                            <button class="btn btn-mv-up"
+                                                tooltip="{{ 'copy_to_clipboard_btn' | translate }}" placement="top"
+                                                (click)="copyToClipboard(description)">
+                                                <i class="glyphicon glyphicon-copy"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

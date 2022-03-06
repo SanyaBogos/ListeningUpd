@@ -1,0 +1,156 @@
+<div *ngIf="isSuper">
+    <div class="row mb-2">
+        <label class="col-2">{{'entr_hdr' | translate}}:</label>
+        <input class="col-4 form-control" type="text" [(ngModel)]="currentPost.header" />
+
+        <label class="col-2">{{'entr_prior' | translate}}:</label>
+
+        <div class="col-4">
+            <select class="form-control" (change)="prioritySelected($event.target.value)">
+                <option *ngFor="let priority of additional.priorities" [value]="priority.id">
+                    {{ priority.name | translate }}
+                </option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row mb-2 mr-2">
+        <label class="col-2">{{'entr_dscr' | translate}}:</label>
+        <textarea class="col-4 form-control" [(ngModel)]="currentPost.description"></textarea>
+
+        <label class="col-2">{{'entr_tpcs' | translate}}:</label>
+
+        <span class="ui-fluid col-4">
+            <p-autoComplete [(ngModel)]="selectedTopics" [suggestions]="filteredTopicsDto"
+                (completeMethod)="search($event)" [minLength]="1" placeholder="{{'select_topics' | translate }}"
+                (onKeyUp)="addValue($event)" field="name" [multiple]="true" [dropdown]="true"></p-autoComplete>
+        </span>
+    </div>
+
+    <div class="row mb-2 mr-2">
+        <div class="col-5">
+            <input #fileInput (change)="fileChangeEvent($event)" placeholder="{{ 'upload_file' | translate}}"
+                type="file"
+                accept="video/mpeg,video/mp4,video/ogg,video/quicktime,video/webm,video/x-ms-wmv,video/x-flv,video/3gpp,video/3gpp" />
+        </div>
+
+        <div class="col-1">
+            <button class="btn" [disabled]="!videoFile" (click)="saveVideo()">
+                <i class="fa fa-save"></i>
+            </button>
+        </div>
+
+        <div class="col-3">
+            <select class="form-control" (change)="videoSelected($event.target.value)">
+                <option *ngFor="let video of additional.videos" value="{{video}}">
+                    {{video}}
+                </option>
+            </select>
+        </div>
+
+        <div class="col-3">
+            <button class="btn mr-1" (click)="addVideo()">
+                <i class="fa fa-plus text-success"></i>
+            </button>
+
+            <button class="btn btn-danger" (click)="preFinalVideoRemove()">
+                <i class="glyphicon glyphicon-trash"></i>
+            </button>
+        </div>
+
+
+    </div>
+
+    <div class="additional-btns">
+        <button class="btn mt-2" [disabled]="!isAvailableClick()" (click)="preview()">
+            <i class="fa fa-eye"></i>
+        </button>
+        <br />
+        <button class="btn mt-2" [disabled]="!isAvailableClick()" (click)="presave()">
+            <i class="fa fa-save"></i>
+        </button>
+        <br />
+        <button class="btn mt-2" [disabled]="!isAvailableClick()" (click)="clean()">
+            <i class="glyphicon glyphicon-trash"></i>
+        </button>
+    </div>
+
+    <div *ngFor="let article of articleParts">
+        <quill-editor [(ngModel)]="article.text"></quill-editor>
+
+        <div *ngIf="article.videoName" class="row">
+            <div class="offset-2 col-8 mt-2 mb-2">
+                <video style="width: 100%" preload="auto" controls>
+                    <source src="{{additional.videoFolderName}}/{{article.videoName}}.{{article.videoType}}"
+                        type="video/{{article.videoType}}">
+                </video>
+            </div>
+
+            <div class="col-2 mt-2">
+                <button class="btn btn-danger" (click)="preDeleteVideo(article)">
+                    <i class="glyphicon glyphicon-trash"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-12 text-center mt-2">
+        <button class="btn   mr-2" [disabled]="!isAvailableClick()" (click)="preview()">
+            <i class="fa fa-eye"></i>
+            {{'preview' | translate }}
+        </button>
+        <button class="btn mr-2" [disabled]="!isAvailableClick()" (click)="presave()">
+            <i class="fa fa-save"></i>
+            {{'save_name' | translate }}
+        </button>
+        <button class="btn mr-2" [disabled]="!isAvailableClick()" (click)="clean()">
+            <i class="glyphicon glyphicon-trash"></i>
+            {{'clean_name' | translate }}
+        </button>
+    </div>
+</div>
+
+<appc-modal #blogPreviewInfo>
+    <div class="app-modal-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 text-center">
+                    <h3>{{'blg_prview' | translate}}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-modal-body">
+        <appc-blog-article-parts *ngIf="isPreviewVisible" [articleParts]="articleParts"></appc-blog-article-parts>
+    </div>
+
+    <div class="app-modal-footer">
+        <button type="button" class="btn" (click)="hideModal()">
+            {{'cancel' | translate}}</button>
+    </div>
+</appc-modal>
+
+<appc-modal #confirmBlg>
+    <div class="app-modal-header">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3 *ngIf="modalMessages && modalMessages.length > 0">{{ modalMessages[0] }}</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-modal-body">
+        <span *ngIf="modalMessages && modalMessages.length > 0">{{ modalMessages[1] }}</span>
+    </div>
+
+    <div class="app-modal-footer">
+        <button type="button" class="btn btn-warning" (click)="runAction()">
+            {{'yes_' | translate }}
+        </button>
+        <button type="button" class="btn" (click)="confirmBlg.hide()">
+            {{'no_' | translate }}
+        </button>
+    </div>
+</appc-modal>

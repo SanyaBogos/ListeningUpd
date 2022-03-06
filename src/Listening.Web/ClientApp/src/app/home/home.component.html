@@ -1,0 +1,26 @@
+<h1 class="text-center">{{'welcome' | translate}}!</h1>
+<span>
+    {{'greeting_word' | translate}}
+</span>
+<h5 style="margin-top: 20px" class="text-center">{{'hoping' | translate}}!</h5>
+
+<div class="d-flex justify-content-center">
+    <button *ngIf="isLoggedIn" class="btn" (click)="goToText()">
+        {{ 'go_to_texts_list' | translate }}
+    </button>
+    <div *ngIf="!isLoggedIn">
+        <a routerLink="register">
+            {{'app_nav_register' | translate}}
+        </a>
+        <label>{{'or_trnsl' | translate}}</label>
+        <a routerLink="login">
+            {{'app_nav_login' | translate}}
+        </a>
+    </div>
+</div>
+
+<br />
+
+<h4 class="text-center">{{ 'video_tutorial' | translate}}</h4>
+
+<appc-how-to-use-enh [videoDescriptions]="videoDescriptions"></appc-how-to-use-enh>

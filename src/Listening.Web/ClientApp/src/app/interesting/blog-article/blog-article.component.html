@@ -1,0 +1,49 @@
+<div *ngIf="post">
+    <div class="back-container">
+        <!-- <div class="offset-10 col-2"> -->
+        <button class="btn" (click)="goToBlog()">
+            <i class="fa fa-arrow-left"></i>
+            {{ 'to_blog' | translate }}
+        </button>
+        <!-- </div> -->
+    </div>
+
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1>
+                {{post.header}}
+            </h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <label class="offset-3 col-2 small">{{ 'app_created' | translate }}</label>
+        <label class="col-2 small text-muted">
+            <!-- {{post.createdDate | date: 'dd-MMM-yyyy HH:mm' }} -->
+            {{post.createdDate | date: 'dd-MMM-yyyy' }}
+        </label>
+
+        <label class="col-2 small" *ngIf="post.lastModifiedDate">{{ 'app_updated' | translate }}</label>
+        <label class="col-2 small" *ngIf="post.lastModifiedDate">
+            <!-- {{post.lastModifiedDate | date: 'dd-MMM-yyyy HH:mm' }} -->
+            {{post.lastModifiedDate | date: 'dd-MMM-yyyy' }}
+        </label>
+    </div>
+
+    <div class="row">
+        <textarea class="col-6 form-control" disabled>{{post.description}}</textarea>
+
+        <div class="col-6">
+            <label class="mr-1 border border-primary rounded" *ngFor="let topic of post.topics">
+                &nbsp;{{ topic }}&nbsp;
+            </label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <appc-blog-article-parts [articleParts]="articleParts"></appc-blog-article-parts>            
+        </div>
+    </div>
+
+</div>

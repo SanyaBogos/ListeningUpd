@@ -1,0 +1,5 @@
+<input class="form-control" [(ngModel)]="email" (change)="changed()" placeholder="{{ 'app_email' | translate }}" />
+
+<span class="text-danger field-validation-valid" [hidden]="!emailError">
+  {{ emailError }}
+</span>

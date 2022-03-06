@@ -1,0 +1,116 @@
+2019-08-08T06:26:52.829-0400 I CONTROL  [initandlisten] MongoDB starting : pid=2696 port=27033 dbpath=../../../data_listening/ 64-bit host=debian
+2019-08-08T06:26:52.829-0400 I CONTROL  [initandlisten] db version v3.6.13
+2019-08-08T06:26:52.829-0400 I CONTROL  [initandlisten] git version: db3c76679b7a3d9b443a0e1b3e45ed02b88c539f
+2019-08-08T06:26:52.829-0400 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1c  28 May 2019
+2019-08-08T06:26:52.829-0400 I CONTROL  [initandlisten] allocator: tcmalloc
+2019-08-08T06:26:52.829-0400 I CONTROL  [initandlisten] modules: none
+2019-08-08T06:26:52.829-0400 I CONTROL  [initandlisten] build environment:
+2019-08-08T06:26:52.829-0400 I CONTROL  [initandlisten]     distmod: debian92
+2019-08-08T06:26:52.829-0400 I CONTROL  [initandlisten]     distarch: x86_64
+2019-08-08T06:26:52.829-0400 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-08-08T06:26:52.829-0400 I CONTROL  [initandlisten] options: { net: { port: 27033 }, storage: { dbPath: "../../../data_listening/" } }
+2019-08-08T06:26:52.830-0400 W -        [initandlisten] Detected unclean shutdown - ../../../data_listening/mongod.lock is not empty.
+2019-08-08T06:26:52.831-0400 I -        [initandlisten] Detected data files in ../../../data_listening/ created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2019-08-08T06:26:52.831-0400 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2019-08-08T06:26:52.831-0400 I STORAGE  [initandlisten] 
+2019-08-08T06:26:52.831-0400 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2019-08-08T06:26:52.831-0400 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2019-08-08T06:26:52.831-0400 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=485M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2019-08-08T06:26:53.964-0400 I STORAGE  [initandlisten] WiredTiger message [1565260013:964041][2696:0x7f11141cc400], txn-recover: Main recovery loop: starting at 2/19072
+2019-08-08T06:26:53.968-0400 I STORAGE  [initandlisten] WiredTiger message [1565260013:968652][2696:0x7f11141cc400], txn-recover: Recovering log 2 through 3
+2019-08-08T06:26:54.130-0400 I STORAGE  [initandlisten] WiredTiger message [1565260014:130481][2696:0x7f11141cc400], txn-recover: Recovering log 3 through 3
+2019-08-08T06:26:54.189-0400 I STORAGE  [initandlisten] WiredTiger message [1565260014:189581][2696:0x7f11141cc400], txn-recover: Set global recovery timestamp: 0
+2019-08-08T06:26:54.289-0400 I CONTROL  [initandlisten] 
+2019-08-08T06:26:54.289-0400 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-08-08T06:26:54.289-0400 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-08-08T06:26:54.289-0400 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2019-08-08T06:26:54.289-0400 I CONTROL  [initandlisten] 
+2019-08-08T06:26:54.289-0400 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2019-08-08T06:26:54.289-0400 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2019-08-08T06:26:54.289-0400 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2019-08-08T06:26:54.289-0400 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2019-08-08T06:26:54.289-0400 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2019-08-08T06:26:54.289-0400 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2019-08-08T06:26:54.289-0400 I CONTROL  [initandlisten] 
+2019-08-08T06:26:54.289-0400 I CONTROL  [initandlisten] 
+2019-08-08T06:26:54.289-0400 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2019-08-08T06:26:54.289-0400 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2019-08-08T06:26:54.289-0400 I CONTROL  [initandlisten] 
+2019-08-08T06:26:54.329-0400 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '../../../data_listening/diagnostic.data'
+2019-08-08T06:26:54.330-0400 I NETWORK  [initandlisten] waiting for connections on port 27033
+2019-08-08T06:26:55.054-0400 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+kill: (2742): No such process
+MongoDB shell version v3.6.13
+connecting to: mongodb://127.0.0.1:27033/?gssapiServiceName=mongodb
+2019-08-08T06:29:26.743-0400 I NETWORK  [listener] connection accepted from 127.0.0.1:52520 #1 (1 connection now open)
+2019-08-08T06:29:26.744-0400 I NETWORK  [conn1] received client metadata from 127.0.0.1:52520 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.13" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.19.0-5-amd64" } }
+Implicit session: session { "id" : UUID("f2675160-b2b6-4102-8f01-612c6c57d71e") }
+MongoDB server version: 3.6.13
+2019-08-08T06:29:26.748-0400 I COMMAND  [conn1] terminating, shutdown command received
+2019-08-08T06:29:26.749-0400 I NETWORK  [conn1] shutdown: going to close listening sockets...
+2019-08-08T06:29:26.749-0400 I NETWORK  [conn1] removing socket file: /tmp/mongodb-27033.sock
+2019-08-08T06:29:26.749-0400 I FTDC     [conn1] Shutting down full-time diagnostic data capture
+2019-08-08T06:29:26.751-0400 I STORAGE  [conn1] WiredTigerKVEngine shutting down
+2019-08-08T06:29:26.879-0400 I STORAGE  [conn1] shutdown: removing fs lock...
+2019-08-08T06:29:26.879-0400 I CONTROL  [conn1] now exiting
+2019-08-08T06:29:26.879-0400 I CONTROL  [conn1] shutting down with code:0
+server should be down...
+2019-08-08T06:29:26.908-0400 I NETWORK  [thread1] trying reconnect to 127.0.0.1:27033 (127.0.0.1) failed
+2019-08-08T06:29:26.908-0400 W NETWORK  [thread1] Failed to connect to 127.0.0.1:27033, in(checking socket for error after poll), reason: Connection refused
+2019-08-08T06:29:26.908-0400 I NETWORK  [thread1] reconnect 127.0.0.1:27033 (127.0.0.1) failed failed 
+2019-08-08T06:29:26.909-0400 I QUERY    [thread1] Failed to end session { id: UUID("f2675160-b2b6-4102-8f01-612c6c57d71e") } due to SocketException: socket exception [CONNECT_ERROR] for couldn't connect to server 127.0.0.1:27033, connection attempt failed
+No executable found matching command "dotnet-Listening.Web.dll"
+kill: (2855): No such process
+2019-08-08T06:34:43.877-0400 I CONTROL  [initandlisten] MongoDB starting : pid=2860 port=27033 dbpath=../../../data_listening/ 64-bit host=debian
+2019-08-08T06:34:43.882-0400 I CONTROL  [initandlisten] db version v3.6.13
+2019-08-08T06:34:43.882-0400 I CONTROL  [initandlisten] git version: db3c76679b7a3d9b443a0e1b3e45ed02b88c539f
+2019-08-08T06:34:43.882-0400 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1c  28 May 2019
+2019-08-08T06:34:43.882-0400 I CONTROL  [initandlisten] allocator: tcmalloc
+2019-08-08T06:34:43.882-0400 I CONTROL  [initandlisten] modules: none
+2019-08-08T06:34:43.882-0400 I CONTROL  [initandlisten] build environment:
+2019-08-08T06:34:43.882-0400 I CONTROL  [initandlisten]     distmod: debian92
+2019-08-08T06:34:43.882-0400 I CONTROL  [initandlisten]     distarch: x86_64
+2019-08-08T06:34:43.882-0400 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-08-08T06:34:43.882-0400 I CONTROL  [initandlisten] options: { net: { port: 27033 }, storage: { dbPath: "../../../data_listening/" } }
+2019-08-08T06:34:43.883-0400 I -        [initandlisten] Detected data files in ../../../data_listening/ created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2019-08-08T06:34:43.883-0400 I STORAGE  [initandlisten] 
+2019-08-08T06:34:43.883-0400 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2019-08-08T06:34:43.883-0400 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2019-08-08T06:34:43.883-0400 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=485M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2019-08-08T06:34:44.787-0400 I STORAGE  [initandlisten] WiredTiger message [1565260484:787763][2860:0x7f42a1590400], txn-recover: Main recovery loop: starting at 3/6400
+2019-08-08T06:34:44.919-0400 I STORAGE  [initandlisten] WiredTiger message [1565260484:919920][2860:0x7f42a1590400], txn-recover: Recovering log 3 through 4
+2019-08-08T06:34:44.990-0400 I STORAGE  [initandlisten] WiredTiger message [1565260484:990174][2860:0x7f42a1590400], txn-recover: Recovering log 4 through 4
+2019-08-08T06:34:45.044-0400 I STORAGE  [initandlisten] WiredTiger message [1565260485:44309][2860:0x7f42a1590400], txn-recover: Set global recovery timestamp: 0
+2019-08-08T06:34:45.122-0400 I CONTROL  [initandlisten] 
+2019-08-08T06:34:45.122-0400 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-08-08T06:34:45.122-0400 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-08-08T06:34:45.122-0400 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2019-08-08T06:34:45.122-0400 I CONTROL  [initandlisten] 
+2019-08-08T06:34:45.122-0400 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2019-08-08T06:34:45.122-0400 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2019-08-08T06:34:45.122-0400 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2019-08-08T06:34:45.122-0400 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2019-08-08T06:34:45.122-0400 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2019-08-08T06:34:45.122-0400 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2019-08-08T06:34:45.122-0400 I CONTROL  [initandlisten] 
+2019-08-08T06:34:45.122-0400 I CONTROL  [initandlisten] 
+2019-08-08T06:34:45.122-0400 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2019-08-08T06:34:45.122-0400 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2019-08-08T06:34:45.123-0400 I CONTROL  [initandlisten] 
+2019-08-08T06:34:45.127-0400 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '../../../data_listening/diagnostic.data'
+2019-08-08T06:34:45.127-0400 I NETWORK  [initandlisten] waiting for connections on port 27033
+2019-08-08T06:35:08.871-0400 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt), will terminate after current cmd ends
+2019-08-08T06:35:08.872-0400 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2019-08-08T06:35:08.875-0400 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27033.sock
+2019-08-08T06:35:08.881-0400 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2019-08-08T06:35:08.909-0400 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2019-08-08T06:35:08.983-0400 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2019-08-08T06:35:08.983-0400 I CONTROL  [signalProcessingThread] now exiting
+2019-08-08T06:35:08.983-0400 I CONTROL  [signalProcessingThread] shutting down with code:0
+MongoDB shell version v3.6.13
+connecting to: mongodb://127.0.0.1:27033/?gssapiServiceName=mongodb
+2019-08-08T06:35:13.611-0400 W NETWORK  [thread1] Failed to connect to 127.0.0.1:27033, in(checking socket for error after poll), reason: Connection refused
+2019-08-08T06:35:13.611-0400 E QUERY    [thread1] Error: couldn't connect to server 127.0.0.1:27033, connection attempt failed :
+connect@src/mongo/shell/mongo.js:263:13
+@(connect):1:6
+exception: connect failed

@@ -1,0 +1,21 @@
+<div *ngIf="users != null && users.length > 0">
+  <div class="card">
+    <div class="card-header bg-light" (click)="isVisible = !isVisible">
+      <div *ngIf="isActive; else elseBlock">
+        <img src="/icons/24px-green_sphere.png" alt="">
+        <label class="ml-1 mt-1">{{ 'active_chat_users' | translate }}</label>
+      </div>
+      <ng-template #elseBlock>
+        <img src="/icons/24px-gray_sphere.png" alt="">
+        <label class="ml-1 mt-1">{{ 'inactive_chat_users' | translate }}</label>
+      </ng-template>
+    </div>
+    <div class="card-block scroll-content" [hidden]="!isVisible">
+      <div *ngFor="let user of users">
+        <button class="btn full-width" (click)="userSelected(user)">
+          {{ getFullName(user) }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="text-center" >
+    <div *ngFor="let row of rows">
+        <span *ngFor="let col of cols">
+            <button class="btn btn-lw-def btn-def-size {{getClass(row, col)}}" 
+                (mouseenter)="mouseEnter(row, col)" (click)="saveWordPosition(row, col)">
+                {{getLetter(row,col)}}
+            </button>
+        </span>    
+        <br>
+    </div>
+</div>

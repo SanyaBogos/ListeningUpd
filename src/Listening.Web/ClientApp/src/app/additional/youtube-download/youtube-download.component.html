@@ -1,0 +1,29 @@
+<div class="row mt-3">
+    <div class="col-4 col-form-label">
+        <label class="text-danger">*&nbsp;</label>
+        <label> {{'entr_ytb_url' | translate }}:</label>
+    </div>
+    <div class="col-4">
+        <input class="form-control" [(ngModel)]="url" />        
+    </div>
+
+    <div class="col-2">
+        <button class="btn mr-2" (click)="getInfo()"
+            [disabled]="!url">{{'get_info' | translate }}</button>
+    </div>
+
+    <div *ngIf="info" class="col-2">
+        <button class="btn mr-2" (click)="download()">
+            {{'dwnlad' | translate }}
+        </button>
+    </div>
+</div>
+
+<div *ngIf="info" class="row">
+    <label class="col-3"> {{'bitrate' | translate }}: {{info.bitrate}}</label>
+    <label class="col-3"> {{'framerate' | translate }}: {{info.framerate}}</label>
+    <label class="col-3"> {{'resolution' | translate }}: {{info.resolution}}</label>
+    <label class="col-3"> {{'videoEncoding' | translate }}: {{info.videoEncoding}}</label>
+    <label class="col-3"> {{'videoQuality' | translate }}: {{info.videoQuality}}</label>
+    <label class="col-3"> {{'videoQualityLabel' | translate }}: {{info.videoQualityLabel}}</label>
+</div>

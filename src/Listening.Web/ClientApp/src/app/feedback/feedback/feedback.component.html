@@ -1,0 +1,52 @@
+<div class="mb-3">
+  <div *ngIf="feedbacks.count > 0; else elseBlock">
+    <div
+      *ngFor="let feedback of feedbacks.data | paginate: { itemsPerPage: itemPerPage, currentPage: p, totalItems: feedbacks.count }"
+      class="border border-primary rounded">
+      <div class="form-group row ml-1">
+        <!-- <label class="col-2 col-form-label"><u><i>{{'usr_name' | translate }}:</i></u></label> -->
+        <label class="col-10 col-form-label"><i>{{feedback.email}}: </i> <b>{{feedback.topic}}</b></label>
+        <!-- <label class="col-2 col-form-label"><u><i>{{'feedback_topic' | translate }}:</i></u></label> -->
+        <!-- <label class="col-8 col-form-label"><b>{{feedback.topic}}</b></label> -->
+        <label class="col-2 col-form-label"><i>{{feedback.createdTime | date:'short' }}</i></label>
+      </div>
+      <div class="form-group row ml-1">
+        <label class="col-12 col-form-label"><b>{{feedback.details}}</b></label>
+      </div>
+    </div>
+
+    <pagination-controls class="text-center" (pageChange)="pageChanged($event)"></pagination-controls>
+  </div>
+  <ng-template #elseBlock>{{'feedback_entry_word' | translate }}</ng-template>
+
+  <hr />
+</div>
+
+<div class="form-horizontal">
+  <div class="form-group row">
+    <label class="col-2 col-form-label">{{'feedback_topic' | translate }}:</label>
+    <div class="col-4">
+      <input class="form-control" [(ngModel)]="currentFeedback.topic" />
+    </div>
+
+    <div class="col-6 col-form-label">
+      <label>
+        <input type="checkbox" [(ngModel)]="currentFeedback.isVisible" />
+        {{'is_visible' | translate }}
+      </label>
+    </div>
+    <!-- <label class="col-5 col-form-label">{{'is_visible' | translate }}</label> -->
+  </div>
+
+  <div class="form-group row">
+    <div class="col-12">
+      <textarea class="form-control" rows="10" [(ngModel)]="currentFeedback.details"></textarea>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="offset-3 col-6 text-center">
+      <button class="btn" (click)="saveFeedback()">{{'send_feedback' | translate }}</button>
+    </div>
+  </div>
+</div>

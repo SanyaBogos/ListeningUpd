@@ -1,0 +1,58 @@
+<h2 class="text-center">{{'app_texts_list_header_for_admin' | translate}}</h2>
+
+<div class="text-center mb-1">
+    <div ngbDropdown class="d-inline-block">
+        <button class="btn" id="dropdownBasic1" ngbDropdownToggle>
+            <i class="fa fa-floppy-o"></i>
+            {{'backup' | translate}}
+        </button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button class="dropdown-item" (click)="createBackup()">{{'save_backup' | translate}}</button>
+            <button class="dropdown-item" (click)="createSqlBackup()">{{'save_sql_backup' | translate}}</button>
+            <button class="dropdown-item" (click)="restoreBackup()">{{'restore_backup' | translate}}</button>
+            <button class="dropdown-item" (click)="restoreSqlBackup()">{{'restore_sql_backup' | translate}}</button>
+            <input #restoreInput (change)="restoreFileSelected($event)" accept="application/zip" type="file"
+                [hidden]="true" />
+            <input #restoreSqlInput (change)="restoreFileSelected($event, true)" accept="application/sql" type="file"
+                [hidden]="true" />
+        </div>
+    </div>
+    <button class="btn ml-1" (click)="createNewText()">
+        {{'new_text_name' | translate}}
+    </button>
+</div>
+
+<appc-filter-sort-base [isAdmin]="true"></appc-filter-sort-base>
+
+<div *ngIf="textDescriptions$ | async; let texts">
+
+    <div class="text-center text-danger" *ngIf="texts.count == 0; else thenBlock">{{ 'no_data' | translate }}</div>
+
+    <ng-template #thenBlock>
+        <div
+            *ngFor="let text of texts.data | paginate: { itemsPerPage: itemPerPage, currentPage: p, totalItems: texts.count }">
+            <button class="btn full-width" (click)="editText(text)">
+                <i class="fa {{ text.audioName ? 'fa-music' : 'fa-video-camera' }} {{ text.complexity ? 'clr-'+text.complexity : '' }}" aria-hidden="true"></i>
+                &nbsp;
+                {{text.title}}
+                <span class="country-flag flag flag-{{text.country.toLowerCase()}} float-right"></span>
+                <span *ngIf="text.assignee" class="text-muted float-right">
+                    <small><i>{{text.assignee}}</i></small>&nbsp;
+                </span>
+                <span *ngIf="text.lastModifiedDate && text.lastModifiedDate.getFullYear() > 2012"
+                    class="text-muted float-right">
+                    <small><i>[{{ text.lastModifiedDate | date: 'dd-MMM-yyyy HH:mm' }}]|</i></small>&nbsp;
+                </span>
+                <span class="text-muted float-right" *ngIf="text.createdDate && text.createdDate.getFullYear() > 2012">
+                    <small><i>({{ text.createdDate | date: 'dd-MMM-yyyy HH:mm' }})|</i></small>&nbsp;
+                </span>
+            </button>
+        </div>
+
+        <pagination-controls class="text-center" (pageChange)="pageChanged($event)"></pagination-controls>
+    </ng-template>
+
+</div>
+
+
+<!-- <appc-texts-list-base #txtListBase [choseTextCallback]="editText"></appc-texts-list-base> -->

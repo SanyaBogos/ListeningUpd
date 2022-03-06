@@ -1,0 +1,92 @@
+.btn-secondary-white {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(60%, #e9ecef), to(#dde2e6));
+  background-image: linear-gradient(white, #e9ecef 60%, #dde2e6);
+  background-repeat: no-repeat;
+  color: #495057;
+}
+
+table tbody tr td span.country-flag-in-grid {
+  margin-top: -18px;
+  margin-bottom: -18px;
+}
+
+table tbody tr td i.red-gradient {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f85032+0,f16f5c+50,f6290c+51,f02f17+71,e73827+100;Red+Gloss+%231 */
+  color: rgb(248, 80, 50);
+  /* Old browsers */
+  color: -moz-linear-gradient(top, rgba(248, 80, 50, 1) 0%, rgba(241, 111, 92, 1) 50%, rgba(246, 41, 12, 1) 51%, rgba(240, 47, 23, 1) 71%, rgba(231, 56, 39, 1) 100%);
+  /* FF3.6-15 */
+  color: -webkit-linear-gradient(top, rgba(248, 80, 50, 1) 0%, rgba(241, 111, 92, 1) 50%, rgba(246, 41, 12, 1) 51%, rgba(240, 47, 23, 1) 71%, rgba(231, 56, 39, 1) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  color: linear-gradient(to bottom, rgba(248, 80, 50, 1) 0%, rgba(241, 111, 92, 1) 50%, rgba(246, 41, 12, 1) 51%, rgba(240, 47, 23, 1) 71%, rgba(231, 56, 39, 1) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f85032', endColorstr='#e73827', GradientType=0);
+  /* IE6-9 */
+}
+
+table tbody tr td i.green-gradient {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9dd53a+0,a1d54f+50,80c217+51,7cbc0a+100;Green+Gloss+%231 */
+  color: rgb(157, 213, 58);
+  /* Old browsers */
+  color: -moz-linear-gradient(top, rgba(157, 213, 58, 1) 0%, rgba(161, 213, 79, 1) 50%, rgba(128, 194, 23, 1) 51%, rgba(124, 188, 10, 1) 100%);
+  /* FF3.6-15 */
+  color: -webkit-linear-gradient(top, rgba(157, 213, 58, 1) 0%, rgba(161, 213, 79, 1) 50%, rgba(128, 194, 23, 1) 51%, rgba(124, 188, 10, 1) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  color: linear-gradient(to bottom, rgba(157, 213, 58, 1) 0%, rgba(161, 213, 79, 1) 50%, rgba(128, 194, 23, 1) 51%, rgba(124, 188, 10, 1) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9dd53a', endColorstr='#7cbc0a', GradientType=0);
+  /* IE6-9 */
+}
+
+table tbody tr td label.tooltips {
+  position: relative;
+  display: inline;
+}
+
+table tbody tr td label.tooltips span {
+  position: absolute;
+  width: 370px;
+  color: #FFFFFF;
+  background: #000000;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 6px;
+}
+
+table tbody tr td label.tooltips span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid #000000;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+
+table tbody tr td label:hover.tooltips span {
+  visibility: visible;
+  opacity: 0.8;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -120px;
+  z-index: 999;
+}
+
+.zero-padding-lang .ui-menubar ul li a {
+  padding: 0 !important;
+}
+
+div:not(.word) > button:not(.btn-danger):not(.btn-primary):not(.btn-primary):not(.btn-secondary):not(.btn-success):not(.btn-warning):not(.btn-info),
+label > button:not(.btn-danger):not(.btn-primary):not(.btn-primary):not(.btn-secondary):not(.btn-success):not(.btn-warning):not(.btn-info),
+span > button:not(.btn-danger):not(.btn-primary):not(.btn-primary):not(.btn-secondary):not(.btn-success):not(.btn-warning):not(.btn-info) {
+  border-color: rgba(0,0,0,0.125) !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(60%, #e9ecef), to(#dde2e6));
+  background-image: linear-gradient(white, #e9ecef 60%, #dde2e6);
+  background-repeat: no-repeat;
+  color: #495057;
+}

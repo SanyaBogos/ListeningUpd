@@ -1,0 +1,29 @@
+<div class="row" class="col-12">
+    <div *ngFor="let description of videoDescriptions; let i = index">
+        <div class="col-12" *ngIf="description.isAllowed">
+            <div class="card">
+                <div class="card-header bg-blue" (click)="changeVideoVisibility(description)">
+                    <div class="row">
+                        <label class="ml-2">
+                            {{description.name | translate}}
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-block" *ngIf="description.isVisible">
+                <div class="row">
+                    <label>{{description.description | translate}}</label>
+                </div>
+                <vg-player (onPlayerReady)="onPlayerReady($event)">
+                    <video #mySpecTreeMedia [vgMedia]="mySpecTreeMedia" id="myTreeVid-{{i}}" style="width: 100%" preload="auto" controls>
+                        <source src="{{description.src}}.{{description.type}}" type="video/{{description.type}}">
+                        <track src="{{description.src}}-en.vtt" kind="subtitles" srclang="en" label="English" default />
+                        <track src="{{description.src}}-ru.vtt" kind="subtitles" srclang="ru" label="Русский" />
+                        <track src="{{description.src}}-ua.vtt" kind="subtitles" srclang="ua" label="Українська" />
+                    </video>
+                </vg-player>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+﻿<div>
+
+    <h1>{{'registr_confirm' | translate }}</h1>
+
+    <p *ngIf="!emailConfirmed">
+        We have sent you a confirmation email, please visit your inbox and confirm by clicking the confirmation link.
+    </p>
+
+    <p *ngIf="emailConfirmed">
+        {{'thnk_for_registry' | translate }} <a routerLink="../../login">{{'app_nav_login' | translate }}</a>.
+    </p>
+</div>

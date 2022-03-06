@@ -1,0 +1,70 @@
+<div class="row">
+  <!-- <div *ngFor="let backupType of dictionaryActions.keys" class="col-3">
+    <button class="btn" (click)="getBackup(backupType)">
+      {{'bckp_spec' | translate }}
+      {{backupType}}
+    </button>
+  </div> -->
+
+  <div class="col-3">
+    <button class="btn" (click)="getBackupSpecFiles()">
+      {{'bckp_spec' | translate }}
+    </button>
+  </div>
+
+  <div class="col-3">
+    <button class="btn" (click)="getBackupBlogFiles()">
+      {{'bckp_blg' | translate }}
+    </button>
+  </div>
+
+  <div class="col-3">
+    <button class="btn" (click)="getBackupSQLFiles()">
+      {{'bckp_sql' | translate }}
+    </button>
+  </div>
+
+  <div class="col-3">
+    <button class="btn" (click)="getBackupFullFiles()">
+      {{'bckp_full' | translate }}
+    </button>
+  </div>
+</div>
+
+<hr />
+
+<div class="row">
+  <div class="col-3">
+    <button class="btn" (click)="restoreBlog()">
+      {{'rstr_blog' | translate }}
+    </button>
+    
+    <input #rstrBlgInpt (change)="restoreFileSelected($event, 1)" accept="application/zip" type="file" [hidden]="true" />
+  </div>
+
+  <div class="col-3">
+    <button class="btn" (click)="restoreSpec()">
+      {{'rstr_spec' | translate }}
+    </button>
+
+    <input #rstrSpcInpt (change)="restoreFileSelected($event, 2)" accept="application/zip" type="file" [hidden]="true" />
+  </div>
+
+  <div class="col-3">
+    <button class="btn" (click)="restoreSQL()">
+      {{'rstr_sql' | translate }}
+    </button>
+
+    <input #rstrSQLInpt (change)="restoreFileSelected($event, 3)" accept="application/zip" type="file" [hidden]="true" />
+  </div>
+
+
+</div>
+
+<!-- <div class="row">
+  <div class="col-3">
+    <button class="btn" (click)="resave()">
+      {{'resave' | translate }}
+    </button>
+  </div>
+</div> -->

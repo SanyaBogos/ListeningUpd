@@ -1,0 +1,50 @@
+WEBVTT
+
+00:00.000 --> 00:03.000
+If you are on a Home page please
+click 'Go to texts list' button
+
+00:03.000 --> 00:07.000
+Click 'Search & Filter' and expand more properties
+for searching
+
+00:07.000 --> 00:10.000
+Click to 'Title' edit box and type name, which you
+want to find (in my case it's 'geo') and click 'Search'
+
+00:10.000 --> 00:12.500
+Take a look at found results
+
+00:12.500 --> 00:17.000
+Click on order button near edit box (two triangles)
+and select order by descending for example and click 'Search'
+
+00:17.000 --> 00:21.000
+Results are ordered. Green circle near 'Search & filter' is green,
+which means that filter applied. Yellow light means, that after filter you 
+did another changes, which is not applied.
+
+00:21.000 --> 00:25.000
+Set order by ascending and click 'Search' button
+
+00:25.000 --> 00:31.000
+Light is green, but after change name it becomes yellow
+(now title is 'geo bomb'). Click 'Search' button.
+
+00:31.000 --> 00:37.000
+You'll see only one result, which corresponds that title.
+Select concrete country (the US) and click 'Search'
+
+00:37.000 --> 00:41.000
+You still are able to see previous result, because it's American text
+Select another country and click 'Search'
+
+00:41.000 --> 00:44.000
+There is no text, which corresponds. 
+
+00:44.000 --> 00:49.000
+If we get beck to the US, will see previous result (one text)
+
+00:49.000 --> 00:55.000
+To remove all filters click button 'Clear'. 
+You'll see all texts as a result.

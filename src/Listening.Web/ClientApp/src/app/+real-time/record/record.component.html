@@ -1,0 +1,47 @@
+<appc-how-to-use-enh [videoDescriptions]="videoDescriptions"></appc-how-to-use-enh>
+
+<h3>{{ 'record_stream' | translate }}</h3>
+<h5>{{ 'record_detailed' | translate }}</h5>
+
+<div class="row">
+    <div class="col-2">
+        <select class="form-control" (change)="modeSelected($event.target.value)">
+            <option *ngFor="let mode of modes" [value]="mode">
+                {{ mode | translate }}
+            </option>
+        </select>
+    </div>
+
+    <div class="col-2">
+        <select class="form-control" (change)="resolutionSelected($event.target.value)">
+            <option *ngFor="let resolution of defaultResolutions">
+                {{resolution.width}} x {{resolution.height}}
+            </option>
+        </select>
+    </div>
+    <div class="col-4">
+        <label>{{ 'max_video_length' | translate }}</label>
+    </div>
+    <div class="col-2">
+        <input class="form-control" type="text" [(ngModel)]="maxVideoLength" />
+    </div>
+    <div class="col-2">
+        <button class="btn" (click)="apply()">{{ 'app_apply' | translate }}</button>
+    </div>
+</div>
+
+<div class="mt-1">
+
+    <ng-template [ngIf]="currentModeApplied === 'screen'">
+        <appc-recorder-screen [settings]="settings"></appc-recorder-screen>
+    </ng-template>
+
+    <ng-template [ngIf]="currentModeApplied === 'video'">
+        <appc-recorder-media [settings]="settings"></appc-recorder-media>
+    </ng-template>
+
+    <ng-template [ngIf]="currentModeApplied === 'audio'">
+        <appc-recorder-media [settings]="settings"></appc-recorder-media>
+    </ng-template>
+
+</div>

@@ -1,0 +1,1 @@
+"C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe" --dbpath "C:\VarteqWork\TestingStuff\another\MongoDBData" --port 27033

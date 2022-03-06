@@ -1,0 +1,11 @@
+<audio [hidden]="!audio" #audioplayer controls>
+  <source *ngIf="audio" [src]="audio" type="audio/mp3">
+</audio>
+<div *ngIf="video">
+  <vg-player class="cut-height" (onPlayerReady)="onPlayerReady($event)">
+    <video height="200" width="266" [vgMedia]="guessingMedia" #guessingMedia 
+        id="guessingVideo" preload="auto" controls>
+      <source [src]="video" type="video/webm">
+    </video>
+  </vg-player>
+</div>

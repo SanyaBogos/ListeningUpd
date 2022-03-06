@@ -1,0 +1,114 @@
+<div class="card">
+  <div class="card-header bg-blue" (click)="changeAddUserVisibility()">
+    <label class="cursor-pointer mb-0">{{'add_user' | translate }}</label>
+  </div>
+
+  <div class="card-block" [hidden]="!isAddUserVisible">
+
+    <div *ngIf="userWithRoles">
+      <div class="row m-1" >
+
+        <div class="col-3">
+          <input class="form-control" type="text" [(ngModel)]="newUser.firstName" placeholder="First Name" />
+        </div>
+  
+        <div class="col-3">
+          <input class="form-control" type="text" [(ngModel)]="newUser.lastName" placeholder="Last Name" />
+        </div>
+  
+        <div class="col-3">
+          <input class="form-control" type="text" [(ngModel)]="newUser.userName" placeholder="User Name" />
+        </div>
+  
+        <div class="col-3">
+          <input class="form-control" type="text" [(ngModel)]="newUser.email" placeholder="Email" />
+        </div>
+      </div>
+  
+      <div class="row m-1">
+        <div class="col-3">
+          <input class="mr-2" type="checkbox" [(ngModel)]="newUser.emailConfirmed" />
+          <label>Email confirmed</label>
+        </div>
+  
+        <div class="col-3">
+          <input class="mr-2" type="checkbox" [(ngModel)]="newUser.isEnabled" />
+          <label>User enabled</label>
+        </div>
+  
+        <div class="col-3">
+          <appc-password [(password)]="newUser.passwd" (passwordChanged)="newUser.passwd = $event">
+          </appc-password>
+        </div>
+  
+        <div class="col-3">
+          <select class="form-control" [(ngModel)]="newUser.role">
+            <option *ngFor="let role of roles" value="{{role}}">
+              {{role}}
+            </option>
+          </select>
+
+          <!-- <ngx-select [allowClear]="true" [items]="userWithRoles.roles" optionValueField="id" optionTextField="name"
+            [(ngModel)]="selectedRole" placeholder="{{'no_role_slctd' | translate }}">
+
+            <ng-template ngx-select-option ngx-select-option-selected let-option let-text="text">
+              <span>{{option.data.name}}</span>
+            </ng-template>
+          </ngx-select> -->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 text-center">
+          <button class="btn" (click)="create()">
+            {{'create' | translate }}
+          </button>
+
+          <button [hidden]="isNewUser" class="btn" (click)="update()">
+            {{'update' | translate }}
+          </button>
+
+          <button class="btn" (click)="clear()">
+            {{'clear' | translate }}
+          </button>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<hr />
+
+<div class="row">
+  <div class="col-md-4">
+    <input *ngIf="config.filtering" 
+      placeholder="Filter all columns" 
+      [ngTableFiltering]="config.filtering"
+      class="form-control" 
+      (tableChanged)="onChangeTable(config)" />
+  </div>
+</div>
+
+<br>
+
+<ng-table [config]="config" 
+      (tableChanged)="onChangeTable(config)" 
+      (cellClicked)="onCellClick($event)" 
+      [rows]="rows"
+    [columns]="columns">
+</ng-table>
+
+<pagination *ngIf="config.paging" class="pagination-sm" 
+        [(ngModel)]="page" 
+        [totalItems]="length"
+        [itemsPerPage]="itemsPerPage" 
+        [maxSize]="maxSize" 
+        [boundaryLinks]="true" 
+        [rotate]="false"
+
+        (pageChanged)="onChangeTable(config, $event)" 
+        (numPages)="numPages = $event">
+</pagination>
+
+<pre *ngIf="config.paging" class="card card-block card-header">Page: {{page}} / {{numPages}}</pre>

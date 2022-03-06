@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  listening.web:
+    image: ${DOCKER_REGISTRY}listening
+    build:
+      context: .
+      dockerfile: src/Listening.Web/Dockerfile

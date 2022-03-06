@@ -1,0 +1,122 @@
+<div class="card">
+  <div class="card-header bg-light" (click)="isVisible = !isVisible">
+    <ng-template [ngIf]="isFilteredOrSorted && isEqualToPrev">
+      <img src="/icons/24px-Green_sphere.png" alt="">
+    </ng-template>
+    <ng-template [ngIf]="isFilteredOrSorted && !isEqualToPrev">
+      <img src="/icons/24px-yellow_sphere.png" alt="">
+    </ng-template>
+    <ng-template [ngIf]="!isFilteredOrSorted">
+      <img src="/icons/24px-gray_sphere.png" alt="">
+    </ng-template>
+    <label class="label-margin"><strong>{{ 'search_and_filter' | translate }}</strong></label>
+  </div>
+
+  <div class="card-block" [hidden]="!isVisible">
+    <div class="form-group row block-magin">
+      <div class="col-3 input-group">
+        <input type="text" class="form-control" [(ngModel)]="textDescription.title"
+          (ngModelChange)="checkEqualityToPrev({ Title: $event })" placeholder="{{'title_placeholder' | translate}}">
+        <div class="input-group-append">
+          <button class="btn input-group-btn" (click)="changeSorting('Title')">
+            <appc-sorting-icon [initStateName]="'Title'" [queryViewModel]="queryViewModel"
+              [isFilteredOrSorted]="isFilteredOrSorted && isEqualToPrev">
+            </appc-sorting-icon>
+          </button>
+        </div>
+      </div>
+
+      <div class="col-3 input-group">
+        <input type="text" class="form-control" [(ngModel)]="textDescription.subTitle"
+          (ngModelChange)="checkEqualityToPrev({ SubTitle: $event })"
+          placeholder="{{'subtitle_placeholder' | translate}}">
+        <div class="input-group-append">
+          <button class="btn input-group-btn" (click)="changeSorting('Subtitle')">
+            <appc-sorting-icon [initStateName]="'Subtitle'" [queryViewModel]="queryViewModel"
+              [isFilteredOrSorted]="isFilteredOrSorted && isEqualToPrev">
+            </appc-sorting-icon>
+          </button>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <appc-country-selector [selectedValue]="textDescription.country"
+          (selectedValueChange)="checkCountry($event)">
+        </appc-country-selector>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="ml-4 mb-2">
+        <appc-complexity [complexity]="textDescription.complexity" (complexitySelected)="complexitySelected($event)">
+        </appc-complexity>
+      </div>
+    </div>
+
+    <div *ngIf="isAdmin">
+      <hr/>
+
+      <div class="row">
+        <div class="col-3 ml-4">
+          <label>
+            <input type="checkbox" (change)="checkEqualityToPrev()" [(ngModel)]="queryViewModel.includeAssignee"/>
+            {{'incld_assgn' | translate }}
+          </label>
+        </div>
+
+        <div class="col-4">
+          <label>
+            <input type="checkbox" (change)="checkEqualityToPrev()" [(ngModel)]="queryViewModel.includeCreateDate" />
+            {{'incld_crt' | translate }} (@)
+          </label>
+        </div>
+
+        <div class="col-4">
+          <label>
+            <input type="checkbox" (change)="checkEqualityToPrev()" [(ngModel)]="queryViewModel.includeUpdateDate"/>
+            {{'incld_upd' | translate }} [@]
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div *ngIf="queryViewModel.includeAssignee" class="col-6">
+          <div class="d-inline-block col-4">
+            <label> {{'assgn' | translate }}:</label>
+          </div>
+          <div class="d-inline-block col-8">
+            <ngx-select [allowClear]="true" [items]="admins" optionValueField="id" optionTextField="email"
+              (select)="assigneeSelected($event)" placeholder="{{'no_admin_selected' | translate }}">
+
+              <ng-template ngx-select-option ngx-select-option-selected let-option let-text="text">
+                <span>{{option.data.email}}</span>
+              </ng-template>
+            </ngx-select>
+          </div>
+        </div>
+
+        <appc-date-filter [hasCreated]="queryViewModel.includeCreateDate"
+          [hasUpdated]="queryViewModel.includeUpdateDate" (dateSelected)="dateSelected($event)" class="col-6">
+        </appc-date-filter>       
+      </div>
+
+    </div>
+
+    <hr/>
+
+    <div class="row">
+      <div class="offset-4 col-4 mb-2">
+        <button class="btn mr-3" (click)="search()"
+          [disabled]="isSearchDisabled()">
+          <i class="fa fa-search"></i> {{ 'search_btn_name' | translate }}
+        </button>
+
+        <button class="btn" [disabled]="isClearDisabled()" (click)="clear()">
+          <i class="fa fa-eraser"></i> {{ 'clear_btn_name' | translate }}
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>

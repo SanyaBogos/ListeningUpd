@@ -1,0 +1,20 @@
+<div *ngIf="captchaImage; else refreshLbl">
+    <img [src]="captchaImage" />
+    <p class="text-center">
+        <appc-countdown [time]="captchaTTL" (timeOver)="dropPicture()"></appc-countdown>
+    </p>
+</div>
+
+<ng-template #refreshLbl>
+    <p class="text-center">
+        <label class=" text-danger"> {{ 'do_refresh_captcha' | translate }} </label>
+    </p>
+</ng-template>
+
+<div class="text-center">
+    <button class="btn mb-2" (click)="refresh()">
+        {{ 'refresh_captcha' | translate }}
+    </button>
+</div>
+
+<input class="form-control" [(ngModel)]="captcha" (ngModelChange)="updateCaptcha($event)" placeholder="{{ 'app_captcha' | translate }}" />

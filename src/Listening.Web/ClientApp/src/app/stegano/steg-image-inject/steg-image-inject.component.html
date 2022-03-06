@@ -1,0 +1,80 @@
+<appc-how-to-use-enh [videoDescriptions]="videoDescriptions"></appc-how-to-use-enh>
+
+<div class="row">
+    <label class="col-4">{{ 'add_container' | translate }}</label>
+    <input type="file" class="col-4 mt-2 ml-3" (change)="fileChangeEvent($event)" />
+    <!-- <input type="text" class="col-4 form-control" [(ngModel)]="msgToHide" [disabled]="!imgSrc" /> -->
+
+    <!-- <a href="{{urlToDownload}}" #aToDownload [hidden]></a> -->
+</div>
+
+<div class="row" *ngIf="imgSrc">
+    <div class="col-6">
+        <textarea class=" form-control" [(ngModel)]="msgToHide" maxlength="maxMessageLength"></textarea>
+        <!-- <br /> -->
+        <label>{{ 'max_msg_lngth' | translate }}: {{maxMessageLength}}</label>
+    </div>
+
+    <div class="col-6">
+        <button class="btn ml-2" [disabled]="!msgToHide || msgToHide.length == 0"
+            (click)="injectMessage()">
+            {{ 'inj_msg' | translate }}
+        </button>
+
+        <button class="btn ml-2" *ngIf="isInjected" (click)="savePicture()">
+            {{ 'save_pict' | translate }}
+        </button>
+
+        <button class="btn ml-2" *ngIf="msgToHide && msgToHide.length > 0" (click)="computeServer()">
+            {{ 'steg_serv_inj' | translate }}
+        </button>
+    </div>
+
+</div>
+
+<div class="row text-center" *ngIf="isCaptured && showCaptcha">
+    <div class="col-12">
+        <appc-captcha (captchaObject)="updateCaptchaObj($event)"></appc-captcha>
+    </div>
+</div>
+
+<appc-steg-settings *ngIf="imgSrc && imageData" [width]="imageData.width" [height]="imageData.height" [isInject]="true"
+    (settingsOut)="applySettings($event)">
+</appc-steg-settings>
+
+<div class="row">
+    <div *ngIf="imgSrc">
+        <button class="btn" (click)="showInput = !showInput">{{ 'input_img' | translate }}</button>
+
+        <div *ngIf="showInput">
+            <p-slider class="mt-3 ml-1" [(ngModel)]="sliderInputVal" [style]="{ 'width':'14em', 'height': '11px' }"
+                [min]="10" [max]="100" [step]="10" [animate]="true"></p-slider>
+            <span>{{ sliderInputVal }}</span>
+            <br />
+            <img class="auto-height" [style.width.%]="sliderInputVal" src="{{imgSrc}}" />
+        </div>
+    </div>
+
+
+    <div [hidden]="!imgSrc">
+        <button class="btn" (click)="showResult = !showResult">
+            {{ 'result_img' | translate }}
+        </button>
+
+        <div [hidden]="!showResult">
+            <!-- <p-slider class="mt-3 ml-1" [(ngModel)]="sliderResultVal" [style]="{ 'width':'14em', 'height': '11px' }"
+                [min]="10" [max]="100" [step]="10" [animate]="true"></p-slider>
+            <span>{{ sliderResultVal }}</span>
+            <br /> 
+            <canvas class="auto-height" [style.width.%]="sliderResultVal" #canvasWithMsg></canvas>-->
+            <canvas class="auto-height" #canvasWithMsg></canvas>
+        </div>
+    </div>
+
+    <!-- <button class="btn">{{ 'diff_img' | translate }}</button> -->
+
+</div>
+
+<!-- <div class="row">
+    <canvas #canvasWithMsg></canvas>
+</div> -->

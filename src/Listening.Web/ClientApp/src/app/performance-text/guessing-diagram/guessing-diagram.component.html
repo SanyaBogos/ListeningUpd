@@ -1,0 +1,28 @@
+<!-- <div class="row" *ngIf="isVisible">
+  <div class="col-3 char-diagram">
+    <canvas baseChart [data]="pieChartData" 
+            [labels]="pieChartLabels" 
+            [chartType]="'pie'"
+            [colors]="pieChartColors">
+    </canvas>
+  </div>  
+</div> -->
+
+<div class="row" *ngIf="isVisible">
+  <div class="col-4 char-diagram shift-from-left">
+    <ngx-charts-pie-chart [view]="view" [scheme]="colorScheme" 
+      [results]="data" [legend]="showLegend" [explodeSlices]="explodeSlices"
+      [labels]="showLabels" [doughnut]="doughnut" 
+      [gradient]="true">
+    </ngx-charts-pie-chart>
+  </div>
+</div>
+
+<!-- <progress [value]="errorCount" [max]="maxErrorValue" class="red-gradient"></progress> -->
+<progress value="{{errorCount}}" max="{{maxErrorValue}}" class="red-gradient"></progress>
+
+<!-- <button (click)="barada()">barada</button> -->
+
+<!-- <div *ngIf="pieChartData && pieChartData.lenght > 0">  
+    <span *ngFor="let xxx of pieChartData">{{xxx}}</span>
+  </div> -->

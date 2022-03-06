@@ -1,0 +1,15 @@
+<div class="row" *ngIf="postDescriptions && postDescriptions.length > 0">
+    <button class="col-12 btn btn-secondary-white" *ngFor="let postDescription of postDescriptions"
+        (click)="choseArticle(postDescription.id)">
+        <label class="font-weight-bold">{{postDescription.header}}</label> <br />
+        <label class="text-justify font-italic break-word">{{postDescription.description}}</label> <br />
+
+        <div class="row">
+            <div class="col-12">
+            <label class="mr-1 border border-primary rounded" *ngFor="let topicId of postDescription.topicIds">
+                &nbsp;{{topicsDictionary[topicId]}}&nbsp;
+            </label>
+            </div>
+        </div>
+    </button>
+</div>

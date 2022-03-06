@@ -1,0 +1,17 @@
+<div *ngIf="textForGuessing">
+  <appc-general-header (heightUpdated)="setShiftFromTop($event)"></appc-general-header>
+</div>
+
+<div [ngStyle]="{ 'margin-top': shiftFromTop }">
+  <div *ngIf="textForGuessing && textDescription">
+    <div *ngIf="type === 's'; then separated else joined"></div>
+
+    <ng-template #separated>
+      <appc-separated-text [textDescription]="textDescription" [textForGuessing]="textForGuessing"></appc-separated-text>
+    </ng-template>
+
+    <ng-template #joined>
+      <appc-joined-text [textDescription]="textDescription" [textForGuessing]="textForGuessing"></appc-joined-text>
+    </ng-template>
+  </div>
+</div>

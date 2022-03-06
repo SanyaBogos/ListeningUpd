@@ -1,0 +1,25 @@
+
+<div class="row" [hidden]="!settings.isBukvitsaVisible">
+    <div class="col-{{ colSize }}">
+        <div class="border border-primary rounded">
+            <table class="table table-borderless">
+                <tr *ngFor="let bukvitsaArray of bukvitsy">
+                    <td *ngFor="let bukvitsa of bukvitsaArray">
+                        <div class="text-center">
+                            <svg [ngClass]="bukvitsa.className" [ngStyle]="{ 'background-color': bukvitsa.bgcolor }" version="1.0" xmlns="http://www.w3.org/2000/svg" [attr.width]="bukvitsa.width"
+                                [attr.height]="bukvitsa.height" [attr.viewBox]="bukvitsa.viewBox"
+                                
+                                preserveAspectRatio="xMidYMid meet" (click)="selected(bukvitsa)">
+                        
+                                <g [attr.transform]="bukvitsa.transform" [attr.fill]="bukvitsa.color" stroke="none">
+                                    <path *ngFor="let path of bukvitsa.pathD" [attr.d]="path" />
+                                </g>
+                            </svg>
+                        </div>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

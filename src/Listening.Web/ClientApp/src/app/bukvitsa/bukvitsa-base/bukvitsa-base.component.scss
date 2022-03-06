@@ -1,0 +1,16 @@
+div {
+    text-align: center !important;
+}
+
+$sizes: 10;
+
+@mixin sizes-bkv {
+    @for $i from 1 through $sizes {
+        .size-#{$i} {
+            // width: (100% / $i);
+            max-width: (10 * $i) + px;
+        }
+    }
+}
+
+@include sizes-bkv;

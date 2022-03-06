@@ -1,0 +1,34 @@
+<div *ngIf="textDescriptions$ | async; let texts">
+
+    <div class="text-center text-danger" *ngIf="texts.count == 0; else thenBlock">{{ 'no_data' | translate }}</div>
+
+    <ng-template #thenBlock>
+        <div class="text-center">
+            <label>
+                <input type="radio" [checked]="'j' === currentType" (click)="currentType = 'j'" />
+                <b class="radio-margin">{{'app_texts_joined_type' | translate}}</b>
+            </label>
+
+            <label>
+                <input type="radio" [checked]="'s' === currentType" (click)="currentType = 's'" />
+                <b class="radio-margin">{{'app_texts_separated_type' | translate}}</b>
+            </label>
+        </div>
+
+        <br />
+
+        <div
+            *ngFor="let text of texts.data | paginate: { itemsPerPage: itemPerPage, currentPage: p, totalItems: texts.count }">
+            <button class="btn full-width" (click)="choseText(text)">
+                <i class="fa {{ text.audioName ? 'fa-music' : 'fa-video-camera' }} {{ text.complexity ? 'shadow clr-'+text.complexity : '' }}"
+                    aria-hidden="true"></i>
+                &nbsp;
+                {{text.title}}
+                <span class="country-flag flag flag-{{text.country.toLowerCase()}} float-right"></span>
+            </button>
+        </div>
+
+        <pagination-controls class="text-center" (pageChange)="pageChanged($event)"></pagination-controls>
+    </ng-template>
+
+</div>

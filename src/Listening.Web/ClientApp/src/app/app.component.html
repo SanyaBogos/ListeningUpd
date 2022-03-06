@@ -1,0 +1,18 @@
+<!-- cookie consent component -->
+<!-- <appc-cookie-consent></appc-cookie-consent> -->
+
+<!-- header component -->
+<appc-header></appc-header>
+
+<!-- component routing placeholder -->
+<main class="shift-from-top" [@routerTransition]="getState(o)">
+  <router-outlet #o="outlet"></router-outlet>
+  <appc-my-notifications></appc-my-notifications>
+</main>
+
+<ngx-ui-loader></ngx-ui-loader>
+
+<!-- footer component -->
+<appc-footer></appc-footer>
+
+<!-- <appc-simple-notifications [options]="notificationOptions"></appc-simple-notifications> -->

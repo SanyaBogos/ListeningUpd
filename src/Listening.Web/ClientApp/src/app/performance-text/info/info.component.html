@@ -1,0 +1,85 @@
+<div class="col-2 justify-content-md-end">
+  <a class="btn btn-small btn-info white-color" (click)="showInfoModal()">
+    <i class="fa fa-info-circle" aria-hidden="true"></i>
+    {{'app_hotkeys' | translate}}
+  </a>
+</div>
+
+<appc-modal #modalInfo>
+  <div class="app-modal-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 text-center">
+          <h3>{{'app_hotkeys' | translate}}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="app-modal-body">
+    <table class="table">
+      <tr>
+        <td class="text-center"><img src="/icons/double_click_icon_merged_70px.png" /></td>
+        <td>
+          <h5>{{'app_double_click' | translate}}</h5>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center"><img src="/icons/enter-2-less.png" /></td>
+        <td>
+          <h5>{{'app_check_word' | translate}}</h5>
+        </td>
+      </tr>
+      <tr *ngIf="!hideExceedFields">
+        <td class="text-center"><img src="/icons/tab-2-less.png" /></td>
+        <td>
+          <h5>{{'app_next_word' | translate}}</h5>
+        </td>
+      </tr>
+      <tr *ngIf="!hideExceedFields">
+        <td class="text-center">
+          <img src="/icons/shift-4-less.png" />
+          <img src="/icons/tab-2-less.png" />
+        </td>
+        <td>
+          <h5>{{'app_previous_word' | translate}}</h5>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center">
+          <img *ngIf="includeShift" src="/icons/ctrl-2-less.png" />
+          <div *ngIf="!includeShift && includeAlt">
+            <img src="/icons/ctrl-2-less.png" />
+            <img src="/icons/alt.png" />
+          </div>
+          <img *ngIf="!includeShift && !includeAlt" src="/icons/ctrl-2-less.png" />
+          <img src="/icons/space-new-less.png" />
+        </td>
+        <td>
+          <h5>{{'app_play_stop_audio' | translate}}</h5>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center">
+          <img src="/icons/ctrl-2-less.png" />
+          <img src="/icons/arrow-left-icon-less.png" />
+        </td>
+        <td>
+          <h5>{{'app_previous_second_in_audio' | translate}}</h5>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center">
+          <img src="/icons/ctrl-2-less.png" />
+          <img src="/icons/arrow-right-icon-less.png" />
+        </td>
+        <td>
+          <h5>{{'app_next_second_in_audio' | translate}}</h5>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="app-modal-footer">
+    <button type="button" class="btn btn-warning" (click)="hideInfoModal()">
+      {{'app_got_it' | translate}}</button>
+  </div>
+</appc-modal>

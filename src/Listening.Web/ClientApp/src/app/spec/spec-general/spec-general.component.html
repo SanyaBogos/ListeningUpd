@@ -1,0 +1,20 @@
+<p>{{ 'convension' | translate}}</p>
+
+<div *ngIf="name" class="row">
+    <div class="col-12 text-center">
+        <h3>{{ name }}</h3>
+    </div>
+</div>
+
+<a *ngIf="originalSite" href="{{originalSite}}" target="_blank">{{ 'original_site' | translate}}</a>
+<a *ngIf="originalLink" class="ml-3" href="{{originalLink}}" target="_blank">{{ 'original_link' | translate}}</a>
+
+<div *ngIf="description" class="row">
+    <div class="col-12">
+        <label>{{ description }}</label>
+    </div>
+</div>
+
+<appc-books *ngIf="books && books.length" [items]="books"></appc-books>
+
+<appc-spec-tree-video *ngIf="files && files.length > 0" [files]="files"></appc-spec-tree-video>

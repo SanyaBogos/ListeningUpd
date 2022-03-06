@@ -1,0 +1,53 @@
+<div class="row">
+  <div class="col-5">
+    <button class="btn mr-1" (click)="getLogFiles(false)">{{ 'get_log' | translate }}</button>
+    <button class="btn mr-1" (click)="getLogFiles(true)">{{ 'get_err' | translate }}</button>
+    <button class="btn mr-1" (click)="clear()">{{ 'clr' | translate }}</button>
+  </div>
+</div>
+
+<div *ngIf="files && files.length > 0" class="row">
+  <div class="col-6">
+    <ul *ngFor="let file of files">
+      <li (click)="fileSelected(file)">{{file}}</li>
+    </ul>
+  </div>
+</div>
+
+<div *ngIf="logs && logs.length > 0" class="row">
+    <div class="col-12">
+      <table class="table table-striped table-bordered">
+        <tr>
+          <th scope="col">{{ 'time_table_header' | translate }}</th>
+          <th scope="col">{{ 'usrNm' | translate }}</th>
+          <th scope="col">{{ 'ip_addr' | translate }}</th>
+          <th scope="col">{{ 'pth' | translate }}</th>
+        </tr>
+        <tr *ngFor="let log of logs">
+          <td>{{log.time | date: 'HH:mm:ss dd MMM yyyy'}}</td>
+          <td>{{log.userName}}</td>
+          <td>{{log.ipAddress}}</td>
+          <td>{{log.path}}</td>
+        </tr>
+      </table>
+    </div>
+</div>
+
+<div *ngIf="errors && errors.length > 0" class="row">
+    <div class="col-12">
+      <table class="table table-striped table-bordered">
+        <tr>
+          <th scope="col">{{ 'time_table_header' | translate }}</th>
+          <th scope="col">{{ 'usrNm' | translate }}</th>
+          <th scope="col">{{ 'ip_addr' | translate }}</th>
+          <th scope="col">{{ 'messages_table_header' | translate }}</th>
+        </tr>
+        <tr *ngFor="let err of errors">
+          <td>{{err.time | date: 'HH:mm:ss dd MMM yyyy'}}</td>
+          <td>{{err.userName}}</td>
+          <td>{{err.ipAddress}}</td>
+          <td>{{err.message}}</td>
+        </tr>
+      </table>
+    </div>
+</div>

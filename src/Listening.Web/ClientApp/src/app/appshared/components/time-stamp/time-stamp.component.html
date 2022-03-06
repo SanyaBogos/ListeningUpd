@@ -1,0 +1,20 @@
+<div class="input-group">
+  <span class="input-group-btn">
+    <button class="btn btn-secondary" type="button" (click)="getPlayerTime()" >
+      <i class="fa fa-arrow-circle-{{arrowName(true)}}" aria-hidden="true"></i>
+    </button>
+  </span>
+
+  <input class=" form-control" placeholder="{{ placeholder | translate }}" type="text" [(ngModel)]="time" 
+    (ngModelChange)="getTimeValue()"/>
+
+  <span class="input-group-btn">
+    <button class="btn btn-secondary" type="button" (click)="setTimeToPlayer()" 
+      [disabled]="!isSetEnable || error">
+      <i class="fa fa-arrow-circle-{{arrowName(false)}}" aria-hidden="true"></i>
+    </button>
+  </span>
+</div>
+<span class="text-danger field-validation-valid" [hidden]="!error">
+  {{error}}
+</span>

@@ -1,0 +1,22 @@
+<div *ngIf="hasCreated || hasUpdated" class="input-group">
+    <select class="d-inline-block form-control col-6 mr-2" (change)="selectName($event.target.value)">
+        <option *ngFor="let name of selectors" [value]="name">{{ name | translate }}</option>
+    </select>
+
+    <button class="d-inline-block btn btn-secondary-white mr-2" (click)="changeBtnState()"><b>{{currentBtnState}}</b></button>
+
+    <input class="d-inline-block form-control" name="mydate" placeholder="{{'select_date' | translate}}" angular-mydatepicker
+        #dp="angular-mydatepicker" [(ngModel)]="model" [options]="myDpOptions" (dateChanged)="onDateChanged($event)" />
+
+    <div class="d-inline-block input-group-append">
+        <button type="button" class="btn" *ngIf="model" (click)="clearDate() && dp.clearDate()">
+            <i class="fa fa-close"></i>
+        </button>
+    </div>
+
+    <div class="d-inline-block input-group-append">
+        <button type="button" class="btn" (click)="toggleDatePicker() || dp.toggleCalendar()">
+            <i class="fa fa-calendar"></i>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+<appc-how-to-use-enh [videoDescriptions]="videoDescriptions"></appc-how-to-use-enh>
+
+<h3>{{ 'check_camera' | translate }}</h3>
+
+<h6>{{ 'select_necessary_settings' | translate }}</h6>
+
+<div class="row">
+  <div class="col-12">
+    <div [hidden]="showingMyselfResult">
+      <label>
+        <input type="checkbox" [(ngModel)]="isVideo" />
+        {{ 'include_video' | translate }}
+      </label>
+      <br />
+      <label>
+        <input type="checkbox" [(ngModel)]="isAudio" />
+        {{ 'include_audio' | translate }}
+      </label>
+      <br />
+      <button class="btn" (click)="startMedia()">
+        {{ 'start_myself_stream' | translate }}
+      </button>
+
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12" [hidden]="!showingMyselfResult">
+    <button [disabled]="!isPaused" class="btn" (click)="playMedia()">
+      <i class="fa fa-play-circle text-success fa-lg"></i>
+    </button>
+    <button [disabled]="isPaused" class="btn" (click)="pauseMedia()">
+      <i class="fa fa-pause-circle text-warning fa-lg"></i>
+    </button>
+    <button class="btn" (click)="stopMedia()">
+      <i class="fa fa-stop-circle text-danger fa-lg"></i>
+    </button>
+    <br />
+    <video [hidden]="!startedAsVideo" #videoMyselfElement width="640" height="480"></video>
+    <audio [hidden]="startedAsVideo" #audioMyselfElement></audio>
+    <!-- <br />
+    <button class="btn" (click)="sendMedia()">
+      {{ 'send_myself_stream' | translate }}
+    </button>
+    <button class="btn" (click)="sendMedia()">
+      {{ 'record_media' | translate }}
+    </button> -->
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <video [hidden]="!startedAsVideo" #videoNeighborElement width="640" height="480"></video>
+  </div>
+</div>

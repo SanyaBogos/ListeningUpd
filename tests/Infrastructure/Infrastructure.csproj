@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Listening.Core\Listening.Core.csproj" />
+    <ProjectReference Include="..\..\src\Listening.Infrastructure\Listening.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\Listening.Web\Listening.Web.csproj" />
+  </ItemGroup>
+
+</Project>

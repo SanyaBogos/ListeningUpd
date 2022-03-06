@@ -1,0 +1,26 @@
+.box {
+  float: left;
+  height: 50px;
+  width: 50px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  clear: both;
+  border-radius: 18%;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.btn-def-size {
+  height: 38px;
+  width: 38px;
+}

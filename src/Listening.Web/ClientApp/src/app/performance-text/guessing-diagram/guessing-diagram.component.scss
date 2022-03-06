@@ -1,0 +1,109 @@
+.char-diagram {
+    position: absolute; 
+    top: -2px; 
+    left: -20%;
+    max-width: 18%;
+}
+
+// .red-gradient {
+//     -webkit-appearance: progress-bar;
+//     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3c5bd+0,e86c57+50,ea2803+51,ff6600+75,c72200+100;Red+Gloss */
+//     background: #f3c5bd; /* Old browsers */
+//     background: -moz-linear-gradient(top, #f3c5bd 0%, #e86c57 50%, #ea2803 51%, #ff6600 75%, #c72200 100%); /* FF3.6-15 */
+//     background: -webkit-linear-gradient(top, #f3c5bd 0%,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%); /* Chrome10-25,Safari5.1-6 */
+//     background: linear-gradient(to bottom, #f3c5bd 0%,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 ); /* IE6-9 */
+// }
+
+// .red-gradient progress[value]::-webkit-progress-value {
+//     background-image:
+//          -webkit-linear-gradient(-45deg, 
+//                                  transparent 33%, rgba(0, 0, 0, .1) 33%, 
+//                                  rgba(0,0, 0, .1) 66%, transparent 66%),
+//          -webkit-linear-gradient(top, 
+//                                  rgba(255, 255, 255, .25), 
+//                                  rgba(0, 0, 0, .25)),
+//          -webkit-linear-gradient(left, #09c, #f44);
+  
+//       border-radius: 2px; 
+//       background-size: 35px 20px, 100% 100%, 100% 100%;
+//   }
+  
+
+// @media screen and (max-width: 1080px){
+//     .shift-from-left {
+//         left: -20%;
+//     }
+// }
+
+// @media screen and (max-width: 980px){
+//     .shift-from-left {
+//         left: -10%;
+//     }
+// }
+
+// @media screen and (max-width: 640px){
+//     .shift-from-left {
+//         left: 0%;
+//     }
+// }
+
+/* Moving on to the styling, we'll start with the main progress bar first and then the value part of it. After that, we'll do some experiments :D */
+body {
+	background: #322c35;
+}
+
+progress {
+	width: 100px;
+    height: 17px;
+    margin-top: 10px;
+    margin-left: -50px;
+    position: absolute;
+	// margin: 50px auto;
+	// display: block;
+	/* Important Thing */
+	-webkit-appearance: none;
+	border: none;
+}
+
+/* All good till now. Now we'll style the background */
+progress::-webkit-progress-bar {
+	background: black;
+	border-radius: 50px;
+	padding: 2px;
+	box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Now the value part */
+progress::-webkit-progress-value {
+	border-radius: 50px;
+	box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+	background:
+		// -webkit-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%),
+		// -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+        // -webkit-linear-gradient(left, #ba7448, #c4672d);
+        // #f3c5bd,
+        linear-gradient(to bottom, #f3c5bd 0%,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%),
+        // -moz-linear-gradient(top, #f3c5bd 0%, #e86c57 50%, #ea2803 51%, #ff6600 75%, #c72200 100%),
+        -webkit-linear-gradient(top, #f3c5bd 0%,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%);
+	
+	/* Looks great, now animating it */
+	background-size: 25px 14px, 100% 100%, 100% 100%;
+	-webkit-animation: move 5s linear 0 infinite;
+}
+
+/* That's it! Now let's try creating a new stripe pattern and animate it using animation and keyframes properties  */
+
+@-webkit-keyframes move {
+	0% {background-position: 0px 0px, 0 0, 0 0}
+	100% {background-position: -100px 0px, 0 0, 0 0}
+}
+
+/* Prefix-free was creating issues with the animation */
+
+
+
+
+
+
+

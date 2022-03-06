@@ -1,0 +1,51 @@
+npm ERR! code ERESOLVE
+npm ERR! ERESOLVE unable to resolve dependency tree
+npm ERR! 
+npm ERR! While resolving: listening@0.0.1
+npm ERR! Found: @angular/core@8.1.2
+npm ERR! node_modules/@angular/core
+npm ERR!   @angular/core@"8.1.2" from the root project
+npm ERR! 
+npm ERR! Could not resolve dependency:
+npm ERR! peer @angular/core@"7.2.15" from @angular/http@7.2.15
+npm ERR! node_modules/@angular/http
+npm ERR!   @angular/http@"7.2.15" from the root project
+npm ERR! 
+npm ERR! Fix the upstream dependency conflict, or retry
+npm ERR! this command with --force, or --legacy-peer-deps
+npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
+npm ERR! 
+npm ERR! See /root/.npm/eresolve-report.txt for a full report.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2021-07-11T10_43_26_891Z-debug.log
+npm WARN @angular/http@7.2.15 requires a peer of @angular/core@7.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN @angular/http@7.2.15 requires a peer of @angular/platform-browser@7.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN @babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining@7.14.5 requires a peer of @babel/core@^7.13.0 but none is installed. You must install peer dependencies yourself.
+npm WARN @babel/plugin-proposal-class-static-block@7.14.5 requires a peer of @babel/core@^7.12.0 but none is installed. You must install peer dependencies yourself.
+npm WARN @ng-bootstrap/ng-bootstrap@4.0.0 requires a peer of @angular/common@^7.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN @ng-bootstrap/ng-bootstrap@4.0.0 requires a peer of @angular/core@^7.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN @ng-bootstrap/ng-bootstrap@4.0.0 requires a peer of @angular/forms@^7.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN angular-mydatepicker@0.1.9 requires a peer of @angular/common@^7.2.0 but none is installed. You must install peer dependencies yourself.
+npm WARN angular-mydatepicker@0.1.9 requires a peer of @angular/core@^7.2.0 but none is installed. You must install peer dependencies yourself.
+npm WARN angular-oauth2-oidc@5.0.2 requires a peer of @angular/common@>=6.0.0 < 8.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN angular-oauth2-oidc@5.0.2 requires a peer of @angular/core@>=6.0.0 < 8.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN bootstrap@4.3.1 requires a peer of popper.js@^1.14.7 but none is installed. You must install peer dependencies yourself.
+npm WARN ng2-table@1.3.2 requires a peer of @angular/common@~2.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN ng2-table@1.3.2 requires a peer of @angular/compiler@~2.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN ng2-table@1.3.2 requires a peer of @angular/core@~2.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN ng2-table@1.3.2 requires a peer of @angular/forms@~2.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN ngx-color-picker@11.0.0 requires a peer of @angular/common@>=9.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN ngx-color-picker@11.0.0 requires a peer of @angular/core@>=9.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN ngx-color-picker@11.0.0 requires a peer of @angular/forms@>=9.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN ngx-loading@3.0.1 requires a peer of @angular/common@^6.0.0-rc.0 || ^6.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN ngx-loading@3.0.1 requires a peer of @angular/core@^6.0.0-rc.0 || ^6.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN The package @angular/compiler-cli is included as both a dev and production dependency.
+
+audited 1761 packages in 16.397s
+
+78 packages are looking for funding
+  run `npm fund` for details
+
+found 37 vulnerabilities (9 low, 23 moderate, 4 high, 1 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details

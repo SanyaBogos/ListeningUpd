@@ -1,0 +1,85 @@
+<div>
+    <div>
+        <h3>{{ 'video_conversation' | translate }}</h3>
+        <button (click)="checkConnect()">test</button>
+
+        <div *ngIf="otherClients != null && otherClients.length > 0">
+            <div *ngIf="!isCall; else isCallModule">
+                <strong>{{'connected_users' | translate }}:</strong>
+                <br />
+
+                <button class="btn" *ngFor="let client of otherClients"
+                    (click)="performCall(client.easyrtcid)">
+                    <i class="fa fa-phone text-success"></i>
+                    {{client.easyrtcid}}
+                </button>
+            </div>
+
+            <ng-template #isCallModule>
+                <button class="btn" *ngIf="isCall" (click)="hangUp()">
+                    <i class="fa fa-phone-slash text-danger"></i>
+                    {{'hang_up' | translate }}
+                </button>
+            </ng-template>
+        </div>
+    </div>
+
+    <div id="videos">
+        <div class="video-div" width="1282" height="722">
+            <div [hidden]="!isCall">
+                <label>{{'caller_video' | translate }}</label><br />
+                <video class="video-elem" autoplay="autoplay" playsinline="playsinline" id="callerVideo"></video>
+            </div>
+
+            <div>
+                <label>{{'my_video' | translate }}</label>
+            </div>
+            <video autoplay="autoplay" playsinline="playsinline" class="video-elem easyrtcMirror" id="selfVideo"
+                muted="true" volume="0"></video>
+        </div>
+        <!-- each caller video needs to be in it"s own div so it"s close button can be positioned correctly -->
+    </div>
+
+    <appc-modal #confirmCall>
+        <div class="app-modal-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 text-center">
+                        <h3>{{'call_confirmation' | translate }}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app-modal-body">
+            <span>{{otherErtcId}} {{'confirm_call_msg' | translate }}</span>
+        </div>
+        <div class="app-modal-footer">
+            <button type="button" class="btn btn-warning" (click)="acceptCallRequest()">
+                {{'yes_' | translate }}
+            </button>
+            <button type="button" class="btn" (click)="rejectCallRequest()">
+                {{'no_' | translate }}
+            </button>
+        </div>
+    </appc-modal>
+
+    <appc-modal #offerCall>
+        <div class="app-modal-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 text-center">
+                        <h3>{{'call_offer' | translate }}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app-modal-body">
+            <span>{{'offer_call_msg' | translate }} {{otherErtcId}}</span>
+        </div>
+        <div class="app-modal-footer">
+            <button type="button" class="btn" (click)="cancelCallRequest()">
+                {{'cancel_call_offer' | translate }}
+            </button>
+        </div>
+    </appc-modal>
+</div>

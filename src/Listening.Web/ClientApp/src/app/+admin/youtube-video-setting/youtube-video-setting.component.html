@@ -1,0 +1,54 @@
+<div class="form-group row" [ngClass]="{ 'chosen-type':!useAudio, 'child-chosen':!useAudio }">
+
+    <label class="col-2 col-form-label">
+      <input type="radio" (click)="changeType(false)" [checked]="!useAudio"  [value]="false"/>
+      <label *ngIf="!useAudio" class="text-danger">&nbsp;*</label>
+      {{ 'video' | translate }}:
+    </label>
+  
+    <div class="col-4">
+      <input class="form-control" [(ngModel)]="videoURL" [disabled]="useAudio" />
+      <button class="offset-4 btn btn-secondary-white shift-from-top" *ngIf="videoURL" (click)="getVideo()" 
+                    [disabled]="useAudio || !isGetVideoEnabled">
+        {{ 'get_video' | translate }}
+      </button>
+  
+      <appc-countdown *ngIf="videoSrc" [time]="videoTTL" (timeOver)="dropVideo()" class="ml-3"></appc-countdown>
+  
+      <div *ngIf="videoSrc">
+        <div class="alert alert-warning shift-from-top" role="alert">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+          {{ 'video_suggestion' | translate }}
+        </div>
+        
+        <div class="alert alert-info shift-from-top" role="alert">
+          <i class="fa fa-info-circle" aria-hidden="true"></i>
+          {{ 'video_info_from_to' | translate }}        
+        </div>
+        
+        <div class="iniline" *ngIf="duration">
+          <appc-time-stamp [duration]="duration" [type]="'f'" (resultTime)="getTimeStamp($event)" 
+            (setTime)="setTimeToPlayer($event)" [timeFromPlayer]="getTimeFromPlayer"></appc-time-stamp>
+          <appc-time-stamp [duration]="duration" [type]="'t'" (resultTime)="getTimeStamp($event)"
+            (setTime)="setTimeToPlayer($event)" [timeFromPlayer]="getTimeFromPlayer"></appc-time-stamp>
+        </div>
+        <span class="text-danger field-validation-valid" [hidden]="!error">
+          {{ error | translate }}
+        </span>
+        
+        <button class="offset-4 btn btn-secondary-white shift-from-top" *ngIf="videoURL || videoName" 
+          (click)="cutVideo()" [disabled]="useAudio || error">
+          {{ 'cut_the_video' | translate }}        
+        </button>
+      </div>
+    </div>
+  
+    <div class="col-6" *ngIf="videoSrc">
+      <vg-player (onPlayerReady)="onPlayerReady($event)">
+        <video height="401" width="535" [vgMedia]="media" #media id="adminVideo" preload="auto" controls>
+          <source [src]="videoSrc" [type]="videoType">
+        </video>
+      </vg-player>
+    </div>
+    
+  </div>

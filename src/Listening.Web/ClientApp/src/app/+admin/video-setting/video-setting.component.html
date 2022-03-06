@@ -1,0 +1,19 @@
+<div class="form-group row" [ngClass]="{ 'chosen-type':!useAudio, 'child-chosen':!useAudio }">
+
+  <label class="col-2 col-form-label">
+    <input type="radio" (click)="changeType(false)" [checked]="!useAudio"  [value]="false"/>
+    <label *ngIf="!useAudio" class="text-danger">&nbsp;*</label>
+    {{ 'video' | translate }}:
+  </label>
+
+  <div class="col-4">
+    <input class="form-control" [(ngModel)]="name" [disabled]="!isFileExist() || !isFileChanged || !useAudio" />
+  </div>
+
+  <div class="col-4">
+    <input #fileInput (change)="fileChanged($event)" placeholder="{{ 'upload_file' | translate}}" type="file"
+      accept="video/mpeg,video/mp4,video/ogg,video/quicktime,video/webm,video/x-ms-wmv,video/x-flv,video/3gpp,video/3gpp"
+      [disabled]="useAudio" />
+  </div>
+
+</div>

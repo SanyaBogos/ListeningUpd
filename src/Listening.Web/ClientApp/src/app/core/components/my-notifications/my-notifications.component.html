@@ -1,0 +1,12 @@
+<div [hidden]="messages.length == 0" 
+    class="growl-container growl-fixed bottom-right">
+  <div [ngClass]="getClass(msg.description.status)" *ngFor="let msg of messages">
+      <button type="button" class="close" (click)="closeNotification(msg.id)">×</button>
+      <h4 class="growl-title">{{msg.description.title | translate}}</h4>
+      <div class="growl-message">
+          <span *ngFor="let message of msg.description.messageParts">
+            {{message | translate}}
+          </span>          
+      </div>      
+  </div>
+</div>

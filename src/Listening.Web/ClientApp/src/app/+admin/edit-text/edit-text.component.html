@@ -1,0 +1,140 @@
+<section>
+  <div class="form-horizontal" *ngIf="textDto">
+
+    <div class="row">
+      <div class="col-11">
+        <h4 class="text-center">{{'manage_text_header' | translate }}</h4>
+      </div>
+      <div class="col-1">
+        <i class="fa fa-question-circle fa-2x top-3" aria-hidden="true"
+          tooltip="{{'audio_or_video_restriction' | translate}}" placement="bottom"></i>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="form-group row">
+      <div class="col-2 col-form-label">
+        <label class="text-danger">*&nbsp;</label>
+        <label> {{'title_name' | translate }}:</label>
+      </div>
+      <div class="col-4">
+        <input class="form-control" [(ngModel)]="textDto.title" (focusout)="checkTitle()" />
+        <span class="text-danger field-validation-valid" [hidden]="!errorTitle">
+          {{ errorTitle | translate }}
+        </span>
+      </div>
+
+      <label class="col-2 col-form-label">{{'subtitle_name' | translate }}: </label>
+      <div class="col-4">
+        <input class="form-control" [(ngModel)]="textDto.subTitle" />
+      </div>
+    </div>
+
+    <appc-audio-setting [useAudio]="useAudio" [name]="textDto.audioName" (fileUpdated)="audioFileUpdate($event)">
+    </appc-audio-setting>
+
+    <appc-video-setting [useAudio]="useAudio" [name]="textDto.videoName" (fileUpdated)="videoFileUpdate($event)">
+    </appc-video-setting>
+
+    <!-- <appc-youtube-video-setting [useAudio]="useAudio" [videoName]="textDto.videoName" (videoHasCut)="videoFileYoutubeUpdate($event)">
+    </appc-youtube-video-setting> -->
+
+
+    <div class="form-group row">
+      <div class="col-2 col-form-label">
+        <label class="text-danger">*&nbsp;</label>
+        <label> {{'country_name' | translate }}:</label>
+      </div>
+      <div class="col-4">
+        <appc-country-selector [selectedValue]="textDto.country" (selectedValueChange)="textDto.country = $event">
+        </appc-country-selector>
+      </div>
+
+      <div class="col-2 col-form-label">
+        <label class="text-danger">*&nbsp;</label>
+        <label> {{'assgn' | translate }}:</label>
+      </div>
+      <div class="col-4">
+        <ngx-select [allowClear]="true" [items]="admins" optionValueField="id" optionTextField="email"
+          [(ngModel)]="selectedAdmin" placeholder="{{'no_admin_selected' | translate }}">
+
+          <ng-template ngx-select-option ngx-select-option-selected let-option let-text="text">
+            <span>{{option.data.email}}</span>
+          </ng-template>
+        </ngx-select>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <label class="col-2 col-form-label">{{'app_complexity' | translate }}:</label>
+
+      <appc-complexity [complexity]="textDto.complexity" (complexitySelected)="complexitySelected($event)">
+      </appc-complexity>
+
+      <!-- <label class="col-2 col-form-label">{{'app_topic' | translate }}:</label>
+      <input class="col-4 form-control" [(ngModel)]="textDto.topic"/> -->
+
+    </div>
+
+        
+    <!-- <div class="row">
+      <appc-topic></appc-topic>
+    </div> -->
+
+    <appc-optical-recognition></appc-optical-recognition>
+
+    <div class="form-group row mt-1">
+      <div class="col-2 col-form-label">
+        <label class="text-danger">*&nbsp;</label>
+        <label> {{'text_name' | translate }}:</label>
+      </div>
+
+      <div class="col-10">
+        <textarea rows="8" class="form-control" [(ngModel)]="textDto.text" (focusout)="checkText()">
+        </textarea>
+        <span [hidden]="!errorText" class="text-danger field-validation-valid">
+          {{errorText | translate }}</span>
+      </div>
+    </div>
+
+    <appc-preview-text [text]="textDto.text"></appc-preview-text>
+
+    <div class="form-group mt-1">
+      <div class="col-12 text-center">
+        <button class="btn mr-2" (click)="save()"
+          [disabled]="isErrorExist()">{{'save_name' | translate }}</button>
+        <button class="btn btn-danger" (click)="confirmDeleting.show()"
+          [disabled]="isNewElement">{{'delete_name' | translate }}</button>
+      </div>
+    </div>
+
+    <appc-modal #confirmDeleting>
+      <div class="app-modal-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 text-center">
+              <h3>{{'delete_confirmation' | translate }}</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="app-modal-body">
+        <span>{{textDto.title}}</span>
+        <br />
+        <span>{{'confirmation_delete_text_question' | translate }}</span>
+      </div>
+      <div class="app-modal-footer">
+        <button type="button" class="btn btn-warning" (click)="remove()">
+          {{'yes_' | translate }}
+        </button>
+        <button type="button" class="btn" (click)="confirmDeleting.hide()">
+          {{'no_' | translate }}
+        </button>
+      </div>
+    </appc-modal>
+
+  </div>
+</section>

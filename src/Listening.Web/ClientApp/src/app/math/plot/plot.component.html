@@ -1,0 +1,101 @@
+<!-- <p>plot works!</p> -->
+<appc-how-to-use-enh [videoDescriptions]="videoDescriptions"></appc-how-to-use-enh>
+
+<div class="row mt-2">
+    <div class="col-1  mt-1">
+        <label>{{ 'x_range' | translate }}</label>
+    </div>
+    <div class="col-1">
+        <input type="number" class="form-control" [(ngModel)]="xFrom" />
+    </div>
+
+    <!-- <div class="col-1 mt-1">
+        <label>{{ 'x_to' | translate }}</label>
+    </div> -->
+
+    <label class="mt-1"><H4>-</H4></label>
+
+    <div class="col-1">
+        <input type="number" class="form-control" [(ngModel)]="xTo" />
+    </div>
+
+    <div class="col-1 mt-1">
+        <label>{{ 'y_range' | translate }}</label>
+    </div>
+    <div class="col-1">
+        <input type="number" class="form-control" [(ngModel)]="yFrom" />
+    </div>
+
+    <!-- <div class="col-1 mt-1">
+        <label>{{ 'y_to' | translate }}</label>
+    </div> -->
+    <label class="mt-1"><H4>-</H4></label>
+
+    <div class="col-1">
+        <input type="number" class="form-control" [(ngModel)]="yTo" />
+    </div>
+
+    <div class="col-2">
+        <!-- <input type="text" class="form-control" [(ngModel)]="func" /> -->
+        <input type="checkbox" class="mt-3" [(ngModel)]="isGrid" />&nbsp;{{ 'grid' | translate }}
+    </div>
+
+</div>
+
+<!-- <div class="row mt-1">
+
+    <div class="col-4">
+        <input type="text" class="form-control" [(ngModel)]="func" />
+    </div>
+
+    <div class="col-1">
+        <input class="form-control" [(colorPicker)]="color" [style.background]="color"/>
+    </div>
+
+    <div class="col-1">
+        <button class="btn" (click)="addFunc()">
+            <i class="fa fa-plus"></i>
+        </button>
+    </div>
+
+</div> -->
+
+<div class="row mt-1" *ngFor="let func of funcs">
+
+    <div class="col-4">
+        <input type="text" class="form-control" [(ngModel)]="func.fn" />
+    </div>
+
+    <div class="col-1">
+        <input class="form-control" [(colorPicker)]="func.color" [style.background]="func.color"/>
+    </div>
+
+    <div class="col-1">
+        <button class="btn" [disabled]="funcs.length == 1" (click)="removeFunc(func)">
+            <i class="fa fa-minus"></i>
+        </button>
+    </div>
+
+</div>
+
+<div class="row mt-1">
+    <div class="col-1">
+        <button class="btn" (click)="addFunc()">
+            <i class="fa fa-plus"></i>
+        </button>
+    </div>
+</div>
+
+<div class="row text-center mt-2">
+    <div class="col-12">
+        <button class="btn" (click)="createPlot()">
+            {{ 'plt_crt' | translate }}
+        </button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div id="plotGraph"></div>
+    </div>
+</div>

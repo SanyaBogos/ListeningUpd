@@ -1,0 +1,27 @@
+﻿<div class="row">
+    <div class="form-group offset-3 col-6">
+
+        <h2 class="text-center">{{ 'app_nav_login' | translate }}</h2>
+
+        <appc-email [email]="loginModel.username" (emailChanged)="loginModel.username = $event"></appc-email>
+        <br/>
+
+        <appc-password [(password)]="loginModel.password" (passwordChanged)="loginModel.password = $event"></appc-password>
+        <br/>
+
+        <div class="text-center">
+            <button class="btn" (click)="login()">
+                <i class="fa fa-sign-in"></i>
+                {{ 'app_nav_login' | translate}}
+            </button>
+        </div>
+
+        <div class="text-center">
+            <a routerLink="forgetpassword">{{ 'app_forget_password' | translate }}</a>
+        </div>
+<!-- 
+        <div class="text-center">
+            <appc-social-login></appc-social-login>
+        </div> -->
+    </div>
+</div>

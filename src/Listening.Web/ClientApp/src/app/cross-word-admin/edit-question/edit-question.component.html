@@ -1,0 +1,104 @@
+<div class="form-group row mt-1">
+    <div class="col-2 col-form-label">
+        <label class="text-danger">*&nbsp;</label>
+        <label> {{'quest' | translate }}:</label>
+    </div>
+
+    <div class="col-4">
+        <textarea rows="4" class="form-control" [(ngModel)]="questionAndWordDescriptionDto.question"
+            (focusout)="checkQuestion()" maxlength="3000">
+      </textarea>
+        <span [hidden]="questionAndWordDescriptionDto.question" class="text-danger field-validation-valid">
+            {{ 'not_empt' | translate }}
+        </span>
+    </div>
+
+    <div class="col-6">
+        <div class="row">
+            <div class="col-3 col-form-label">
+                <label class="text-danger">*&nbsp;</label>
+                <label> {{'answ' | translate }}:</label>
+            </div>
+
+            <div class="col-9">
+                <input class="form-control" [(ngModel)]="questionAndWordDescriptionDto.answer" />
+                <span [hidden]="questionAndWordDescriptionDto.answer" class="text-danger field-validation-valid">
+                    {{ 'not_empt' | translate }}
+                </span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3 col-form-label">
+                <label class="text-danger">*&nbsp;</label>
+                <label> {{'dirct' | translate }}:</label>
+            </div>
+
+            <div class="col-4">
+                <ngx-select [allowClear]="false" [items]="directions" optionValueField="id" optionTextField="name" [(ngModel)]="selectedDirection">
+                    <ng-template ngx-select-option ngx-select-option-selected let-option let-text="text">
+                        <span>{{option.data.name}}</span>
+                    </ng-template>
+                </ngx-select>
+            </div>
+
+            <div *ngIf="selectedDirection && questionAndWordDescriptionDto.answer" class="col-2">
+                <button class="btn" (click)="addWordToGrid()">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                    <!-- {{ 'add_wrd' | translate }} -->
+                </button>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-3 col-form-label">
+                <label class="text-danger">*&nbsp;</label>
+                <label> {{'posit' | translate }}:</label>
+            </div>
+
+            <div class="col-4">
+                <input [(ngModel)]="questionAndWordDescriptionDto.startPointX" class="form-control" type="number" placeholder="{{'horiz' | translate }}"/>
+            </div>
+
+            <div class="col-4">
+                <input [(ngModel)]="questionAndWordDescriptionDto.startPointY"  class="form-control" type="number" placeholder="{{'vert' | translate }}"/>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-12 text-center">
+            <button class="btn mr-2" (click)="saveQuestion()" [disabled]="isSaveDisabled()">{{ 'save_qst' | translate }}</button>
+            <button class="btn btn-danger" (click)="confirmQuestionDeleting.show()"
+                [disabled]="isNewElement">{{'del_qst' | translate }}
+            </button>
+        </div>
+    </div>
+
+    <appc-modal #confirmQuestionDeleting>
+        <div class="app-modal-header">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5 text-center">
+                <h3>{{'delete_confirmation' | translate }}</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="app-modal-body">
+          <!-- <span>{{textDto.title}}</span> -->
+          <br />
+          <span>{{'confirmation_delete_text_question' | translate }}</span>
+        </div>
+        <div class="app-modal-footer">
+          <button type="button" class="btn btn-warning" (click)="removeQuestion()">
+            {{'yes_' | translate }}
+          </button>
+          <button type="button" class="btn" (click)="confirmQuestionDeleting.hide()">
+            {{'no_' | translate }}
+          </button>
+        </div>
+      </appc-modal>
+</div>

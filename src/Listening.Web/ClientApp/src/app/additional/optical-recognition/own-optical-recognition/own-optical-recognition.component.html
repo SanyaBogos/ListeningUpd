@@ -1,0 +1,52 @@
+<appc-how-to-use-enh [videoDescriptions]="videoDescriptions"></appc-how-to-use-enh>
+
+<div class="row">
+    <div class="col-6">
+        <input type="file" class="mt-2 ml-3" (change)="fileChangeEvent($event)" />
+    </div>
+    <div *ngIf="croppedImage" class="col-6">
+        <ngx-select [allowClear]="false" [items]="langList" [multiple]="true"
+          [(ngModel)]="selectedLanguages" placeholder="{{'no_lang_slctd' | translate }}">
+
+          <ng-template ngx-select-option ngx-select-option-selected let-option let-text="text">
+            <span>{{option.data}}</span>
+          </ng-template>
+        </ngx-select>
+    </div>
+</div>
+
+<image-cropper 
+        [imageChangedEvent]="imageChangedEvent" 
+        [maintainAspectRatio]="false" 
+        [aspectRatio]="4 / 3" 
+        format="fileFormat"
+        (imageCropped)="imageCropped($event)" 
+        (imageLoaded)="imageLoaded()" 
+        (cropperReady)="cropperReady()"
+        (loadImageFailed)="loadImageFailed()">
+</image-cropper>
+
+<div *ngIf="croppedImage">
+    <div *ngIf="isCaptured">
+        <appc-captcha (captchaObject)="updateCaptchaObj($event)"></appc-captcha>
+    </div>
+
+    <div class="row">
+        <div class="col-12 text-center">
+            <button class="btn" (click)="recognize()">{{'recognize_btn' | translate }}</button>
+        </div>
+    </div>
+</div>
+
+<div [hidden]="!recognizedResult">
+    <div class="row">
+        <textarea #txtArea class="form-control ml-5 mr-5 mt-2 mb-2" rows="10">{{recognizedResult}}</textarea>
+    </div>
+
+    <div class="row">
+        <div class="col-12 text-center">
+            <button class="btn" [ngxClipboard]="txtArea"
+                (cbOnSuccess)="copied()">{{'copy_to_clipboard_btn' | translate }}</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-12">
+        <div *ngFor="let item of items">
+            <h3 class="mt-2"><b><label>{{ item.name | translate }}</label></b> </h3> 
+
+            <div *ngFor="let course of item.courses">
+                <a href="spec/gen/{{course.id}}">{{ course.name | translate }} - ({{ course.author | translate }})</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<ng-template [ngIf]="!isInitEqualsCurrent()">
+  <i class="fa fa-sort" aria-hidden="true"></i>
+</ng-template>
+<ng-template [ngIf]="isInitEqualsCurrent() && queryViewModel.isAscending">
+  <i [ngClass]="{'active-sorting': isFilteredOrSorted}" 
+        class="fa fa-sort-amount-asc" aria-hidden="true"></i>
+</ng-template>
+<ng-template [ngIf]="isInitEqualsCurrent() && !queryViewModel.isAscending">
+  <i [ngClass]="{'active-sorting': isFilteredOrSorted}" 
+        class="fa fa-sort-amount-desc" aria-hidden="true"></i>
+</ng-template>

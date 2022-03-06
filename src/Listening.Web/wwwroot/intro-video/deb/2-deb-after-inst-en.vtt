@@ -1,0 +1,35 @@
+WEBVTT
+
+00:01.000 --> 00:04.000
+Open terminal and copy the last command
+(click on right button near command)
+
+00:04.000 --> 00:06.000
+Paste this into terminal
+(hotkey Shift+Ctrl+v in my case)
+
+00:06.000 --> 00:09.000
+Press Enter
+
+00:09.000 --> 00:18.000
+and look how does it works
+
+00:18.000 --> 00:20.000
+Enter credentials (which you entered at configuration)
+(login: root, password: r00tme for me)
+
+00:20.000 --> 00:25.000
+Open terminal and check that at least one of 
+Additional software is installed
+
+00:25.000 --> 00:29.000
+I've checked tesseract
+
+00:29.000 --> 00:36.000
+... and gxneur 
+
+00:36.000 --> 00:40.000
+... and gedit
+
+00:40.000 --> 00:50.000
+List of partitions

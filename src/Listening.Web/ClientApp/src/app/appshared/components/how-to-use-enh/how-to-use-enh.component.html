@@ -1,0 +1,50 @@
+<div class="card">
+    <div class="card-header bg-blue">
+        <div class="row">
+            <label class="col-6 col-form-label cursor-pointer" (click)="changeHowUseVisibility()">
+                {{ 'how_use' | translate }}
+            </label>
+        </div>
+    </div>
+
+    <div class="card-block" [hidden]="!isHowUseVisible">
+        <div class="m-2">
+            <div class="row">
+                <div class="col-12">
+                    <appc-how-to-use [videoDescriptions]="videoDescriptions"></appc-how-to-use>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="row" class="col-12">
+    <div *ngFor="let description of videoDescriptions">
+        <div class="col-12" *ngIf="description.isAllowed">
+            <div class="card">
+                <div class="card-header bg-blue" (click)="changeVideoVisibility(description)">
+                    <div class="row">
+                        <label class="ml-2">
+                            {{description.name | translate}}
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-block" *ngIf="description.isVisible">
+                <div class="row">
+                    <label>{{description.description | translate}}</label>
+                </div>
+                <video style="width: 100%" preload="auto" controls>
+                    <source src="{{description.src}}.{{description.type}}" type="video/{{description.type}}">
+                    <track src="{{description.src}}-en.vtt" kind="subtitles" srclang="en" label="English"
+                        default />
+                    <track src="{{description.src}}-ru.vtt" kind="subtitles" srclang="ru"
+                        label="Русский" />
+                    <track src="{{description.src}}-ua.vtt" kind="subtitles" srclang="ua"
+                        label="Українська" />
+                </video>
+            </div>
+        </div>
+    </div>
+</div> -->

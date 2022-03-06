@@ -1,0 +1,1 @@
+"C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe" --dbpath "D:\Projects\My Internal Projects\Pub_Materials\MongoDBData3" --port 27033

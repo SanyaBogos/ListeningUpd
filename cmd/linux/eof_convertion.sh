@@ -1,0 +1,1 @@
+for file in *.sh; do dos2unix "$file"; done 
